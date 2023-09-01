@@ -1,0 +1,19 @@
+@font-face {
+	font-family: "Silkscreen-Regular";
+	src: url(../fonts/Silkscreen-Regular.ttf);
+}
+
+@font-face {
+	font-family: "SuperMarioBros";
+	src: url(../fonts/Super-Mario-Bros.ttf);
+}
+
+@font-face {
+	font-family: "Player2";
+	src: url(../fonts/PressStart2P.ttf);
+}
+
+@font-face {
+	font-family: "Arcade";
+	src: url(../fonts/Arcade-Classic.ttf);
+}
