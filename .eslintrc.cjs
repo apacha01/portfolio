@@ -17,6 +17,7 @@ module.exports = {
 			{ allowConstantExport: true },
 		],
 		'semi': ['error', 'always'],
-		'indent': ['error', 'tab']
+		'indent': ['error', 'tab'],
+		'quotes': ['error', 'single']
 	},
 }
