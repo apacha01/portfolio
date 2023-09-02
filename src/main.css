@@ -1,5 +1,33 @@
 @import url(./assets/css/variables.css);
 
 body {
+	font-size: 1em;
 	background-color: var(--mario-skyblue);
+}
+
+/* Font Size Responsivness */
+/* Desktop */
+@media (min-width: 1024px) {
+	body {
+		font-size: 1.2em;
+	}
+}
+
+/* Large Scale Displays */
+@media (min-width: 1366px) {
+	body {
+		font-size: 1.3em;
+	}
+}
+
+@media (min-width: 1920px) {
+	body {
+		font-size: 1.8em;
+	}
+}
+
+@media (min-width: 2560px) {
+	body {
+		font-size: 2.3em;
+	}
 }

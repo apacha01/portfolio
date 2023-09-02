@@ -9,7 +9,7 @@
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 50px;
+	height: 3em;
 	margin-top: 20px;
 	font-family: 'SK-Regular';
 }
@@ -21,16 +21,15 @@
 	position: relative;
 	width: 75%;
 	height: 100%;
-	padding: 0 25px;
+	padding: 0 1em;
 	background-color: var(--mario-alt-block-color);
 	color: var(--mario-alt-block-font-color);
 	box-shadow: 1px 2px 4px 0px black;
-	max-width: 900px;
+	max-width: 80%;
 }
 
 .header-menu-btn,
-.header-menu-icon,
-.header-play-icon {
+.header-menu-icon {
 	position: relative;
 	padding: 0;
 	width: 32px;
@@ -62,30 +61,30 @@
 
 .header-screw {
 	position: absolute;
-	width: 5px;
-	height: 5px;
+	aspect-ratio: 1 / 1;
+	width: 0.25em;
 	background-color: var(--mario-alt-block-font-color);
 	box-shadow: 0.75px 0.75px 1px 0px black;
 }
 
 .header-screw:nth-of-type(1) {
-	top: 5px;
-	left: 5px;
+	top: 0.25em;
+	left: 0.25em;
 }
 
 .header-screw:nth-of-type(2) {
-	top: 5px;
-	right: 5px;
+	top: 0.25em;
+	right: 0.25em;
 }
 
 .header-screw:nth-of-type(3) {
-	bottom: 5px;
-	left: 5px;
+	bottom: 0.25em;
+	left: 0.25em;
 }
 
 .header-screw:nth-of-type(4) {
-	bottom: 5px;
-	right: 5px;
+	bottom: 0.25em;
+	right: 0.25em;
 }
 
 /* NAVBAR STYLES */
@@ -114,7 +113,7 @@
 	justify-content: space-evenly;
 }
 
-.menu-link {
+.menu-item {
 	position: relative;
 	width: 80%;
 	font-size: 2em;
@@ -122,7 +121,13 @@
 	padding: 5px;
 }
 
-.menu-link::after {
+.menu-link {
+	display: block;
+	width: 100%;
+	color: var(--mario-alt-block-font-color)
+}
+
+.menu-item::after {
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -135,7 +140,7 @@
 	z-index: -1;
 }
 
-.menu-link:hover::after {
+.menu-item:hover::after {
 	transform: scaleX(1);
 }
 
@@ -144,7 +149,7 @@
 }
 
 .menu-container.open {
-	clip-path: circle(100%);
+	clip-path: circle(75%);
 }
 
 /* Animations */
@@ -164,16 +169,14 @@
 
 /* Tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
-	.header-name {
-		font-size: 1.6em;
+	.menu {
+		height: 75%;
+		top: 40%;
 	}
 }
 
+/* Desktop */
 @media (min-width: 1024px) {
-	.header-name {
-		font-size: 1.1em;
-	}
-
 	.header-menu-btn {
 		display: none;
 	}
@@ -186,11 +189,12 @@
 	}
 
 	.menu {
+		height: 100%;
 		flex-direction: row;
 		justify-content: flex-end;
 	}
 
-	.menu-link {
+	.menu-item {
 		width: auto;
 		font-size: 1em;
 		padding: 5px;
