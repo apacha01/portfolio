@@ -3,20 +3,32 @@ import MISTERY_BLOCK_SVG from '../../assets/svgs/mario-mistery-block.svg';
 import COIN_GIF from '../../assets/imgs/coin.gif';
 import useLang from '../../contexts/langStore.js';
 import useOpenMenu from '../../hooks/useOpenMenu.js';
+import useText from '../../hooks/useText';
 
 function MarioHeader() {
-	const {open, toggleOpen} = useOpenMenu();
-	const {toggleLang, getLangText} = useLang();
+	const {open, toggleOpen} = useOpenMenu(false);
+	const toggleLang = useLang(state => state.toggleLang);
+	const text = useText();
 
 	//#8dd601, #0f9401
 
 	return (
 		<div className="header-container">
 			<header className="header">
-				<p className="header-name">{getLangText().headerName}</p>
+				<p className="header-name">{text.headerName}</p>
+				<div className="lang-toggle-container">
+					<label htmlFor="lang" className="lang-toggle-label"></label>
+					<input
+						type="checkbox"
+						name="lang"
+						id="lang"
+						className="lang-toggle-input"
+						onClick={toggleLang}
+					/>
+				</div>
 				<nav id="menu" className="menu-container">
 					<ul className="menu">
-						{getLangText().headerLinks.map((e, i) => {
+						{text.headerLinks.map((e, i) => {
 							return (
 								<li className="menu-item" key={i}>
 									<a
@@ -42,10 +54,10 @@ function MarioHeader() {
 					/>
 					<img className={`header-coin ${open ? 'animate' : ''}`} src={COIN_GIF} />
 				</button>
-				<div className="header-screw"></div>
-				<div className="header-screw"></div>
-				<div className="header-screw"></div>
-				<div className="header-screw"></div>
+				<span className="header-screw"></span>
+				<span className="header-screw"></span>
+				<span className="header-screw"></span>
+				<span className="header-screw"></span>
 			</header>
 		</div>
 	);
