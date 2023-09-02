@@ -11,11 +11,18 @@ const useOpenMenu = (initialValue = false) => {
 
 	useEffect(() => {
 		// dealy to let the coin out of the '?' block
-		setTimeout(() => document.getElementById('menu').classList.toggle('open'), 250);
-		setTimeout(() => {
-			let icon =  document.getElementById('menu-icon');
-			icon.src = open ? EXCLAMATION_BLOCK_SVG : MISTERY_BLOCK_SVG;
-		},250);
+		if (open) {
+			setTimeout(() => document.getElementById('menu').classList.add('open'), 250);
+			setTimeout(() => {
+				document.getElementById('menu-icon').src = EXCLAMATION_BLOCK_SVG;
+			},250);
+		}
+		else {
+			document.getElementById('menu').classList.remove('open');
+			setTimeout(() => {
+				document.getElementById('menu-icon').src = MISTERY_BLOCK_SVG;
+			},250);
+		}
 	}, [open]);
 
 	return {open, toggleOpen};
