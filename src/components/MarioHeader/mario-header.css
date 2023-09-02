@@ -44,7 +44,7 @@
 }
 
 .header-menu-btn.animate {
-	animation: MisteryBoxJump .35s ease;
+	animation: MisteryBoxJump .2s ease;
 }
 
 .header-coin {
@@ -155,7 +155,7 @@
 /* Animations */
 @keyframes MisteryBoxJump {
 	50% {
-		transform: translateY(-2px);
+		transform: translateY(-4px);
 	}
 }
 

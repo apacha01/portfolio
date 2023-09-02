@@ -1,0 +1,22 @@
+{
+	"en": {
+		"headerName": "Agustin Pacheco",
+		"headerLinks": [
+			"Home",
+			"Experience",
+			"Studies",
+			"About Me",
+			"Contact"
+		]
+	},
+	"es": {
+		"headerName": "Agustín Pacheco",
+		"headerLinks": [
+			"Inicio",
+			"Experiencia",
+			"Formación",
+			"Sobre Mí",
+			"Contacto"
+		]
+	}
+}
