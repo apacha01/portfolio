@@ -113,21 +113,24 @@
 	justify-content: space-evenly;
 }
 
-.menu-item {
+.menu-item,
+.lang-container {
 	position: relative;
 	width: 80%;
 	font-size: 2em;
 	text-align: center;
-	padding: 5px;
+	margin: 5px;
 }
 
 .menu-link {
 	display: block;
 	width: 100%;
-	color: var(--mario-alt-block-font-color)
+	height: 100%;
+	color: var(--mario-alt-block-font-color);
+	padding: 10px 0;
 }
 
-.menu-item::after {
+.menu-link::after {
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -140,7 +143,7 @@
 	z-index: -1;
 }
 
-.menu-item:hover::after {
+.menu-link:hover::after {
 	transform: scaleX(1);
 }
 
@@ -153,15 +156,28 @@
 }
 
 /* Language Toggler */
+.lang-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 14px;
+}
+
 .lang-toggle-container {
 	position: relative;
 	display: flex;
 	align-items: center;
-	width: 10%;
-	height: 50%;
+	width: 2em;
+	height: 100%;
+	max-width: 3em;
+}
+
+.lang-flag {
+	width: 1em;
 }
 
 .lang-toggle-label {
+	position: relative;
 	display: block;
 	height: 0.1em;
 	width: 100%;
@@ -171,15 +187,16 @@
 .lang-toggle-label::after {
 	content: "";
 	display: block;
-	position: relative;
-	top: -6px;
-	left: -6px;
+	position: absolute;
+	top: -7px;
+	left: -8px;
 	width: 16px;
 	height: 14px;
 	background-image: url('../../assets/imgs/mario-green-turtle-sprite.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	cursor: pointer;
+	transition: left 0.1s ease;
 }
 
 .lang-toggle-input {
@@ -191,6 +208,10 @@
 	margin: 0;
 	opacity: 0;
 	cursor: pointer;
+}
+
+.lang-toggle-input:checked+.lang-toggle-label::after {
+	left: calc(100% - 8px);
 }
 
 /* Animations */
@@ -211,8 +232,29 @@
 /* Tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
 	.menu {
-		height: 75%;
-		top: 40%;
+		height: auto;
+		gap: 15px;
+	}
+
+	.menu-item,
+	.lang-container {
+		width: 50%;
+		font-size: 3em;
+	}
+
+	.lang-container {
+		gap: 28px;
+	}
+
+	.lang-toggle-label::after {
+		top: -12px;
+		left: -12px;
+		width: 32px;
+		height: 28px;
+	}
+
+	.lang-toggle-input:checked+.lang-toggle-label::after {
+		left: calc(100% - 16px);
 	}
 }
 
@@ -230,18 +272,44 @@
 	}
 
 	.menu {
-		height: 100%;
 		flex-direction: row;
 		justify-content: flex-end;
 	}
 
-	.menu-item {
+	.menu-item,
+	.lang-container {
 		width: auto;
-		font-size: 1em;
-		padding: 5px;
+		font-size: 0.8em;
 	}
 
 	.menu-link:hover {
 		color: var(--mario-alt-block-color);
+	}
+}
+
+@media (min-width: 1366px) {
+	.menu {
+		gap: 1em;
+	}
+
+	.lang-flag {
+		width: 1.5em;
+	}
+}
+
+@media (min-width: 2560px) {
+	.lang-container {
+		gap: 28px;
+	}
+
+	.lang-toggle-label::after {
+		top: -12px;
+		left: -12px;
+		width: 32px;
+		height: 28px;
+	}
+
+	.lang-toggle-input:checked+.lang-toggle-label::after {
+		left: calc(100% - 16px);
 	}
 }
