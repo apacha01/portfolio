@@ -11,9 +11,7 @@ function MarioHeader() {
 	const {open, toggleOpen} = useOpenMenu(false);
 	const toggleLang = useLang(state => state.toggleLang);
 	const text = useText();
-
-	//#8dd601, #0f9401
-
+	
 	return (
 		<div className="header-container">
 			<header className="header">
