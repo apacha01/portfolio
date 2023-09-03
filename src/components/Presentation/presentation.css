@@ -1,0 +1,22 @@
+@import url(../../assets/css/fonts.css);
+
+.presentation-container {
+	width: 75%;
+	margin-left: 12.5%;
+	text-align: center;
+	font-family: 'Player2';
+}
+
+.presentation-title {
+	display: inline;
+	font-size: 1.2em;
+	line-height: 1.25em;
+	border-right: 3px solid black;
+	animation: blink 0.5s infinite step-end alternate;
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
+}

@@ -7,7 +7,8 @@
 			"Studies",
 			"About Me",
 			"Contact"
-		]
+		],
+		"presentation": "Hi! I'm Agustin, a web developer."
 	},
 	"es": {
 		"headerName": "Agustín Pacheco",
@@ -17,6 +18,7 @@
 			"Estudios",
 			"Sobre Mí",
 			"Contacto"
-		]
+		],
+		"presentation": "¡Hola! Me llamo Agustín, soy un desarrollador web."
 	}
 }
