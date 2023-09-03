@@ -15,8 +15,35 @@
 	animation: blink 0.5s infinite step-end alternate;
 }
 
+/* Animations */
 @keyframes blink {
 	50% {
 		border-color: transparent;
+	}
+}
+
+/* Responsiveness */
+/* Hardcoded heights to avoid layout shifting while typing the title */
+@media (max-width: 320px) {
+	.presentation-container {
+		min-height: 100px;
+	}
+}
+
+@media (min-width: 321px) and (max-width: 413px) {
+	.presentation-container {
+		min-height: 70px;
+	}
+}
+
+@media (min-width: 414px) and (max-width: 848px) {
+	.presentation-container {
+		min-height: 45px;
+	}
+}
+
+@media (min-width: 849px) {
+	.presentation-container {
+		min-height: 22px;
 	}
 }
