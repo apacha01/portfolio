@@ -19,6 +19,7 @@ module.exports = {
 		'semi': ['error', 'always'],
 		'indent': ['error', 'tab'],
 		'quotes': ['error', 'single'],
+		'no-trailing-spaces': "error",
 		'react/prop-types': 0
 	},
 }
