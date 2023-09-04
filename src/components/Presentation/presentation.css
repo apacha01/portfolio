@@ -1,4 +1,5 @@
 @import url(../../assets/css/fonts.css);
+@import url(../../assets/css/variables.css);
 
 .presentation-container {
 	width: 75%;
@@ -11,8 +12,9 @@
 	display: inline;
 	font-size: 1.2em;
 	line-height: 1.25em;
-	border-right: 3px solid black;
+	border-right: 3px solid var(--mario-skyblue-font);
 	animation: blink 0.5s infinite step-end alternate;
+	color: var(--mario-skyblue-font);
 }
 
 /* Animations */
