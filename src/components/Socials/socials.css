@@ -1,0 +1,82 @@
+@import url(../../assets/css/variables.css);
+
+.socials-container {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 25px;
+	width: 80%;
+	margin-left: 10%;
+}
+
+.lkin-cloud,
+.gh-cloud,
+.cv-cloud {
+	/* SVG Size */
+	aspect-ratio: 330 / 240;
+	position: relative;
+	width: 6em;
+	background: url('../../assets/svgs/mario-single-cloud-sprite.svg') no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.lkin-cloud {
+	transform: translate(0.35em, 1.2em);
+	animation: floating-lkin 6s infinite ease;
+}
+
+.gh-cloud {
+	transform: translateY(-0.35em);
+	animation: floating-gh 8s infinite ease;
+}
+
+.cv-cloud {
+	transform: translate(-1em, 2em);
+	animation: floating-cv 5s infinite ease;
+}
+
+.lkin-logo {
+	width: 1.75em;
+	border-radius: 0.2em;
+	background: url(../../assets/svgs/linkedin.svg) no-repeat;
+}
+
+.gh-logo {
+	width: 2em;
+	background: url(../../assets/svgs/github.svg) no-repeat;
+}
+
+.cv-logo {
+	width: 2em;
+	background: url(../../assets/svgs/cv.svg) no-repeat;
+}
+
+.logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-45%, -45%);
+	aspect-ratio: 1 / 1;
+	background-color: var(--mario-skyblue-font);
+	background-position: center;
+	background-size: cover;
+}
+
+/* Keyframes */
+@keyframes floating-lkin {
+	50% {
+		transform: translate(0.35em, 1.1em);
+	}
+}
+
+@keyframes floating-gh {
+	50% {
+		transform: translateY(-0.34em);
+	}
+}
+
+@keyframes floating-cv {
+	50% {
+		transform: translate(-1em, 1.9em);
+	}
+}

@@ -1,6 +1,6 @@
 .body-container {
 	position: absolute;
-	margin-top: calc(3em + 50px);
+	margin-top: 6em;
 	width: 100%;
 	height: 100%;
 	z-index: -1;
