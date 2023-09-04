@@ -34,18 +34,18 @@
 
 @media (min-width: 321px) and (max-width: 413px) {
 	.presentation-container {
-		min-height: 70px;
+		min-height: 75px;
 	}
 }
 
 @media (min-width: 414px) and (max-width: 848px) {
 	.presentation-container {
-		min-height: 45px;
+		min-height: 50px;
 	}
 }
 
 @media (min-width: 849px) {
 	.presentation-container {
-		min-height: 22px;
+		min-height: 25px;
 	}
 }
