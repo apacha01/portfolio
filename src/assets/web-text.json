@@ -8,7 +8,19 @@
 			"About Me",
 			"Contact"
 		],
-		"presentation": "Hi! I'm Agustin, a web developer."
+		"presentation": "Hi! I'm Agustin, a web developer.",
+		"projects": [
+			{
+				"title": "Pokédex",
+				"description": "A pokédex made consuming the pokeapi v2. Learned a lot of css tricks and about api calls with JS.",
+				"img": "src/assets/imgs/project-pokedex.png",
+				"technologies": [
+					"HTML",
+					"CSS",
+					"JavaScript"
+				]
+			}
+		]
 	},
 	"es": {
 		"headerName": "Agustín Pacheco",
