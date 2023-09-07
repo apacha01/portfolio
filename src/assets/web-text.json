@@ -3,7 +3,7 @@
 		"headerName": "Agustin Pacheco",
 		"headerLinks": [
 			"Home",
-			"Experience",
+			"Projects",
 			"Studies",
 			"About Me",
 			"Contact"
@@ -18,7 +18,9 @@
 					"HTML",
 					"CSS",
 					"JavaScript"
-				]
+				],
+				"repo": "",
+				"deploy": ""
 			}
 		]
 	},
@@ -26,7 +28,7 @@
 		"headerName": "Agustín Pacheco",
 		"headerLinks": [
 			"Inicio",
-			"Experiencia",
+			"Proyectos",
 			"Estudios",
 			"Sobre Mí",
 			"Contacto"

@@ -3,6 +3,7 @@ import MARIO_IDLE from '../../assets/svgs/mario-idle.svg';
 import MARIO_JUMP from '../../assets/svgs/mario-jump.svg';
 import { useState } from 'react';
 import useText from '../../hooks/useText';
+import Project from '../Project/Project';
 
 function Projects () {
 	const [jump, setJump] = useState(false);
@@ -16,13 +17,8 @@ function Projects () {
 	};
 
 	return (
-		<section className="projects-container">
-			<div className="project">
-				<h3>{projects[0].title}</h3>
-				<p>{projects[0].description}</p>
-				<img src={projects[0].img} alt={projects[0].title} style={{maxWidth:'100%'}} />
-				<p>{projects[0].technologies}</p>
-			</div>
+		<section id='projects' className="projects-container">
+			<Project project={projects[0]}/>
 			<div className="navigation">
 				<button onClick={makeJump} className="project-btn prev-project">{'<'}</button>
 				<img
