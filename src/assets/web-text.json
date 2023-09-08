@@ -21,6 +21,19 @@
 				],
 				"repo": "",
 				"deploy": ""
+			},
+			{
+				"title": "Chedoc Movies",
+				"description": "A web page showing movies and series for an interview at chedoc. Made using React Router and Zustand along with the classic web trio.",
+				"img": "src/assets/imgs/project-chedoc.png",
+				"technologies": [
+					"HTML",
+					"CSS",
+					"JavaScript",
+					"React"
+				],
+				"repo": "",
+				"deploy": ""
 			}
 		]
 	},

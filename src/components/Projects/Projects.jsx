@@ -6,8 +6,10 @@ import useText from '../../hooks/useText';
 import Project from '../Project/Project';
 
 function Projects () {
-	const [jump, setJump] = useState(false);
 	const projects = useText().projects;
+	const [jump, setJump] = useState(false);
+	const [selectedProject,  setSelectedProject] = useState(projects[0]);
+	const [selectedIndex,  setSelectedIndex] = useState(0);
 
 	const makeJump = () => {
 		setJump(true);
@@ -16,17 +18,39 @@ function Projects () {
 		}, 200);
 	};
 
+	const selectNewProject = (next = true) => {
+		if (next) {
+			const newIndex = selectedIndex < projects.length - 1
+				? selectedIndex + 1
+				: 0;
+			setSelectedIndex(newIndex);
+			setSelectedProject(projects[newIndex]);
+		}
+		else {
+			const newIndex = selectedIndex > 0
+				? selectedIndex - 1
+				: projects.length - 1;
+			setSelectedIndex(newIndex);
+			setSelectedProject(projects[newIndex]);
+		}
+	};
+
+	const handleClick = (next = true) => {
+		makeJump();
+		selectNewProject(next);
+	};
+
 	return (
 		<section id='projects' className="projects-container">
-			<Project project={projects[0]}/>
+			<Project project={selectedProject} hitted={jump}/>
 			<div className="navigation">
-				<button onClick={makeJump} className="project-btn prev-project">{'<'}</button>
+				<button onClick={() => handleClick(false)} className="project-btn">{'<'}</button>
 				<img
 					src={jump ? MARIO_JUMP : MARIO_IDLE}
 					alt="Mario"
 					className={`mario-sprite left ${jump ? 'jump' : ''}`}
 				/>
-				<button onClick={makeJump} className="project-btn next-project">{'>'}</button>
+				<button onClick={() => handleClick(true)} className="project-btn">{'>'}</button>
 			</div>
 		</section>
 	);
