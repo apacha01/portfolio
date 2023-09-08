@@ -8,14 +8,20 @@ import Project from '../Project/Project';
 function Projects () {
 	const projects = useText().projects;
 	const [jump, setJump] = useState(false);
-	const [selectedProject,  setSelectedProject] = useState(projects[0]);
-	const [selectedIndex,  setSelectedIndex] = useState(0);
+	const [hit, setHit] = useState(false);
+	const [selectedIndex, setSelectedIndex] = useState(0);
 
 	const makeJump = () => {
 		setJump(true);
 		setTimeout(() => {
+			setHit(true);
+		}, 100);
+		setTimeout(() => {
 			setJump(false);
 		}, 200);
+		setTimeout(() => {
+			setHit(false);
+		}, 300);
 	};
 
 	const selectNewProject = (next = true) => {
@@ -24,14 +30,12 @@ function Projects () {
 				? selectedIndex + 1
 				: 0;
 			setSelectedIndex(newIndex);
-			setSelectedProject(projects[newIndex]);
 		}
 		else {
 			const newIndex = selectedIndex > 0
 				? selectedIndex - 1
 				: projects.length - 1;
 			setSelectedIndex(newIndex);
-			setSelectedProject(projects[newIndex]);
 		}
 	};
 
@@ -42,7 +46,10 @@ function Projects () {
 
 	return (
 		<section id='projects' className="projects-container">
-			<Project project={selectedProject} hitted={jump}/>
+			<Project
+				projectIndex={selectedIndex}
+				hitted={hit}
+			/>
 			<div className="navigation">
 				<button onClick={() => handleClick(false)} className="project-btn">{'<'}</button>
 				<img

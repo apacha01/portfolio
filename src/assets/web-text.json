@@ -23,7 +23,7 @@
 				"deploy": ""
 			},
 			{
-				"title": "Chedoc Movies",
+				"title": "Chedoc Shows",
 				"description": "A web page showing movies and series for an interview at chedoc. Made using React Router and Zustand along with the classic web trio.",
 				"img": "src/assets/imgs/project-chedoc.png",
 				"technologies": [
@@ -46,6 +46,33 @@
 			"Sobre Mí",
 			"Contacto"
 		],
-		"presentation": "¡Hola! Me llamo Agustín, soy un desarrollador web."
+		"presentation": "¡Hola! Me llamo Agustín, soy un desarrollador web.",
+		"projects": [
+			{
+				"title": "Pokédex",
+				"description": "Una pokedex usando la pokeapi v2. Aprendí mucho sobre CSS y las llamadas a apis con JS.",
+				"img": "src/assets/imgs/project-pokedex.png",
+				"technologies": [
+					"HTML",
+					"CSS",
+					"JavaScript"
+				],
+				"repo": "",
+				"deploy": ""
+			},
+			{
+				"title": "Chedoc Shows",
+				"description": "Página web para mostrar series y películas chedoc. Hecha con React Router y Zustand, además del trio clásico de la web.",
+				"img": "src/assets/imgs/project-chedoc.png",
+				"technologies": [
+					"HTML",
+					"CSS",
+					"JavaScript",
+					"React"
+				],
+				"repo": "",
+				"deploy": ""
+			}
+		]
 	}
 }
