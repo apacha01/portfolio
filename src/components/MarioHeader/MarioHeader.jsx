@@ -11,13 +11,13 @@ function MarioHeader() {
 	const {open, toggleOpen} = useOpenMenu(false);
 	const toggleLang = useLang(state => state.toggleLang);
 	const text = useText();
-	
+
 	return (
 		<div className="header-container">
 			<header className="header">
 				<p className="header-name">{text.headerName}</p>
-				<button 
-					className={`header-menu-btn ${open ? 'animate' : ''}`} 
+				<button
+					className={`header-menu-btn ${open ? 'animate' : ''}`}
 					onClick={toggleOpen}
 				>
 					<img

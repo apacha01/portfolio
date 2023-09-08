@@ -4,9 +4,10 @@ import MARIO_JUMP from '../../assets/svgs/mario-jump.svg';
 import { useState } from 'react';
 import useText from '../../hooks/useText';
 import Project from '../Project/Project';
+import Title from '../Title/Title';
 
 function Projects () {
-	const projects = useText().projects;
+	const text = useText();
 	const [jump, setJump] = useState(false);
 	const [hit, setHit] = useState(false);
 	const [selectedIndex, setSelectedIndex] = useState(0);
@@ -26,7 +27,7 @@ function Projects () {
 
 	const selectNewProject = (next = true) => {
 		if (next) {
-			const newIndex = selectedIndex < projects.length - 1
+			const newIndex = selectedIndex < text.projects.length - 1
 				? selectedIndex + 1
 				: 0;
 			setSelectedIndex(newIndex);
@@ -34,7 +35,7 @@ function Projects () {
 		else {
 			const newIndex = selectedIndex > 0
 				? selectedIndex - 1
-				: projects.length - 1;
+				: text.projects.length - 1;
 			setSelectedIndex(newIndex);
 		}
 	};
@@ -45,7 +46,8 @@ function Projects () {
 	};
 
 	return (
-		<section id='projects' className="projects-container">
+		<section id={text.headerLinks[1].toLowerCase().replace(' ', '-')} className="projects-container">
+			<Title title={text.headerLinks[1].toLowerCase().replace(' ', '-')} withCloud={true} />
 			<Project
 				projectIndex={selectedIndex}
 				hitted={hit}

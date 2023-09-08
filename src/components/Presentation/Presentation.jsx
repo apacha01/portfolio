@@ -7,7 +7,7 @@ function Presentation ({ speed = 100 }) {
 	const { typewriting } = useTypewriter(text.presentation, speed);
 
 	return (
-		<section id="home" className="presentation-container">
+		<section id={text.headerLinks[0].toLowerCase().replace(' ', '-')} className="presentation-container">
 			<h1 className="presentation-title">{typewriting}</h1>
 		</section>
 	);

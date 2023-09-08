@@ -1,0 +1,39 @@
+.title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "SuperMarioBros";
+	font-size: 2em;
+	text-align: center;
+}
+
+.letter {
+	margin-top: 10px;
+}
+
+.mario-blue {
+	color: var(--mario-blue);
+}
+
+.mario-yellow {
+	color: var(--mario-yellow);
+}
+
+.mario-red {
+	color: var(--mario-red);
+}
+
+.mario-green {
+	color: var(--mario-green);
+}
+
+.bg-cloud {
+	aspect-ratio: 1000 / 426;
+	background-image: url(../../assets/imgs/mario-triple-cloud-sprite.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.fsz-md {
+	font-size: 1.8em;
+}
