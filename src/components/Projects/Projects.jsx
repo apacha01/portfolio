@@ -47,7 +47,7 @@ function Projects () {
 
 	return (
 		<section id={text.headerLinks[1].toLowerCase().replace(' ', '-')} className="projects-container">
-			<Title title={text.headerLinks[1].toLowerCase().replace(' ', '-')} withCloud={true} />
+			<Title title={text.headerLinks[1]} withCloud={true} />
 			<Project
 				projectIndex={selectedIndex}
 				hitted={hit}
@@ -61,6 +61,7 @@ function Projects () {
 				/>
 				<button onClick={() => handleClick(true)} className="project-btn">{'>'}</button>
 			</div>
+			<div className="projects-floor"></div>
 		</section>
 	);
 }
