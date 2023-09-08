@@ -4,6 +4,7 @@
 		"headerLinks": [
 			"Home",
 			"Projects",
+			"Skills",
 			"Studies",
 			"About Me",
 			"Contact"
@@ -35,6 +36,24 @@
 				"repo": "",
 				"deploy": ""
 			}
+		],
+		"skills": [
+			{
+				"name": "HTML",
+				"level": 4
+			},
+			{
+				"name": "CSS",
+				"level": 3
+			},
+			{
+				"name": "JavaScript",
+				"level": 4
+			},
+			{
+				"name": "React",
+				"level": 2
+			}
 		]
 	},
 	"es": {
@@ -42,6 +61,7 @@
 		"headerLinks": [
 			"Inicio",
 			"Proyectos",
+			"Habilidades",
 			"Estudios",
 			"Sobre Mi",
 			"Contacto"
@@ -72,6 +92,24 @@
 				],
 				"repo": "",
 				"deploy": ""
+			}
+		],
+		"skills": [
+			{
+				"name": "HTML",
+				"level": 4
+			},
+			{
+				"name": "CSS",
+				"level": 3
+			},
+			{
+				"name": "JavaScript",
+				"level": 4
+			},
+			{
+				"name": "React",
+				"level": 2
 			}
 		]
 	}
