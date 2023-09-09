@@ -12,7 +12,16 @@ function Skills () {
 			{
 				text.skills.map((s, i) => {
 					return (
-						<Skill key={i} name={s.name} level={s.level} />
+						<Skill
+							key={i}
+							name={s.name}
+							level={
+								/* level between 0 & 5 */
+								s.level > 5
+									? 5
+									: (s.level < 0 ? 0 : s.level)
+							}
+						/>
 					);
 				})
 			}
