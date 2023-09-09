@@ -1,4 +1,5 @@
 import useText from '../../hooks/useText';
+import Skill from '../Skill/Skill';
 import Title from '../Title/Title';
 import './skills.css';
 
@@ -11,10 +12,7 @@ function Skills () {
 			{
 				text.skills.map((s, i) => {
 					return (
-						<div key={i} className="skill">
-							<h3 className="skill-name">{s.name}</h3>
-							<div className="skill-level">{s.level}</div>
-						</div>
+						<Skill key={i} name={s.name} level={s.level} />
 					);
 				})
 			}
