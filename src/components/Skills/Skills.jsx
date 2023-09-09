@@ -7,8 +7,8 @@ function Skills () {
 	const text = useText();
 
 	return (
-		<section id={text.headerLinks[2].toLowerCase().replace(' ', '-')} className="skills-container">
-			<Title title={text.headerLinks[2]} withCloud={true} />
+		<section id={text.headerLinks.skills.id} className="skills-container">
+			<Title title={text.headerLinks.skills.title} withCloud={true} />
 			{
 				text.skills.map((s, i) => {
 					return (

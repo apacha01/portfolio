@@ -29,15 +29,15 @@ function MarioHeader() {
 				</button>
 				<nav id="menu" className="menu-container">
 					<ul className="menu">
-						{text.headerLinks.map((e, i) => {
+						{Object.entries(text.headerLinks).map((e, i) => {
 							return (
 								<li className="menu-item" key={i}>
 									<a
 										className="menu-link"
-										href={`#${e.toLowerCase().replace(' ', '-')}`}
+										href={`#${e[1].id}`}
 										onClick={toggleOpen}
 									>
-										{e}
+										{e[1].title}
 									</a>
 								</li>
 							);

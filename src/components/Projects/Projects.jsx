@@ -46,8 +46,8 @@ function Projects () {
 	};
 
 	return (
-		<section id={text.headerLinks[1].toLowerCase().replace(' ', '-')} className="projects-container">
-			<Title title={text.headerLinks[1]} withCloud={true} />
+		<section id={text.headerLinks.projects.id} className="projects-container">
+			<Title title={text.headerLinks.projects.title} withCloud={true} />
 			<Project
 				projectIndex={selectedIndex}
 				hitted={hit}

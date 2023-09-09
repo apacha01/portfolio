@@ -1,14 +1,32 @@
 {
 	"en": {
 		"headerName": "Agustin Pacheco",
-		"headerLinks": [
-			"Home",
-			"Projects",
-			"Skills",
-			"Studies",
-			"About Me",
-			"Contact"
-		],
+		"headerLinks": {
+			"home": {
+				"id": "home",
+				"title": "Home"
+			},
+			"projects": {
+				"id": "projects",
+				"title": "Projects"
+			},
+			"skills": {
+				"id": "skills",
+				"title": "Skills"
+			},
+			"studies": {
+				"id": "studies",
+				"title": "Studies"
+			},
+			"about": {
+				"id": "about-me",
+				"title": "About Me"
+			},
+			"contact": {
+				"id": "contact",
+				"title": "Contact"
+			}
+		},
 		"presentation": "Hi! I'm Agustin, a web developer.",
 		"projects": [
 			{
@@ -58,14 +76,32 @@
 	},
 	"es": {
 		"headerName": "Agustín Pacheco",
-		"headerLinks": [
-			"Inicio",
-			"Proyectos",
-			"Habilidades",
-			"Estudios",
-			"Sobre Mi",
-			"Contacto"
-		],
+		"headerLinks": {
+			"home": {
+				"id": "home",
+				"title": "Inicio"
+			},
+			"projects": {
+				"id": "projects",
+				"title": "Proyectos"
+			},
+			"skills": {
+				"id": "skills",
+				"title": "Habilidades"
+			},
+			"studies": {
+				"id": "studies",
+				"title": "Estudios"
+			},
+			"about": {
+				"id": "about-me",
+				"title": "Sobre Mi"
+			},
+			"contact": {
+				"id": "contact",
+				"title": "Contacto"
+			}
+		},
 		"presentation": "¡Hola! Me llamo Agustín, soy un desarrollador web.",
 		"projects": [
 			{
