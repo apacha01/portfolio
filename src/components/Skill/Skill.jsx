@@ -6,7 +6,7 @@ function Skill ({name = '', level = 0}) {
 		let stars = [];
 
 		for (let i = 5; i > 0; i--) {
-			stars.push(<span className={`star ${i > num ? '' : 'bright'}`}></span>);
+			stars.push(<span key={i} className={`star ${i > num ? '' : 'bright'}`}></span>);
 		}
 
 		return stars;
