@@ -12,7 +12,6 @@ function Skill ({name = '', level = 0}) {
 		return stars;
 	};
 
-
 	return (
 		<div className="skill-container">
 			<div className="skill">
