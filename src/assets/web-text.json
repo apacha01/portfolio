@@ -12,7 +12,7 @@
 			},
 			"skills": {
 				"id": "skills",
-				"title": "Skills"
+				"title": "Stats"
 			},
 			"studies": {
 				"id": "studies",
@@ -65,7 +65,7 @@
 				"level": 3
 			},
 			{
-				"name": "JavaScript",
+				"name": "JS",
 				"level": 4
 			},
 			{
@@ -140,7 +140,7 @@
 				"level": 3
 			},
 			{
-				"name": "JavaScript",
+				"name": "JS",
 				"level": 4
 			},
 			{

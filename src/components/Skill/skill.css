@@ -26,10 +26,15 @@
 	background-size: contain;
 	background-position: center;
 	padding: 0 5px;
+	opacity: 0.5;
 }
 
 .skill-floor {
 	width: 100%;
 	height: 16px;
 	background-image: url(../../assets/imgs/mario-breakable-block-sprite.png);
+}
+
+.bright {
+	opacity: 1;
 }
