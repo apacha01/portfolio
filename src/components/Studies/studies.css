@@ -13,10 +13,17 @@
 	padding: 1em 0;
 }
 
+.studies-floor {
+	width: 100%;
+	height: 16px;
+	background-image: url(../../assets/imgs/mario-breakable-block-sprite.png);
+	margin-top: 8px;
+}
+
 .mario-flagpole {
 	position: absolute;
 	background-color: #8cd600;
-	right: 0;
+	right: 7px;
 	bottom: 0;
 	height: 100%;
 	width: 2px;

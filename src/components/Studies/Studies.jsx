@@ -22,6 +22,7 @@ function Studies() {
 					<img className='flagpole-bottom' src={MARIO_FLAGPOLE_BOTTOM} alt="Flagpole top" />
 				</div>
 			</div>
+			<div className="studies-floor"></div>
 		</section>
 	);
 }
