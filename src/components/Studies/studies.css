@@ -1,0 +1,86 @@
+.studies-section {
+	width: 80%;
+	margin-left: 10%;
+	padding-top: 5em;
+}
+
+.studies-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1em;
+	padding: 1em 0;
+}
+
+.study-container {
+	box-sizing: border-box;
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	margin-top: 1em;
+	gap: 1em;
+	padding-right: 16px;
+}
+
+.study-media-container {
+	position: relative;
+	width: 5em;
+	aspect-ratio: 1 / 1;
+	max-width: 15%;
+	background: url(../../assets/svgs/mario-cloud-floor-sprite.svg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.study-img {
+	position: absolute;
+	width: 65%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.study-text-container {
+	font-family: "Player2";
+	font-size: 0.55em;
+	color: var(--mario-skyblue-font);
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.study-flag {
+	aspect-ratio: 1 / 1;
+	width: 16px;
+	position: absolute;
+	top: 0;
+	right: 1px;
+}
+
+.mario-flagpole {
+	position: absolute;
+	background-color: #8cd600;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 2px;
+	z-index: -1;
+}
+
+.flagpole-top {
+	aspect-ratio: 1 / 1;
+	width: 8px;
+	position: absolute;
+	top: -4px;
+	right: -3px;
+}
+
+.flagpole-bottom {
+	aspect-ratio: 1 / 1;
+	width: 16px;
+	position: absolute;
+	bottom: -8px;
+	right: -7px;
+}

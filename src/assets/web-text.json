@@ -72,6 +72,29 @@
 				"name": "React",
 				"level": 2
 			}
+		],
+		"studies": [
+			{
+				"img": "src/assets/imgs/utn-logo.jpg",
+				"degree": "IT Technician",
+				"timeSpend": "2021 - Present",
+				"institution": "UTN - INSPT",
+				"location": "Bs. As. Argentina"
+			},
+			{
+				"img": "src/assets/imgs/oracle-logo.png",
+				"degree": "Web Development Training",
+				"timeSpend": "2022",
+				"institution": "Alura + Oracle Next Education",
+				"location": "Online"
+			},
+			{
+				"img": "src/assets/imgs/et28-logo.jpg",
+				"degree": "High School - Electronics Technician",
+				"timeSpend": "2016 - 2020",
+				"institution": "Technical School N.28 'República Francesa'",
+				"location": "Bs. As. Argentina"
+			}
 		]
 	},
 	"es": {
