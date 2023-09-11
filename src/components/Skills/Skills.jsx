@@ -7,7 +7,7 @@ function Skills () {
 	const text = useText();
 
 	return (
-		<section id={text.headerLinks.skills.id} className="skills-container">
+		<section id={text.headerLinks.skills.id} className="skills-section">
 			<Title title={text.headerLinks.skills.title} withCloud={true} />
 			{
 				text.skills.map((s, i) => {

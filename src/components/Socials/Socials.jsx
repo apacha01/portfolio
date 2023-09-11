@@ -2,7 +2,7 @@ import './socials.css';
 
 function Socials () {
 	return (
-		<section className="socials-container">
+		<section className="socials-section">
 			<div className="lkin-cloud">
 				<a
 					title="Linkedin"

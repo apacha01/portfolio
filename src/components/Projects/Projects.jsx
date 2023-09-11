@@ -46,7 +46,7 @@ function Projects () {
 	};
 
 	return (
-		<section id={text.headerLinks.projects.id} className="projects-container">
+		<section id={text.headerLinks.projects.id} className="projects-section">
 			<Title title={text.headerLinks.projects.title} withCloud={true} />
 			<Project
 				projectIndex={selectedIndex}
