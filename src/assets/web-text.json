@@ -170,6 +170,29 @@
 				"name": "React",
 				"level": 2
 			}
+		],
+		"studies": [
+			{
+				"img": "src/assets/imgs/utn-logo.jpg",
+				"degree": "Técnico en Informática Aplicada",
+				"timeSpend": "2021 - Actualidad",
+				"institution": "UTN - INSPT",
+				"location": "Bs. As. Argentina"
+			},
+			{
+				"img": "src/assets/imgs/oracle-logo.png",
+				"degree": "Formación en Desarrollo Web",
+				"timeSpend": "2022",
+				"institution": "Alura + Oracle Next Education",
+				"location": "Online"
+			},
+			{
+				"img": "src/assets/imgs/et28-logo.jpg",
+				"degree": "Secundario. Técnico en Electrónica",
+				"timeSpend": "2016 - 2020",
+				"institution": "Escuela Técnica N.28 'República Francesa'",
+				"location": "Bs. As. Argentina"
+			}
 		]
 	}
 }
