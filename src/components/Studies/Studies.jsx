@@ -3,6 +3,7 @@ import Title from '../Title/Title';
 import useText from '../../hooks/useText';
 import MARIO_FLAGPOLE_TOP from '../../assets/svgs/mario-flagpole-top-sprite.svg';
 import MARIO_FLAGPOLE_BOTTOM from '../../assets/svgs/mario-flagpole-bottom-sprite.svg';
+import MARIO_CASTLE from '../../assets/svgs/mario-big-castle-sprite.svg';
 import Study from '../Study/Study';
 
 function Studies() {
@@ -21,6 +22,7 @@ function Studies() {
 					<img className='flagpole-top' src={MARIO_FLAGPOLE_TOP} alt="Flagpole top" />
 					<img className='flagpole-bottom' src={MARIO_FLAGPOLE_BOTTOM} alt="Flagpole top" />
 				</div>
+				<img src={MARIO_CASTLE} alt="Mario Castle" className="mario-castle" />
 			</div>
 			<div className="studies-floor"></div>
 		</section>
