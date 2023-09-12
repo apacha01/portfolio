@@ -95,7 +95,16 @@
 				"institution": "Technical School N.28 'República Francesa'",
 				"location": "Bs. As. Argentina"
 			}
-		]
+		],
+		"about": {
+			"text": "Well... There's not much to say.\nI like sports, I'm a team player.\nI like tech, that's why I chose it as my career.\nAnd in case you couldn't tell, I like games :).",
+			"hobbies": [
+				"Voley",
+				"Futbol",
+				"Music",
+				"Reading"
+			]
+		}
 	},
 	"es": {
 		"headerName": "Agustín Pacheco",
