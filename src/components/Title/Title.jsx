@@ -10,9 +10,18 @@ function Title ({title = 'Mock title', withCloud = false}) {
 			{
 				title.split('').map((l, i) => {
 					return (
-						<span key={i} className={`letter ${colors[i % colors.length]}`}>
-							{l}
-						</span>
+						' '.localeCompare(l)
+							? (
+								<span key={i} className={`letter ${colors[i % colors.length]}`}>
+									{l}
+								</span>
+							)
+							: (
+								<span key={i} className={`letter ${colors[i % colors.length]}`}>
+									{/* No Break Space */}
+									{'\u00A0'}
+								</span>
+							)
 					);
 				})
 			}

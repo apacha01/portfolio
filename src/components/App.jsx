@@ -1,3 +1,4 @@
+import About from './About/About.jsx';
 import MarioHeader from './MarioHeader/MarioHeader.jsx';
 import Presentation from './Presentation/Presentation.jsx';
 import Projects from './Projects/Projects.jsx';
@@ -16,6 +17,7 @@ function App() {
 				<Projects />
 				<Skills />
 				<Studies />
+				<About />
 			</div>
 		</>
 	);
