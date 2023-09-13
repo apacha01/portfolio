@@ -9,13 +9,35 @@ function About() {
 	return (
 		<section id={text.headerLinks.about.id} className="about-section">
 			<Title title={text.headerLinks.about.title} withCloud={true} />
-			<div className="about-bush-container">
-				<img src={MARIO_SIMPLE_BUSH} alt="Mario Bush Sprite" className="bush" />
-				<img src={MARIO_SIMPLE_BUSH} alt="Mario Bush Sprite" className="bush" />
+			<div className="about-container">
+				<h3 className="about-title">{text.about.title}</h3>
+				<div className="about-bush-container">
+					<img src={MARIO_SIMPLE_BUSH} alt="Mario Bush Sprite" className="bush" />
+					<img src={MARIO_SIMPLE_BUSH} alt="Mario Bush Sprite" className="bush" />
+				</div>
+				<div className="about-text-container">
+					<div className="text-overlay"></div>
+					<p className="about-text">{text.about.text}</p>
+				</div>
 			</div>
-			<div className="about-text-container">
-				<div className="text-overlay"></div>
-				<p className="about-text">{text.about.text}</p>
+			<div className="hobbies-container">
+				<h3 className="hobbies-title">Hobbies</h3>
+				<div className="hobbies-hobbie">
+					{
+						text.about.hobbies.map((h, i) => {
+							return (
+								<div key={i} className="hobbie-container">
+									<div className="hobbie">
+										<img className="hobbie-icon" src={h.icon} />
+										<p className="hobbie-text">{h.name}</p>
+									</div>
+									<div className="mario-tube"></div>
+									<div className="hobbie-floor"></div>
+								</div>
+							);
+						})
+					}
+				</div>
 			</div>
 		</section>
 	);

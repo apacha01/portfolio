@@ -97,12 +97,33 @@
 			}
 		],
 		"about": {
+			"title": "A few things to know",
 			"text": "Well... There's not much to say.\nI like sports, I'm a team player.\nI like tech, that's why I chose it as my career.\nAnd in case you couldn't tell, I like games :).",
 			"hobbies": [
-				"Voley",
-				"Futbol",
-				"Music",
-				"Reading"
+				{
+					"name": "Voley",
+					"icon": "src/assets/svgs/volleyball.svg"
+				},
+				{
+					"name": "Football",
+					"icon": "src/assets/svgs/football.svg"
+				},
+				{
+					"name": "Music",
+					"icon": "src/assets/svgs/headphones.svg"
+				},
+				{
+					"name": "Reading",
+					"icon": "src/assets/svgs/book-stack.svg"
+				},
+				{
+					"name": "Chess",
+					"icon": "src/assets/svgs/chess-knight.svg"
+				},
+				{
+					"name": "Games",
+					"icon": "src/assets/svgs/joystick.svg"
+				}
 			]
 		}
 	},

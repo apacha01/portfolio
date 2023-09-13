@@ -11,14 +11,14 @@ function App() {
 	return (
 		<>
 			<MarioHeader />
-			<div className="body-container">
+			<main className="body-container">
 				<Presentation />
 				<Socials />
 				<Projects />
 				<Skills />
 				<Studies />
 				<About />
-			</div>
+			</main>
 		</>
 	);
 }
