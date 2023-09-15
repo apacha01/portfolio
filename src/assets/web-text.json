@@ -121,7 +121,7 @@
 					"icon": "src/assets/svgs/chess-knight.svg"
 				},
 				{
-					"name": "Games",
+					"name": "Gaming",
 					"icon": "src/assets/svgs/joystick.svg"
 				}
 			]
@@ -223,6 +223,36 @@
 				"institution": "Escuela Técnica N.28 'República Francesa'",
 				"location": "Bs. As. Argentina"
 			}
-		]
+		],
+		"about": {
+			"title": "Algunas cosas a saber",
+			"text": "Bueno... No hay mucho para decir.\nMe gustan los deportes, sé jugar en equipo.\nMe gusta la tecnología, por eso elegí esta carrera.\nY por si no se nota, me gustan los juegos :).",
+			"hobbies": [
+				{
+					"name": "Voley",
+					"icon": "src/assets/svgs/volleyball.svg"
+				},
+				{
+					"name": "Futbol",
+					"icon": "src/assets/svgs/football.svg"
+				},
+				{
+					"name": "Musica",
+					"icon": "src/assets/svgs/headphones.svg"
+				},
+				{
+					"name": "Leer",
+					"icon": "src/assets/svgs/book-stack.svg"
+				},
+				{
+					"name": "Ajedrez",
+					"icon": "src/assets/svgs/chess-knight.svg"
+				},
+				{
+					"name": "Jugar",
+					"icon": "src/assets/svgs/joystick.svg"
+				}
+			]
+		}
 	}
 }
