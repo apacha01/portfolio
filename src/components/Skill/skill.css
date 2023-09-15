@@ -2,6 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	width: 100%;
 }
 
 .skill {
@@ -46,5 +47,23 @@
 
 	.skill {
 		padding-top: 20px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.skill-container {
+		width: 75%;
+	}
+
+	.skill-name {
+		font-size: 1.5em;
+	}
+
+	.skill {
+		padding-top: 30px;
+	}
+
+	.star {
+		width: 2em;
 	}
 }

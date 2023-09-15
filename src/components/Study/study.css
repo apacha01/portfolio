@@ -49,3 +49,10 @@
 		font-size: 0.8em;
 	}
 }
+
+@media (min-width: 1024px) {
+	.study-flag {
+		width: 32px;
+		right: 16px;
+	}
+}

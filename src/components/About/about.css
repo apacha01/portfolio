@@ -79,7 +79,7 @@
 .hobbie {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	aspect-ratio: 1 / 1;
 	width: 65%;

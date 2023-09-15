@@ -60,3 +60,21 @@
 		width: 50%;
 	}
 }
+
+@media (min-width: 1024px) {
+	.mario-flagpole {
+		width: 4px;
+		right: 14px;
+	}
+
+	.flagpole-top {
+		width: 16px;
+		top: -4px;
+		right: -6px;
+	}
+
+	.flagpole-bottom {
+		width: 32px;
+		right: -14px;
+	}
+}

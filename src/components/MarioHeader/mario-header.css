@@ -260,9 +260,14 @@
 		display: none;
 	}
 
+	.header-name {
+		font-size: 0.8em;
+	}
+
 	.menu-container {
 		position: relative;
-		width: 70%;
+		width: 80%;
+		height: auto;
 		background-color: transparent;
 		clip-path: none;
 	}
@@ -270,6 +275,14 @@
 	.menu {
 		flex-direction: row;
 		justify-content: flex-end;
+	}
+
+	.menu-item {
+		margin: 4px;
+	}
+
+	.lang-toggle-container {
+		width: 1em;
 	}
 
 	.menu-item,
@@ -285,7 +298,7 @@
 
 @media (min-width: 1366px) {
 	.menu {
-		gap: 1em;
+		gap: 0.5em;
 	}
 
 	.lang-flag {
