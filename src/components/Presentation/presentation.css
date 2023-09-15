@@ -25,25 +25,25 @@
 /* Responsiveness */
 /* Hardcoded heights to avoid layout shifting while typing the title */
 @media (max-width: 320px) {
-	.presentation-container {
+	.presentation-section {
 		min-height: 100px;
 	}
 }
 
 @media (min-width: 321px) and (max-width: 413px) {
-	.presentation-container {
+	.presentation-section {
 		min-height: 75px;
 	}
 }
 
 @media (min-width: 414px) and (max-width: 848px) {
-	.presentation-container {
+	.presentation-section {
 		min-height: 50px;
 	}
 }
 
 @media (min-width: 849px) {
-	.presentation-container {
+	.presentation-section {
 		min-height: 25px;
 	}
 }

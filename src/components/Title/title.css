@@ -3,12 +3,12 @@
 	justify-content: center;
 	align-items: center;
 	font-family: "SuperMarioBros";
-	font-size: 2em;
 	text-align: center;
 }
 
 .letter {
 	margin-top: 10px;
+	font-size: 2em;
 }
 
 .mario-blue {
@@ -29,6 +29,7 @@
 
 .bg-cloud {
 	aspect-ratio: 1000 / 426;
+	width: 100%;
 	background-image: url(../../assets/imgs/mario-triple-cloud-sprite.png);
 	background-size: cover;
 	background-position: center;
@@ -36,4 +37,19 @@
 
 .fsz-md {
 	font-size: 1.6em;
+}
+
+@media (min-width: 768px) {
+
+	.bg-cloud {
+		max-width: 17.5em;
+	}
+
+	.letter {
+		font-size: 2em;
+	}
+
+	.fsz-md {
+		font-size: 1.8em;
+	}
 }

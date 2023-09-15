@@ -75,3 +75,18 @@
 	border-radius: 2px;
 	box-shadow: 2px 2px 1px black;
 }
+
+@media (min-width: 768px) {
+	.project {
+		height: 600px;
+		margin: 1em 0 2em;
+	}
+
+	.project-img {
+		max-width: 90%;
+	}
+
+	.project-tech {
+		font-size: 1.25em;
+	}
+}

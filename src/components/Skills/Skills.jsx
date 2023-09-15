@@ -9,22 +9,24 @@ function Skills () {
 	return (
 		<section id={text.headerLinks.skills.id} className="skills-section">
 			<Title title={text.headerLinks.skills.title} withCloud={true} />
-			{
-				text.skills.map((s, i) => {
-					return (
-						<Skill
-							key={i}
-							name={s.name}
-							level={
+			<div className="skills-container">
+				{
+					text.skills.map((s, i) => {
+						return (
+							<Skill
+								key={i}
+								name={s.name}
+								level={
 								/* level between 0 & 5 */
-								s.level > 5
-									? 5
-									: (s.level < 0 ? 0 : s.level)
-							}
-						/>
-					);
-				})
-			}
+									s.level > 5
+										? 5
+										: (s.level < 0 ? 0 : s.level)
+								}
+							/>
+						);
+					})
+				}
+			</div>
 		</section>
 	);
 }

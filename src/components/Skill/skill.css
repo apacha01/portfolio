@@ -14,7 +14,7 @@
 
 .skill-name {
 	font-family: "Player2";
-	font-size: 0.8em;
+	font-size: 1em;
 	color: var(--mario-skyblue-font);
 }
 
@@ -37,4 +37,14 @@
 
 .bright {
 	opacity: 1;
+}
+
+@media (min-width: 768px) {
+	.star {
+		width: 1.5em;
+	}
+
+	.skill {
+		padding-top: 20px;
+	}
 }
