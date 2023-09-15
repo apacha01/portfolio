@@ -1,0 +1,55 @@
+.contact-section {
+	width: 80%;
+	margin-left: 10%;
+	padding-top: 5em;
+}
+
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 1em;
+	color: var(--mario-skyblue-font);
+}
+
+.contact-text {
+	width: 90%;
+	font-family: "Player2";
+	line-height: 1.25;
+}
+
+.contact-links-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding-top: 2em;
+	width: 90%;
+}
+
+.contact-link {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 0.5em;
+	font-family: "Sk-Regular";
+	color: var(--mario-skyblue-font);
+}
+
+.linkedin-icon {
+	aspect-ratio: 1 / 1;
+	width: 1.5em;
+	background-color: var(--mario-skyblue-font);
+}
+
+.mail-icon {
+	aspect-ratio: 1 / 1;
+	width: 1.5em;
+}
+
+.mario-tree-floor {
+	aspect-ratio: 1 / 1;
+	width: 100%;
+	background: url(../../assets/svgs/mario-tree-sprite.svg) no-repeat 0 0;
+	margin-top: 0.5em;
+}

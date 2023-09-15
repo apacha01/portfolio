@@ -125,6 +125,9 @@
 					"icon": "src/assets/svgs/joystick.svg"
 				}
 			]
+		},
+		"contact": {
+			"text": "Mamma Mia! Do you speak italian? I don't, so if you contact me, in English please."
 		}
 	},
 	"es": {
@@ -155,7 +158,7 @@
 				"title": "Contacto"
 			}
 		},
-		"presentation": "¡Hola! Me llamo Agustín, soy un desarrollador web.",
+		"presentation": "¡Hola! Me llamo Agustín y soy desarrollador web.",
 		"projects": [
 			{
 				"title": "Pokédex",
@@ -253,6 +256,9 @@
 					"icon": "src/assets/svgs/joystick.svg"
 				}
 			]
+		},
+		"contact": {
+			"text": "¡Mamma Mia! ¿Hablas italiano? Yo no, asique contactame en español por favor."
 		}
 	}
 }
