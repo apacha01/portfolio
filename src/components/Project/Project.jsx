@@ -28,8 +28,16 @@ function Project ({projectIndex, hitted = false}) {
 					}
 				</div>
 				<div className="project-btns-container">
-					<a className="repo-btn" href={currentProject.repo} target='_blank' rel="noreferrer">Repo</a>
-					<a className="demo-btn" href={currentProject.deploy} target='_blank' rel="noreferrer">Demo</a>
+					{
+						''.localeCompare(currentProject.repo) === 0
+							? null
+							: <a className="repo-btn" href={currentProject.repo} target='_blank' rel="noreferrer">Repo</a>
+					}
+					{
+						''.localeCompare(currentProject.deploy) === 0
+							? null
+							: <a className="demo-btn" href={currentProject.deploy} target='_blank' rel="noreferrer">Demo</a>
+					}
 				</div>
 			</div>
 		</div>

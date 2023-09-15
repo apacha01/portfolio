@@ -38,8 +38,8 @@
 					"CSS",
 					"JavaScript"
 				],
-				"repo": "",
-				"deploy": ""
+				"repo": "https://github.com/apacha01/Pokedex",
+				"deploy": "https://apacha01.github.io/Pokedex/"
 			},
 			{
 				"title": "Chedoc Shows",
@@ -51,7 +51,7 @@
 					"JavaScript",
 					"React"
 				],
-				"repo": "",
+				"repo": "https://github.com/apacha01/practice-react/tree/master/practice-projects/projects/05-chedoc-movies",
 				"deploy": ""
 			}
 		],
