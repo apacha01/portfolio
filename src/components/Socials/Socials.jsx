@@ -1,6 +1,12 @@
 import './socials.css';
+import CV_ES from '../../assets/cv-es.pdf';
+import CV_EN from '../../assets/cv-en.pdf';
+import useLang from '../../contexts/langStore';
+import { LANGUAGE_OPTIONS } from '../../constants/lang';
 
 function Socials () {
+	const lang = useLang(state => state.lang);
+
 	return (
 		<section className="socials-section">
 			<div className="lkin-cloud">
@@ -25,7 +31,7 @@ function Socials () {
 				<a
 					title="Resume / CV"
 					target="_blank"
-					href="../../assets/cv.pdf"
+					href={lang === LANGUAGE_OPTIONS.ENGLISH ? CV_EN : CV_ES}
 					className="logo cv-logo"
 					rel="noreferrer">
 				</a>

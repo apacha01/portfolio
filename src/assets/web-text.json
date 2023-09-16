@@ -58,11 +58,11 @@
 		"skills": [
 			{
 				"name": "HTML",
-				"level": 4
+				"level": 5
 			},
 			{
 				"name": "CSS",
-				"level": 3
+				"level": 4
 			},
 			{
 				"name": "JS",
@@ -70,7 +70,19 @@
 			},
 			{
 				"name": "React",
+				"level": 3
+			},
+			{
+				"name": "Node",
 				"level": 2
+			},
+			{
+				"name": "Express",
+				"level": 2
+			},
+			{
+				"name": "Tailwind",
+				"level": 1
 			}
 		],
 		"studies": [
@@ -169,8 +181,8 @@
 					"CSS",
 					"JavaScript"
 				],
-				"repo": "",
-				"deploy": ""
+				"repo": "https://github.com/apacha01/Pokedex",
+				"deploy": "https://apacha01.github.io/Pokedex/"
 			},
 			{
 				"title": "Chedoc Shows",
@@ -182,18 +194,18 @@
 					"JavaScript",
 					"React"
 				],
-				"repo": "",
+				"repo": "https://github.com/apacha01/practice-react/tree/master/practice-projects/projects/05-chedoc-movies",
 				"deploy": ""
 			}
 		],
 		"skills": [
 			{
 				"name": "HTML",
-				"level": 4
+				"level": 5
 			},
 			{
 				"name": "CSS",
-				"level": 3
+				"level": 4
 			},
 			{
 				"name": "JS",
@@ -201,26 +213,38 @@
 			},
 			{
 				"name": "React",
+				"level": 3
+			},
+			{
+				"name": "Node",
 				"level": 2
+			},
+			{
+				"name": "Express",
+				"level": 2
+			},
+			{
+				"name": "Tailwind",
+				"level": 1
 			}
 		],
 		"studies": [
 			{
-				"img": "src/assets/imgs/utn-logo.jpg",
+				"img": "/imgs/utn-logo.jpg",
 				"degree": "Técnico en Informática Aplicada",
 				"timeSpend": "2021 - Actualidad",
 				"institution": "UTN - INSPT",
 				"location": "Bs. As. Argentina"
 			},
 			{
-				"img": "src/assets/imgs/oracle-logo.png",
+				"img": "/imgs/oracle-logo.png",
 				"degree": "Formación en Desarrollo Web",
 				"timeSpend": "2022",
 				"institution": "Alura + Oracle Next Education",
 				"location": "Online"
 			},
 			{
-				"img": "src/assets/imgs/et28-logo.jpg",
+				"img": "/imgs/et28-logo.jpg",
 				"degree": "Secundario. Técnico en Electrónica",
 				"timeSpend": "2016 - 2020",
 				"institution": "Escuela Técnica N.28 'República Francesa'",
@@ -233,27 +257,27 @@
 			"hobbies": [
 				{
 					"name": "Voley",
-					"icon": "src/assets/svgs/volleyball.svg"
+					"icon": "/svgs/volleyball.svg"
 				},
 				{
 					"name": "Futbol",
-					"icon": "src/assets/svgs/football.svg"
+					"icon": "/svgs/football.svg"
 				},
 				{
 					"name": "Musica",
-					"icon": "src/assets/svgs/headphones.svg"
+					"icon": "/svgs/headphones.svg"
 				},
 				{
 					"name": "Leer",
-					"icon": "src/assets/svgs/book-stack.svg"
+					"icon": "/svgs/book-stack.svg"
 				},
 				{
 					"name": "Ajedrez",
-					"icon": "src/assets/svgs/chess-knight.svg"
+					"icon": "/svgs/chess-knight.svg"
 				},
 				{
 					"name": "Jugar",
-					"icon": "src/assets/svgs/joystick.svg"
+					"icon": "/svgs/joystick.svg"
 				}
 			]
 		},
