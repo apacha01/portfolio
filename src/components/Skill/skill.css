@@ -66,4 +66,8 @@
 	.star {
 		width: 2em;
 	}
+
+	.skill-floor {
+		height: 32px;
+	}
 }

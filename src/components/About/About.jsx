@@ -2,6 +2,7 @@ import useText from '../../hooks/useText';
 import Title from '../Title/Title';
 import './about.css';
 import MARIO_SIMPLE_BUSH from '../../assets/svgs/mario-single-bush-sprite.svg';
+import MARIO_TUBE from '../../assets/svgs/mario-tube-sprite.svg';
 
 function About() {
 	const text = useText();
@@ -28,10 +29,10 @@ function About() {
 							return (
 								<div key={i} className="hobbie-container">
 									<div className="hobbie">
-										<img className="hobbie-icon" src={h.icon} />
+										<img className="hobbie-icon" src={h.icon} alt={`${h.name} svg`} />
 										<p className="hobbie-text">{h.name}</p>
 									</div>
-									<div className="mario-tube"></div>
+									<img className="mario-tube" src={MARIO_TUBE} />
 									<div className="hobbie-floor"></div>
 								</div>
 							);

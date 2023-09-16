@@ -32,7 +32,7 @@
 			{
 				"title": "Pokédex",
 				"description": "A pokédex made consuming the pokeapi v2. Learned a lot of css tricks and about api calls with JS.",
-				"img": "src/assets/imgs/project-pokedex.png",
+				"img": "/imgs/project-pokedex.png",
 				"technologies": [
 					"HTML",
 					"CSS",
@@ -44,7 +44,7 @@
 			{
 				"title": "Chedoc Shows",
 				"description": "A web page showing movies and series for an interview at chedoc. Made using React Router and Zustand along with the classic web trio.",
-				"img": "src/assets/imgs/project-chedoc.png",
+				"img": "/imgs/project-chedoc.png",
 				"technologies": [
 					"HTML",
 					"CSS",
@@ -75,21 +75,21 @@
 		],
 		"studies": [
 			{
-				"img": "src/assets/imgs/utn-logo.jpg",
+				"img": "/imgs/utn-logo.jpg",
 				"degree": "IT Technician",
 				"timeSpend": "2021 - Present",
 				"institution": "UTN - INSPT",
 				"location": "Bs. As. Argentina"
 			},
 			{
-				"img": "src/assets/imgs/oracle-logo.png",
+				"img": "/imgs/oracle-logo.png",
 				"degree": "Web Development Training",
 				"timeSpend": "2022",
 				"institution": "Alura + Oracle Next Education",
 				"location": "Online"
 			},
 			{
-				"img": "src/assets/imgs/et28-logo.jpg",
+				"img": "/imgs/et28-logo.jpg",
 				"degree": "High School - Electronics Technician",
 				"timeSpend": "2016 - 2020",
 				"institution": "Technical School N.28 'República Francesa'",
@@ -102,27 +102,27 @@
 			"hobbies": [
 				{
 					"name": "Voley",
-					"icon": "src/assets/svgs/volleyball.svg"
+					"icon": "/svgs/volleyball.svg"
 				},
 				{
 					"name": "Football",
-					"icon": "src/assets/svgs/football.svg"
+					"icon": "/svgs/football.svg"
 				},
 				{
 					"name": "Music",
-					"icon": "src/assets/svgs/headphones.svg"
+					"icon": "/svgs/headphones.svg"
 				},
 				{
 					"name": "Reading",
-					"icon": "src/assets/svgs/book-stack.svg"
+					"icon": "/svgs/book-stack.svg"
 				},
 				{
 					"name": "Chess",
-					"icon": "src/assets/svgs/chess-knight.svg"
+					"icon": "/svgs/chess-knight.svg"
 				},
 				{
 					"name": "Gaming",
-					"icon": "src/assets/svgs/joystick.svg"
+					"icon": "/svgs/joystick.svg"
 				}
 			]
 		},
