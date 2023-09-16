@@ -1,8 +1,12 @@
-# React + Vite
+# Frontend Portfolio
+A (way better) recreation of my [first portfolio](https://apacha01.github.io/Portafolio_Front-End_V1/) made with React.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Installation
+* Clone the repo with `git clone https://github.com/apacha01/portfolio-frontend`.
+* Run `npm install`.
+* To run it locally use `npm run dev` and if you want to deploy use `npm run deploy`.
+*Note:* For deployment you need to have run `git remote add origin ...` with your repo. And don't forget to edit the `homepage` in the `package.json` file.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Usage
+To make your own portfolio just edit the `web-text.json` file in the `assets` folder.
+**IMPORTANT:** Any media (img, svg or video) file used in the `web-text.json` has to be in the public folder for production or else you'll have a bunch of `alt` text from all the images.
