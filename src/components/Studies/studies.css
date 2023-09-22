@@ -20,7 +20,7 @@
 .studies-floor {
 	width: 100%;
 	height: 32px;
-	background-image: url(../../assets/imgs/mario-floor-sprite.png);
+	background-image: var(--mario-floor);
 }
 
 .mario-castle {

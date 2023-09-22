@@ -10,8 +10,8 @@
 	--mario-alt-block-color: #fab930;
 	--mario-alt-block-font-color: #994a06;
 	--mario-coin-yellow: #fea144;
-	--mario-breakable-block: url(../imgs/mario-breakable-block-sprite.png);
-	--mario-floor: url(../imgs/mario-floor-sprite.png);
+	--mario-breakable-block: url(../svgs/mario-breakable-block-sprite.svg);
+	--mario-floor: url(../svgs/mario-floor-sprite.svg);
 }
 
 [data-theme='dark'] {
