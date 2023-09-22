@@ -3,4 +3,4 @@ const LANGUAGE_OPTIONS = {
 	SPANISH: 'es'
 };
 
-export {LANGUAGE_OPTIONS};
+export { LANGUAGE_OPTIONS };
