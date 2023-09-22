@@ -53,7 +53,7 @@
 	left: 50%;
 	transform: translate(-45%, -40%);
 	aspect-ratio: 1 / 1;
-	background-color: var(--mario-skyblue-font);
+	background-color: var(--mario-bg-font-color);
 	background-position: center;
 	background-size: cover;
 }

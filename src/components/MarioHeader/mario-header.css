@@ -9,6 +9,7 @@
 	margin-left: 10%;
 	margin-top: 20px;
 	font-family: 'SK-Regular';
+	z-index: 999;
 }
 
 .header {

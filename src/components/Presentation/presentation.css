@@ -8,9 +8,9 @@
 	display: inline;
 	font-size: 1.2em;
 	line-height: 1.25em;
-	border-right: 3px solid var(--mario-skyblue-font);
+	border-right: 3px solid var(--mario-bg-font-color);
 	animation: blink 0.5s infinite step-end alternate;
-	color: var(--mario-skyblue-font);
+	color: var(--mario-bg-font-color);
 }
 
 /* Animations */

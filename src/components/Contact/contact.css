@@ -13,7 +13,7 @@
 	justify-content: center;
 	align-items: center;
 	padding-top: 1em;
-	color: var(--mario-skyblue-font);
+	color: var(--mario-bg-font-color);
 }
 
 .contact-text {
@@ -37,13 +37,13 @@
 	align-items: center;
 	gap: 0.5em;
 	font-family: "Sk-Regular";
-	color: var(--mario-skyblue-font);
+	color: var(--mario-bg-font-color);
 }
 
 .linkedin-icon {
 	aspect-ratio: 1 / 1;
 	width: 1.5em;
-	background-color: var(--mario-skyblue-font);
+	background-color: var(--mario-bg-font-color);
 }
 
 .mail-icon {

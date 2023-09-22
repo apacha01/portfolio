@@ -30,7 +30,7 @@
 .study-text-container {
 	font-family: "Player2";
 	font-size: 0.55em;
-	color: var(--mario-skyblue-font);
+	color: var(--mario-bg-font-color);
 	display: flex;
 	flex-direction: column;
 	gap: 1em;

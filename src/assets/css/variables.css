@@ -3,11 +3,22 @@
 	--mario-red: #e52521;
 	--mario-yellow: #fbd000;
 	--mario-green: #43b047;
-	--mario-skyblue: #6185f8;
-	--mario-skyblue-font: #fafafa;
+	--mario-bg-color: #6185f8;
+	--mario-bg-font-color: #fafafa;
 	--mario-block-color: #9c4a00;
 	--mario-block-font-color: #ffcec5;
 	--mario-alt-block-color: #fab930;
 	--mario-alt-block-font-color: #994a06;
 	--mario-coin-yellow: #fea144;
+	--mario-breakable-block: url(../imgs/mario-breakable-block-sprite.png);
+	--mario-floor: url(../imgs/mario-floor-sprite.png);
+}
+
+[data-theme='dark'] {
+	--mario-bg-color: #000000;
+	--mario-bg-font-color: #fafafa;
+	--mario-block-color: #007b8c;
+	--mario-block-font-color: #b5efef;
+	--mario-breakable-block: url(../imgs/mario-breakable-block-underground-sprite.png);
+	--mario-floor: url(../imgs/mario-floor-underground-sprite.png);
 }

@@ -16,7 +16,7 @@
 .skill-name {
 	font-family: "Player2";
 	font-size: 1em;
-	color: var(--mario-skyblue-font);
+	color: var(--mario-bg-font-color);
 }
 
 .star {

@@ -18,7 +18,7 @@
 .about-title,
 .hobbies-title {
 	font-family: "Player2";
-	color: var(--mario-skyblue-font);
+	color: var(--mario-bg-font-color);
 	margin: 2.5em 0 1.5em 0;
 	text-align: center;
 	font-size: 1.25em;
@@ -41,7 +41,7 @@
 .about-text-container {
 	position: relative;
 	font-family: "Sk-Regular";
-	color: var(--mario-skyblue-font);
+	color: var(--mario-bg-font-color);
 	background-image: url(../../assets/imgs/mario-breakable-block-sprite.png);
 	padding: 1em;
 }
