@@ -13,8 +13,8 @@ function MarioHeader() {
 	const text = useText();
 
 	return (
-		<div className="header-container">
-			<header className="header">
+		<header className="header-container">
+			<div className="header">
 				<p className="header-name">{text.headerName}</p>
 				<button
 					className={`header-menu-btn ${open ? 'animate' : ''}`}
@@ -61,8 +61,8 @@ function MarioHeader() {
 				<span className="header-screw"></span>
 				<span className="header-screw"></span>
 				<span className="header-screw"></span>
-			</header>
-		</div>
+			</div>
+		</header>
 	);
 }
 
