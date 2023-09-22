@@ -1,8 +1,8 @@
 import useText from '../../hooks/useText';
 import Title from '../Title/Title';
-import './about.css';
-import MARIO_SIMPLE_BUSH from '../../assets/svgs/mario-single-bush-sprite.svg';
 import MARIO_TUBE from '../../assets/svgs/mario-tube-sprite.svg';
+import './about.css';
+import BushSprite from '../Sprites/BushSprite';
 
 function About() {
 	const text = useText();
@@ -13,8 +13,8 @@ function About() {
 			<div className="about-container">
 				<h3 className="about-title">{text.about.title}</h3>
 				<div className="about-bush-container">
-					<img src={MARIO_SIMPLE_BUSH} alt="Mario Bush Sprite" className="bush" />
-					<img src={MARIO_SIMPLE_BUSH} alt="Mario Bush Sprite" className="bush" />
+					<BushSprite classes="bush"/>
+					<BushSprite classes="bush"/>
 				</div>
 				<div className="about-text-container">
 					<div className="text-overlay"></div>
