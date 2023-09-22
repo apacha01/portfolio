@@ -86,16 +86,16 @@
 				"level": 3
 			},
 			{
+				"name": "Tailwind",
+				"level": 2
+			},
+			{
 				"name": "Node",
 				"level": 2
 			},
 			{
 				"name": "Express",
 				"level": 2
-			},
-			{
-				"name": "Tailwind",
-				"level": 1
 			}
 		],
 		"studies": [
@@ -242,16 +242,16 @@
 				"level": 3
 			},
 			{
+				"name": "Tailwind",
+				"level": 2
+			},
+			{
 				"name": "Node",
 				"level": 2
 			},
 			{
 				"name": "Express",
 				"level": 2
-			},
-			{
-				"name": "Tailwind",
-				"level": 1
 			}
 		],
 		"studies": [
