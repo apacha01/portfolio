@@ -1,6 +1,6 @@
 import { THEME_OPTIONS } from '../../constants/theme.js';
 
-function BushSprite ({ theme, classes }) {
+function BushSprite ({ theme = 'light', classes = '' }) {
 	return (
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" className={classes}>
 			<g fill="#8cd600">

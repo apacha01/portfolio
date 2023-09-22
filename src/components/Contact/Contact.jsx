@@ -1,8 +1,8 @@
 import useText from '../../hooks/useText';
+import MailIcon from '../Sprites/MailIcon';
+import LinkedinIcon from '../Sprites/LinkedinIcon';
 import Title from '../Title/Title';
 import './contact.css';
-import LINKEDIN_ICON from '../../assets/svgs/linkedin.svg';
-import MAIL_ICON from '../../assets/svgs/mail.svg';
 
 function Contact () {
 	const text = useText();
@@ -18,7 +18,7 @@ function Contact () {
 						className="contact-link contact-linkedin"
 						target="_blank" rel="noreferrer"
 					>
-						<img src={LINKEDIN_ICON} alt="Linkedin icon" className="linkedin-icon" />
+						<LinkedinIcon classes="linkedin-icon"/>
 						Linkedin
 					</a>
 					<a
@@ -26,7 +26,7 @@ function Contact () {
 						className="contact-link contact-mail"
 						target="_blank" rel="noreferrer"
 					>
-						<img src={MAIL_ICON} alt="Mail icon" className="mail-icon" />
+						<MailIcon classes="mail-icon"/>
 						Email
 					</a>
 				</div>
