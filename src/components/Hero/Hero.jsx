@@ -1,5 +1,6 @@
 import useText from '../../hooks/useText';
 import useLang from '../../contexts/langStore';
+import useTheme from '../../contexts/themeStore';
 import Presentation from '../Presentation/Presentation';
 import Socials from '../Socials/Socials';
 import Toggler from '../Toggler/Toggler';
@@ -11,12 +12,15 @@ import './hero.css';
 
 function Hero () {
 	const toggleLang = useLang(state => state.toggleLang);
+	const toggleTheme = useTheme(state => state.toggleTheme);
+	const theme = useTheme(state => state.theme);
 	const text = useText();
 
 	return (
 		<section id={text.headerLinks.home.id} className='hero-section'>
 			<div className="togglers-container">
 				<Toggler
+					theme={theme}
 					id='lang-toggle'
 					onToggle={toggleLang}
 					LeftIcon={FLAG_US}
@@ -25,8 +29,9 @@ function Hero () {
 					rightAlt='Argentinian Flag'
 				/>
 				<Toggler
+					theme={theme}
 					id='theme-toggle'
-					onToggle={toggleLang}
+					onToggle={toggleTheme}
 					LeftIcon={SunIcon}
 					RightIcon={MoonIcon}
 				/>
