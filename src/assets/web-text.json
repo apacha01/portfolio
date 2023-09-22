@@ -53,6 +53,19 @@
 				],
 				"repo": "https://github.com/apacha01/practice-react/tree/master/practice-projects/projects/05-chedoc-movies",
 				"deploy": ""
+			},
+			{
+				"title": "Cryptopacha",
+				"description": "A crypto page consuming the coingecko api to show info on the top 10 cryptos by marketcap. It also includes pagination for up to the top 50, with the option of expanding the information on a separate page thanks to React Router.",
+				"img": "/portfolio-frontend/imgs/project-cryptopacha.png",
+				"technologies": [
+					"HTML",
+					"CSS",
+					"JavaScript",
+					"React"
+				],
+				"repo": "https://github.com/apacha01/practice-react/tree/master/practice-projects/projects/06-cryptopacha",
+				"deploy": ""
 			}
 		],
 		"skills": [
@@ -195,6 +208,19 @@
 					"React"
 				],
 				"repo": "https://github.com/apacha01/practice-react/tree/master/practice-projects/projects/05-chedoc-movies",
+				"deploy": ""
+			},
+			{
+				"title": "Cryptopacha",
+				"description": "Una página web que consume la api de coingecko para mostrar información de las 10 primeras cryptomonedas por capitalización de mercado. También incluye paginación para hasta las 50 con mayor capitalización de mercado, con la opción de expandir la información en una página aparte gracias a React Router.",
+				"img": "/portfolio-frontend/imgs/project-cryptopacha.png",
+				"technologies": [
+					"HTML",
+					"CSS",
+					"JavaScript",
+					"React"
+				],
+				"repo": "https://github.com/apacha01/practice-react/tree/master/practice-projects/projects/06-cryptopacha",
 				"deploy": ""
 			}
 		],
