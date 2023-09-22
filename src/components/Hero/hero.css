@@ -1,5 +1,12 @@
 .hero-section {
 	width: 80%;
 	margin-left: 10%;
-	padding-top: 6em;
+	padding-top: 5em;
+}
+
+.togglers-container {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 4em;
+	gap: 2em;
 }
