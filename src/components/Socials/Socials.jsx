@@ -2,7 +2,7 @@ import './socials.css';
 import CV_ES from '../../assets/cv-es.pdf';
 import CV_EN from '../../assets/cv-en.pdf';
 import useLang from '../../contexts/langStore';
-import LinkedinIcon from '../Sprites/LinkedinIcon';
+import LinkedinIcon from '../Icons/LinkedinIcon';
 import { LANGUAGE_OPTIONS } from '../../constants/lang';
 
 function Socials () {

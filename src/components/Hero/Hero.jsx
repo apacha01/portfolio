@@ -5,6 +5,8 @@ import Socials from '../Socials/Socials';
 import Toggler from '../Toggler/Toggler';
 import FLAG_US from '../../assets/imgs/flag-us.png';
 import FLAG_ARG from '../../assets/imgs/flag-arg.png';
+import SunIcon from '../Icons/SunIcon';
+import MoonIcon from '../Icons/MoonIcon';
 import './hero.css';
 
 function Hero () {
@@ -15,11 +17,18 @@ function Hero () {
 		<section id={text.headerLinks.home.id} className='hero-section'>
 			<div className="togglers-container">
 				<Toggler
+					id='lang-toggle'
 					onToggle={toggleLang}
-					leftIcon={FLAG_US}
+					LeftIcon={FLAG_US}
 					leftAlt='US Flag'
-					rightIcon={FLAG_ARG}
+					RightIcon={FLAG_ARG}
 					rightAlt='Argentinian Flag'
+				/>
+				<Toggler
+					id='theme-toggle'
+					onToggle={toggleLang}
+					LeftIcon={SunIcon}
+					RightIcon={MoonIcon}
 				/>
 			</div>
 			<Presentation />

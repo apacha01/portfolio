@@ -1,6 +1,6 @@
 import useText from '../../hooks/useText';
-import MailIcon from '../Sprites/MailIcon';
-import LinkedinIcon from '../Sprites/LinkedinIcon';
+import MailIcon from '../Icons/MailIcon';
+import LinkedinIcon from '../Icons/LinkedinIcon';
 import Title from '../Title/Title';
 import './contact.css';
 
