@@ -1,8 +1,8 @@
 import useText from '../../hooks/useText';
 import Title from '../Title/Title';
-import MARIO_TUBE from '../../assets/svgs/mario-tube-sprite.svg';
-import './about.css';
 import BushSprite from '../Sprites/BushSprite';
+import TubeSprite from '../Sprites/TubeSprite';
+import './about.css';
 
 function About() {
 	const text = useText();
@@ -32,7 +32,7 @@ function About() {
 										<img className="hobbie-icon" src={h.icon} alt={`${h.name} svg`} />
 										<p className="hobbie-text">{h.name}</p>
 									</div>
-									<img className="mario-tube" src={MARIO_TUBE} />
+									<TubeSprite />
 									<div className="hobbie-floor"></div>
 								</div>
 							);
