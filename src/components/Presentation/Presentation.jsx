@@ -7,9 +7,9 @@ function Presentation ({ speed = 100 }) {
 	const { typewriting } = useTypewriter(text.presentation, speed);
 
 	return (
-		<section id={text.headerLinks.home.id} className="presentation-section">
+		<div className="presentation-container">
 			<h1 className="presentation-title">{typewriting}</h1>
-		</section>
+		</div>
 	);
 
 }

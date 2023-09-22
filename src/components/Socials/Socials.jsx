@@ -9,7 +9,7 @@ function Socials () {
 	const lang = useLang(state => state.lang);
 
 	return (
-		<section className="socials-section">
+		<div className="socials-container">
 			<div className="lkin-cloud">
 				<a
 					title="Linkedin"
@@ -38,7 +38,7 @@ function Socials () {
 					rel="noreferrer">
 				</a>
 			</div>
-		</section>
+		</div>
 	);
 }
 
