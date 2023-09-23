@@ -13,8 +13,8 @@ function App() {
 
 	return (
 		<>
-			<MarioHeader />
 			<main className="body-container" data-theme={theme}>
+				<MarioHeader />
 				<Hero />
 				<Projects />
 				<Skills />

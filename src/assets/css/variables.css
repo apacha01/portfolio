@@ -24,6 +24,7 @@
 	--mario-block-font-color: #b5efef;
 	--mario-alt-block-color: #63adff;
 	--mario-alt-block-font-color: #ffffff;
+	--mario-coin-yellow: #007b8c;
 	--shadow-color: #007b8c;
 	--mario-breakable-block: url(../svgs/mario-breakable-block-underground-sprite.svg);
 	--mario-floor: url(../svgs/mario-floor-underground-sprite.svg);
