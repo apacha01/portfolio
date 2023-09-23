@@ -21,8 +21,8 @@
 	--mario-bg-font-color: #fafafa;
 	--mario-block-color: #007b8c;
 	--mario-block-font-color: #b5efef;
-	--mario-breakable-block: url(../imgs/mario-breakable-block-underground-sprite.png);
-	--mario-floor: url(../imgs/mario-floor-underground-sprite.png);
+	--mario-breakable-block: url(../svgs/mario-breakable-block-underground-sprite.svg);
+	--mario-floor: url(../svgs/mario-floor-underground-sprite.svg);
 	--mario-cursor: url(../imgs/mario-cursor-underground.png);
 	--mario-tree: url(../svgs/mario-mushroom-sprite.svg);
 }
