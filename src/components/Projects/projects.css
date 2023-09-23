@@ -30,7 +30,7 @@
 }
 
 .jump {
-	animation: marioJump 0.2s ease;
+	animation: marioJump 0.2s ease-in-out;
 }
 
 .projects-floor {

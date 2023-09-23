@@ -86,7 +86,7 @@
 	color: var(--mario-alt-block-font-color);
 	background-color: var(--mario-alt-block-color);
 	border-radius: 2px;
-	box-shadow: 4px 4px 3px black;
+	box-shadow: 4px 4px 3px var(--shadow-color);
 	margin: 1em;
 	padding: 0.5em;
 	animation: floating 5s infinite ease-in-out;
