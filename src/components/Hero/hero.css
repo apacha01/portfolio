@@ -7,6 +7,5 @@
 .togglers-container {
 	display: flex;
 	justify-content: flex-end;
-	margin-bottom: 4em;
 	gap: 2em;
 }
