@@ -30,8 +30,8 @@
 .bg-cloud {
 	aspect-ratio: 1000 / 426;
 	width: 100%;
-	background-image: url(../../assets/imgs/mario-triple-cloud-sprite.png);
-	background-size: cover;
+	background: url(../../assets/svgs/mario-triple-cloud-sprite.svg) no-repeat;
+	background-size: contain;
 	background-position: center;
 }
 
