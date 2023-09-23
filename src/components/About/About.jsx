@@ -3,8 +3,10 @@ import Title from '../Title/Title';
 import BushSprite from '../Sprites/BushSprite';
 import TubeSprite from '../Sprites/TubeSprite';
 import './about.css';
+import useTheme from '../../contexts/themeStore';
 
 function About() {
+	const theme = useTheme(s => s.theme);
 	const text = useText();
 
 	return (
@@ -32,7 +34,7 @@ function About() {
 										<img className="hobbie-icon" src={h.icon} alt={`${h.name} svg`} />
 										<p className="hobbie-text">{h.name}</p>
 									</div>
-									<TubeSprite />
+									<TubeSprite theme={theme} />
 									<div className="hobbie-floor"></div>
 								</div>
 							);

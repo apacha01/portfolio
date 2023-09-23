@@ -3,9 +3,11 @@ import MailIcon from '../Icons/MailIcon';
 import LinkedinIcon from '../Icons/LinkedinIcon';
 import Title from '../Title/Title';
 import './contact.css';
+import useTheme from '../../contexts/themeStore';
 
 function Contact () {
 	const text = useText();
+	const theme = useTheme(s => s.theme);
 
 	return (
 		<section id={text.headerLinks.contact.id} className="contact-section">
@@ -26,7 +28,7 @@ function Contact () {
 						className="contact-link contact-mail"
 						target="_blank" rel="noreferrer"
 					>
-						<MailIcon classes="mail-icon"/>
+						<MailIcon theme={theme} classes="mail-icon"/>
 						Email
 					</a>
 				</div>
