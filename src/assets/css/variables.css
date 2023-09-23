@@ -12,6 +12,8 @@
 	--mario-coin-yellow: #fea144;
 	--mario-breakable-block: url(../svgs/mario-breakable-block-sprite.svg);
 	--mario-floor: url(../svgs/mario-floor-sprite.svg);
+	--mario-cursor: url(../imgs/mario-cursor.png);
+	--mario-tree: url(../svgs/mario-tree-sprite.svg);
 }
 
 [data-theme='dark'] {
@@ -21,4 +23,6 @@
 	--mario-block-font-color: #b5efef;
 	--mario-breakable-block: url(../imgs/mario-breakable-block-underground-sprite.png);
 	--mario-floor: url(../imgs/mario-floor-underground-sprite.png);
+	--mario-cursor: url(../imgs/mario-cursor-underground.png);
+	--mario-tree: url(../svgs/mario-mushroom-sprite.svg);
 }
