@@ -32,21 +32,6 @@
 	animation: floating-cv 5s infinite ease;
 }
 
-.lkin-logo {
-	width: 1.75em;
-	border-radius: 0.2em;
-}
-
-.gh-logo {
-	width: 2em;
-	background: url(../../assets/svgs/github.svg) no-repeat;
-}
-
-.cv-logo {
-	width: 2em;
-	background: url(../../assets/svgs/cv.svg) no-repeat;
-}
-
 .logo {
 	position: absolute;
 	top: 50%;
@@ -54,8 +39,19 @@
 	transform: translate(-45%, -40%);
 	aspect-ratio: 1 / 1;
 	background-color: var(--mario-bg-font-color);
-	background-position: center;
-	background-size: cover;
+}
+
+.lkin-logo {
+	width: 1.75em;
+}
+
+.gh-logo {
+	width: 2em;
+}
+
+.cv-logo {
+	width: 2em;
+	transform: translate(-40%, -40%);
 }
 
 /* Keyframes */

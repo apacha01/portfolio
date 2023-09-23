@@ -3,6 +3,8 @@ import CV_ES from '../../assets/cv-es.pdf';
 import CV_EN from '../../assets/cv-en.pdf';
 import useLang from '../../contexts/langStore';
 import LinkedinIcon from '../Icons/LinkedinIcon';
+import GitHubIcon from '../Icons/GitHubIcon';
+import ResumeIcon from '../Icons/ResumeIcon';
 import { LANGUAGE_OPTIONS } from '../../constants/lang';
 
 function Socials () {
@@ -27,6 +29,7 @@ function Socials () {
 					href="https://github.com/apacha01"
 					className="logo gh-logo"
 					rel="noreferrer">
+					<GitHubIcon />
 				</a>
 			</div>
 			<div className="cv-cloud">
@@ -36,6 +39,7 @@ function Socials () {
 					href={lang === LANGUAGE_OPTIONS.ENGLISH ? CV_EN : CV_ES}
 					className="logo cv-logo"
 					rel="noreferrer">
+					<ResumeIcon />
 				</a>
 			</div>
 		</div>
