@@ -60,7 +60,7 @@
 
 @keyframes floating-gh {
 	50% {
-		transform: translateY(-0.34em);
+		transform: translateY(-0.25em);
 	}
 }
 

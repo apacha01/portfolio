@@ -1,9 +1,10 @@
+import './about.css';
 import useText from '../../hooks/useText';
+import useTheme from '../../contexts/themeStore';
 import Title from '../Title/Title';
 import BushSprite from '../Sprites/BushSprite';
 import TubeSprite from '../Sprites/TubeSprite';
-import './about.css';
-import useTheme from '../../contexts/themeStore';
+import CustomIcon from '../Icons/CustomIcon';
 
 function About() {
 	const theme = useTheme(s => s.theme);
@@ -31,7 +32,7 @@ function About() {
 							return (
 								<div key={i} className="hobbie-container">
 									<div className="hobbie">
-										<img className="hobbie-icon" src={h.icon} alt={`${h.name} svg`} />
+										<CustomIcon path={h.icon} classes='hobbie-icon' />
 										<p className="hobbie-text">{h.name}</p>
 									</div>
 									<TubeSprite theme={theme} />

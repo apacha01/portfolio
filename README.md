@@ -1,5 +1,5 @@
 # Frontend Portfolio
-A (way better) recreation of my [first portfolio](https://apacha01.github.io/Portafolio_Front-End_V1/) made with React.
+A (way better) recreation of my [first portfolio](https://.github.com/apacha01/Portafolio_Front-End_V1), this time with React.
 
 # Installation
 * Clone the repo with `git clone https://github.com/apacha01/portfolio-frontend`.
@@ -10,4 +10,4 @@ A (way better) recreation of my [first portfolio](https://apacha01.github.io/Por
 # Usage
 To make your own portfolio just edit the `web-text.json` file in the `assets` folder.
 
-**IMPORTANT:** Any media (img, svg or video) file used in the `web-text.json` has to be in the public folder for production or else you'll have a bunch of `alt` text from all the images. You'll also need to add the repository name as a prefix in the path to the media file (e.g. `/portfolio-frontend/imgs/...`).
+**IMPORTANT:** Any media (img, svg or video) file used in the `web-text.json` has to be in the public folder for production or else you'll have a bunch of `alt` text from all the images. You'll also need to add the repository name as base in `vite.config.js` and as a prefix in the path to the media file (e.g. `/portfolio-frontend/imgs/...`).
