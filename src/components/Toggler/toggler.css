@@ -61,3 +61,10 @@
 .right-icon {
 	right: 0.4em;
 }
+
+
+@media (min-width: 1024px) {
+	.toggle-floor {
+		height: 32px;
+	}
+}
