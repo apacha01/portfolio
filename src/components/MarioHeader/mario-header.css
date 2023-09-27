@@ -1,13 +1,14 @@
 /* HEADER STYLES */
 .header-container {
-	position: fixed;
+	position: sticky;
+	top: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 80%;
+	width: 85%;
+	max-width: 42em;
 	height: 3em;
-	margin-left: 10%;
-	margin-top: 20px;
+	margin: auto;
 	font-family: 'SK-Regular';
 	z-index: 999;
 }
@@ -198,6 +199,10 @@
 
 /* Desktop */
 @media (min-width: 1024px) {
+	.header-container {
+		width: 100%;
+	}
+
 	.header-menu-btn {
 		display: none;
 	}
@@ -208,13 +213,13 @@
 
 	.menu-container {
 		position: relative;
-		width: 80%;
 		height: auto;
 		background-color: transparent;
 		clip-path: none;
 	}
 
 	.menu {
+		gap: 0.25em;
 		flex-direction: row;
 		justify-content: flex-end;
 	}

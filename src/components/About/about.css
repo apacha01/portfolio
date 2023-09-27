@@ -2,9 +2,9 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 80%;
-	padding-top: 5em;
-	margin-left: 10%;
+	width: 100%;
+	margin: auto;
+	margin-top: 5em;
 }
 
 .about-container {
@@ -48,6 +48,8 @@
 
 .about-text {
 	position: relative;
+	text-wrap: balance;
+	min-width: 65ch;
 }
 
 .text-overlay {

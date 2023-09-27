@@ -15,7 +15,7 @@
 
 .skill-name {
 	font-family: "Player2";
-	font-size: 1em;
+	font-size: 0.9em;
 	color: var(--mario-bg-font-color);
 }
 
@@ -51,10 +51,6 @@
 }
 
 @media (min-width: 1024px) {
-	.skill-container {
-		width: 75%;
-	}
-
 	.skill-name {
 		font-size: 1.5em;
 	}

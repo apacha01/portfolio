@@ -2,7 +2,20 @@ body {
 	cursor: var(--mario-cursor), auto;
 }
 
-.body-container {
+.body-bg {
 	width: 100%;
 	background-color: var(--mario-bg-color);
+}
+
+.body-content {
+	width: 85%;
+	max-width: 42em;
+	margin: auto;
+	margin-top: 3em;
+}
+
+@media (min-width: 1024px) {
+	.body-content {
+		width: 100%;
+	}
 }

@@ -1,8 +1,8 @@
+import './contact.css';
 import useText from '../../hooks/useText';
 import MailIcon from '../Icons/MailIcon';
 import LinkedinIcon from '../Icons/LinkedinIcon';
 import Title from '../Title/Title';
-import './contact.css';
 import useTheme from '../../contexts/themeStore';
 
 function Contact() {

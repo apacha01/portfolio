@@ -1,3 +1,4 @@
+import './app.css';
 import About from './About/About.jsx';
 import Contact from './Contact/Contact.jsx';
 import Hero from './Hero/Hero.jsx';
@@ -5,16 +6,15 @@ import MarioHeader from './MarioHeader/MarioHeader.jsx';
 import Projects from './Projects/Projects.jsx';
 import Skills from './Skills/Skills.jsx';
 import Studies from './Studies/Studies.jsx';
-import './app.css';
 import useTheme from '../contexts/themeStore.js';
 
 function App() {
 	const theme = useTheme(state => state.theme);
 
 	return (
-		<>
-			<main className="body-container" data-theme={theme}>
-				<MarioHeader />
+		<div className="body-bg" data-theme={theme}>
+			<MarioHeader />
+			<main className="body-content">
 				<Hero />
 				<Projects />
 				<Skills />
@@ -22,7 +22,7 @@ function App() {
 				<About />
 				<Contact />
 			</main>
-		</>
+		</div>
 	);
 }
 

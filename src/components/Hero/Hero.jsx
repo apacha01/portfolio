@@ -1,6 +1,4 @@
-import useText from '../../hooks/useText';
-import useLang from '../../contexts/langStore';
-import useTheme from '../../contexts/themeStore';
+import './hero.css';
 import Presentation from '../Presentation/Presentation';
 import Socials from '../Socials/Socials';
 import Toggler from '../Toggler/Toggler';
@@ -8,7 +6,9 @@ import FLAG_US from '../../assets/imgs/flag-us.png';
 import FLAG_ARG from '../../assets/imgs/flag-arg.png';
 import SunIcon from '../Icons/SunIcon';
 import MoonIcon from '../Icons/MoonIcon';
-import './hero.css';
+import useText from '../../hooks/useText';
+import useLang from '../../contexts/langStore';
+import useTheme from '../../contexts/themeStore';
 
 function Hero() {
 	const toggleLang = useLang(state => state.toggleLang);
