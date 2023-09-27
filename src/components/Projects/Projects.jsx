@@ -6,7 +6,7 @@ import useText from '../../hooks/useText';
 import Project from '../Project/Project';
 import Title from '../Title/Title';
 
-function Projects () {
+function Projects() {
 	const text = useText();
 	const [jump, setJump] = useState(false);
 	const [hit, setHit] = useState(false);

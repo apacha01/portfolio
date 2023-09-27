@@ -1,14 +1,13 @@
 import { useEffect, useState } from 'react';
 import './title.css';
 
-function Title ({title = 'Mock title', withCloud = false}) {
+function Title({ title = 'Mock title', withCloud = false }) {
 	const colors = ['mario-blue', 'mario-yellow', 'mario-red', 'mario-green'];
 	const [lettersAmount, setLettersAmount] = useState(0);
 
 	useEffect(() => {
 		setLettersAmount(title.split('').length);
-	}
-	, [title]);
+	}, [title]);
 
 	return (
 		<h2

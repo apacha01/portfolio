@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-function CustomIcon ({ path, classes = '' }) {
+function CustomIcon({ path, classes = '' }) {
 	const ImportedIconRef = useRef(null);
 
 	useEffect(() => {

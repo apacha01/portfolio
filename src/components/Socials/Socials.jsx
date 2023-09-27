@@ -7,7 +7,7 @@ import GitHubIcon from '../Icons/GitHubIcon';
 import ResumeIcon from '../Icons/ResumeIcon';
 import { LANGUAGE_OPTIONS } from '../../constants/lang';
 
-function Socials () {
+function Socials() {
 	const lang = useLang(state => state.lang);
 
 	return (

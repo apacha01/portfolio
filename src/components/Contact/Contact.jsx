@@ -5,7 +5,7 @@ import Title from '../Title/Title';
 import './contact.css';
 import useTheme from '../../contexts/themeStore';
 
-function Contact () {
+function Contact() {
 	const text = useText();
 	const theme = useTheme(s => s.theme);
 
@@ -20,7 +20,7 @@ function Contact () {
 						className="contact-link contact-linkedin"
 						target="_blank" rel="noreferrer"
 					>
-						<LinkedinIcon classes="linkedin-icon"/>
+						<LinkedinIcon classes="linkedin-icon" />
 						Linkedin
 					</a>
 					<a
@@ -28,7 +28,7 @@ function Contact () {
 						className="contact-link contact-mail"
 						target="_blank" rel="noreferrer"
 					>
-						<MailIcon theme={theme} classes="mail-icon"/>
+						<MailIcon theme={theme} classes="mail-icon" />
 						Email
 					</a>
 				</div>

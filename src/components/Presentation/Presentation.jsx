@@ -2,7 +2,7 @@ import './presentation.css';
 import useText from '../../hooks/useText';
 import useTypewriter from '../../hooks/useTypewriter';
 
-function Presentation ({ speed = 100 }) {
+function Presentation({ speed = 100 }) {
 	const text = useText();
 	const { typewriting } = useTypewriter(text.presentation, speed);
 

@@ -1,6 +1,6 @@
 import './skill.css';
 
-function Skill ({name = '', level = 0}) {
+function Skill({ name = '', level = 0 }) {
 
 	const generateStars = (num) => {
 		let stars = [];

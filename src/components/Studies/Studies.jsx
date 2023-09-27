@@ -16,7 +16,7 @@ function Studies() {
 			<Title title={text.headerLinks.studies.title} withCloud={true} />
 			<div className="studies-container">
 				{
-					text.studies.map((e,i) => {
+					text.studies.map((e, i) => {
 						return (<Study key={i} study={e} withFlag={true} />);
 					})
 				}

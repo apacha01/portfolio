@@ -10,7 +10,7 @@ import SunIcon from '../Icons/SunIcon';
 import MoonIcon from '../Icons/MoonIcon';
 import './hero.css';
 
-function Hero () {
+function Hero() {
 	const toggleLang = useLang(state => state.toggleLang);
 	const toggleTheme = useTheme(state => state.toggleTheme);
 	const theme = useTheme(state => state.theme);

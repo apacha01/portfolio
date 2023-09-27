@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import useText from '../../hooks/useText';
 import './project.css';
 
-function Project ({projectIndex, hitted = false}) {
+function Project({ projectIndex, hitted = false }) {
 	const projects = useText().projects;
 	const [currentProject, setCurrentProject] = useState(projects[0]);
 
@@ -15,10 +15,10 @@ function Project ({projectIndex, hitted = false}) {
 			<div className={`project-container ${hitted ? 'hit' : ''}`}>
 				<h3 className="project-title">{currentProject.title}</h3>
 				<p className="project-description">{currentProject.description}</p>
-				<img className="project-img" src={currentProject.img} alt={currentProject.title}/>
+				<img className="project-img" src={currentProject.img} alt={currentProject.title} />
 				<div className="project-technologies">
 					{
-						currentProject.technologies.map((t,i) => {
+						currentProject.technologies.map((t, i) => {
 							return (
 								<div key={i} className="project-tech">
 									{t}

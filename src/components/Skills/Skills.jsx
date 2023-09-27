@@ -3,7 +3,7 @@ import Skill from '../Skill/Skill';
 import Title from '../Title/Title';
 import './skills.css';
 
-function Skills () {
+function Skills() {
 	const text = useText();
 
 	return (
@@ -17,7 +17,7 @@ function Skills () {
 								key={i}
 								name={s.name}
 								level={
-								/* level between 0 & 5 */
+									/* level between 0 & 5 */
 									s.level > 5
 										? 5
 										: (s.level < 0 ? 0 : s.level)

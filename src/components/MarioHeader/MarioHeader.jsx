@@ -5,7 +5,7 @@ import useOpenMenu from '../../hooks/useOpenMenu.js';
 import useText from '../../hooks/useText';
 
 function MarioHeader() {
-	const {open, toggleOpen} = useOpenMenu(false);
+	const { open, toggleOpen } = useOpenMenu(false);
 	const text = useText();
 
 	return (

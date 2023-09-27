@@ -16,8 +16,8 @@ function About() {
 			<div className="about-container">
 				<h3 className="about-title">{text.about.title}</h3>
 				<div className="about-bush-container">
-					<BushSprite classes="bush"/>
-					<BushSprite classes="bush"/>
+					<BushSprite classes="bush" />
+					<BushSprite classes="bush" />
 				</div>
 				<div className="about-text-container">
 					<div className="text-overlay"></div>
