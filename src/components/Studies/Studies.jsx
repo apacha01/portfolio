@@ -1,10 +1,10 @@
 import './studies.css';
 import Title from '../Title/Title';
 import useText from '../../hooks/useText';
-import MARIO_CASTLE from '../../assets/svgs/mario-big-castle-sprite.svg';
 import Study from '../Study/Study';
 import FlagpoleBottomSprite from '../Sprites/FlagpoleBottomSprite';
 import FlagpoleTopSprite from '../Sprites/FlagpoleTopSprite';
+import BigCastleSprite from '../Sprites/BigCastleSprite';
 import useTheme from '../../contexts/themeStore';
 
 function Studies() {
@@ -24,7 +24,7 @@ function Studies() {
 					<FlagpoleTopSprite theme={theme} classes='flagpole-top' />
 					<FlagpoleBottomSprite theme={theme} classes='flagpole-bottom' />
 				</div>
-				<img src={MARIO_CASTLE} alt="Mario Castle" className="mario-castle" />
+				<BigCastleSprite classes="mario-castle" />
 			</div>
 			<div className="studies-floor"></div>
 		</section>
