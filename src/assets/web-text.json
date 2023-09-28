@@ -62,7 +62,8 @@
 					"HTML",
 					"CSS",
 					"JavaScript",
-					"React"
+					"React",
+					"Tailwind"
 				],
 				"repo": "https://github.com/apacha01/practice-react/tree/master/practice-projects/projects/06-cryptopacha",
 				"deploy": ""
@@ -218,7 +219,8 @@
 					"HTML",
 					"CSS",
 					"JavaScript",
-					"React"
+					"React",
+					"Tailwind"
 				],
 				"repo": "https://github.com/apacha01/practice-react/tree/master/practice-projects/projects/06-cryptopacha",
 				"deploy": ""
