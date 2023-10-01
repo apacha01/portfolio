@@ -49,7 +49,7 @@
 .about-text {
 	position: relative;
 	text-wrap: balance;
-	min-width: 65ch;
+	max-width: 65ch;
 }
 
 .text-overlay {
