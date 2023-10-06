@@ -13,7 +13,7 @@ function Contact() {
 		<section id={text.headerLinks.contact.id} className="contact-section">
 			<Title title={text.headerLinks.contact.title} withCloud={true} />
 			<div className="contact-container">
-				<h4 className="contact-text">{text.contact.text}</h4>
+				<h3 className="contact-text">{text.contact.text}</h3>
 				<div className="contact-links-container">
 					<a
 						href="https://www.linkedin.com/in/agust%C3%ADn-pacheco-estudianteit/"

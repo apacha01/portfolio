@@ -12,7 +12,7 @@ function Study({ study, withFlag = false }) {
 				/>
 			</div>
 			<div className="study-text-container">
-				<h4 className="study-degree">* {study.degree}</h4>
+				<h3 className="study-degree">* {study.degree}</h3>
 				<span className="study-time">* {study.timeSpend}</span>
 				<p className="study-institution">* {study.institution}</p>
 				<p className="study-location">* {study.location}</p>
