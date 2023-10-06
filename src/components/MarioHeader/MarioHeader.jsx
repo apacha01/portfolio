@@ -13,6 +13,7 @@ function MarioHeader() {
 			<div className="header">
 				<p className="header-name">{text.headerName}</p>
 				<button
+					aria-label="Menu button"
 					className={`header-menu-btn ${open ? 'animate' : ''}`}
 					onClick={toggleOpen}
 				>
@@ -20,8 +21,9 @@ function MarioHeader() {
 						id="menu-icon"
 						className="header-menu-icon"
 						src={MISTERY_BLOCK_SVG}
+						alt="Mario mistery block svg"
 					/>
-					<img className={`header-coin ${open ? 'animate' : ''}`} src={COIN_GIF} />
+					<img className={`header-coin ${open ? 'animate' : ''}`} src={COIN_GIF} alt="Mario spinning coin gif" />
 				</button>
 				<nav id="menu" className="menu-container">
 					<ul className="menu">
