@@ -2,8 +2,8 @@ import { useState } from 'react';
 import ShellSprite from '../Sprites/ShellSprite';
 import './toggler.css';
 
-function Toggler({ theme = 'light', id = 'toggle', onToggle = () => { }, LeftIcon = '', RightIcon = '', leftAlt, rightAlt }) {
-	const [checked, setChecked] = useState(false);
+function Toggler({ theme = 'light', id = 'toggle', onToggle = () => { }, LeftIcon = '', RightIcon = '', leftAlt, rightAlt, initialState = false }) {
+	const [checked, setChecked] = useState(initialState);
 
 	const handleToggle = () => {
 		setChecked(c => !c);

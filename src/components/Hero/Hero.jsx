@@ -9,6 +9,7 @@ import MoonIcon from '../Icons/MoonIcon';
 import useText from '../../hooks/useText';
 import useLang from '../../contexts/langStore';
 import useTheme from '../../contexts/themeStore';
+import { THEME_OPTIONS } from '../../constants/theme';
 
 function Hero() {
 	const toggleLang = useLang(state => state.toggleLang);
@@ -27,6 +28,7 @@ function Hero() {
 					leftAlt='US Flag'
 					RightIcon={FLAG_ARG}
 					rightAlt='Argentinian Flag'
+					initialState={false}
 				/>
 				<Toggler
 					theme={theme}
@@ -34,6 +36,7 @@ function Hero() {
 					onToggle={toggleTheme}
 					LeftIcon={SunIcon}
 					RightIcon={MoonIcon}
+					initialState={theme === THEME_OPTIONS.DARK}
 				/>
 			</div>
 			<Presentation />
