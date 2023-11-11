@@ -42,14 +42,30 @@
 				"deploy": "https://apacha01.github.io/Pokedex/"
 			},
 			{
+				"title": "Reading List",
+				"description": "A reading list web app for books. Includes different filters, search and tests (with React Testing Library).",
+				"img": "/portfolio-frontend/imgs/project-readinglist.png",
+				"technologies": [
+					"HTML",
+					"JavaScript",
+					"React",
+					"Zustand",
+					"Tailwind"
+				],
+				"repo": "https://github.com/apacha01/practice-react/tree/master/practice-projects/projects/07-book-store",
+				"deploy": "https://apacha01.github.io/reading-list-interview/"
+			},
+			{
 				"title": "Chedoc Shows",
-				"description": "A web page for movies and series from an interview at chedoc. Made with React Router, Zustand and the classic web trio.",
+				"description": "A web page for movies and series from a mock interview at chedoc.",
 				"img": "/portfolio-frontend/imgs/project-chedoc.png",
 				"technologies": [
 					"HTML",
 					"CSS",
 					"JavaScript",
-					"React"
+					"React",
+					"React Router",
+					"Zustand"
 				],
 				"repo": "https://github.com/apacha01/practice-react/tree/master/practice-projects/projects/05-chedoc-movies",
 				"deploy": ""
@@ -60,9 +76,9 @@
 				"img": "/portfolio-frontend/imgs/project-cryptopacha.png",
 				"technologies": [
 					"HTML",
-					"CSS",
 					"JavaScript",
 					"React",
+					"React Router",
 					"Tailwind"
 				],
 				"repo": "https://github.com/apacha01/practice-react/tree/master/practice-projects/projects/06-cryptopacha",
@@ -199,27 +215,43 @@
 				"deploy": "https://apacha01.github.io/Pokedex/"
 			},
 			{
+				"title": "Lista de lectura",
+				"description": "Una página web para hacer una lista de lectura con tus libros. Incluye filtros, búsqueda por distintos parámetros y testing (React Testing Library).",
+				"img": "/portfolio-frontend/imgs/project-readinglist.png",
+				"technologies": [
+					"HTML",
+					"JavaScript",
+					"React",
+					"Zustand",
+					"Tailwind"
+				],
+				"repo": "https://github.com/apacha01/practice-react/tree/master/practice-projects/projects/07-book-store",
+				"deploy": "https://apacha01.github.io/reading-list-interview/"
+			},
+			{
 				"title": "Chedoc Shows",
-				"description": "Página web para mostrar series y películas chedoc. Hecha con React Router y Zustand, además del trio clásico de la web.",
+				"description": "Página web para mostrar series y películas. Ejercicio de una simulación de entrevista de chedoc.",
 				"img": "/portfolio-frontend/imgs/project-chedoc.png",
 				"technologies": [
 					"HTML",
 					"CSS",
 					"JavaScript",
-					"React"
+					"React",
+					"React Router",
+					"Zustand"
 				],
 				"repo": "https://github.com/apacha01/practice-react/tree/master/practice-projects/projects/05-chedoc-movies",
 				"deploy": ""
 			},
 			{
 				"title": "Cryptopacha",
-				"description": "Una página web que consume la api de coingecko para mostrar información de las 10 primeras cryptomonedas por capitalización de mercado. También incluye paginación para hasta las 50 con mayor capitalización de mercado, con la opción de expandir la información en una página aparte gracias a React Router.",
+				"description": "Una página web que consume la api de coingecko para mostrar información de las cryptomonedas con mayor capitalización de mercado (con paginación).",
 				"img": "/portfolio-frontend/imgs/project-cryptopacha.png",
 				"technologies": [
 					"HTML",
-					"CSS",
 					"JavaScript",
 					"React",
+					"React Router",
 					"Tailwind"
 				],
 				"repo": "https://github.com/apacha01/practice-react/tree/master/practice-projects/projects/06-cryptopacha",
