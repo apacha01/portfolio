@@ -1,5 +1,6 @@
 .presentation-container {
 	width: 100%;
+	min-height: 150px;
 	margin: 4em 0;
 	text-align: center;
 	font-family: 'Player2';
@@ -23,26 +24,20 @@
 
 /* Responsiveness */
 /* Hardcoded heights to avoid layout shifting while typing the title */
-@media (max-width: 320px) {
-	.presentation-container {
-		min-height: 100px;
-	}
-}
-
-@media (min-width: 321px) and (max-width: 413px) {
+@media (min-width: 546px) {
 	.presentation-container {
 		min-height: 75px;
 	}
 }
 
-@media (min-width: 414px) and (max-width: 848px) {
+@media (min-width: 772px) {
 	.presentation-container {
-		min-height: 50px;
+		min-height: 65px;
 	}
 }
 
-@media (min-width: 849px) {
+@media (min-width: 1024px) {
 	.presentation-container {
-		min-height: 25px;
+		min-height: 90px;
 	}
 }

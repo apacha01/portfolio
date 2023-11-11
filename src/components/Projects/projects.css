@@ -19,10 +19,17 @@
 	aspect-ratio: 1 / 1;
 	width: 10%;
 	max-width: 40px;
-	background-color: var(--mario-block-color);
+	background-color: var(--mario-alt-block-color);
+	box-shadow: 2px 2px 3px var(--shadow-color);
+	border: none;
 	color: black;
 	font-weight: bold;
 	font-size: 1.25em;
+}
+
+.project-btn:active {
+	box-shadow: none;
+	transform: translate(3px, 3px);
 }
 
 .mario-sprite {
