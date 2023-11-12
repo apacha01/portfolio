@@ -59,9 +59,7 @@
 			transform: translateY(-2em);
 		}
 	}
-}
 
-@media (min-width: 1024px) {
 	.projects-floor {
 		height: 32px;
 	}

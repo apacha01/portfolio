@@ -38,18 +38,20 @@
 	line-height: 1.3;
 	width: 80%;
 	max-width: 60ch;
-	min-height: 90px;
+	min-height: 50px;
 }
 
 .project-img-tech-container {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-evenly;
 	width: 100%;
-	gap: 2em;
+	gap: 1em;
 }
 
 .project-img {
 	max-width: 100%;
+	object-fit: cover;
 	border: solid 1px black;
 	border-radius: 10px;
 }
@@ -57,11 +59,11 @@
 .project-technologies {
 	font-size: 0.75em;
 	font-family: "Arcade";
-	width: 100%;
 	display: flex;
-	gap: 5px;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
+	gap: 5px;
 }
 
 .project-tech {
@@ -97,22 +99,16 @@
 	}
 
 	.project-img {
-		max-width: 70%;
+		max-width: 60%;
 	}
 
 	.project-img-tech-container {
-		width: 80%;
 		flex-direction: row;
+		gap: 0;
 	}
 
 	.project-technologies {
 		flex-direction: column;
 		max-height: 15em;
-	}
-}
-
-@media (min-width: 1024px) {
-	.project-floor {
-		height: 32px;
 	}
 }

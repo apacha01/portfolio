@@ -10,7 +10,7 @@
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: baseline;
-	padding: 10px 2px 0;
+	padding: 0 3px;
 }
 
 .skill-name {
@@ -42,25 +42,11 @@
 
 @media (min-width: 768px) {
 	.star {
-		width: 1.5em;
+		width: 2.5em;
 	}
 
-	.skill {
-		padding-top: 20px;
-	}
-}
-
-@media (min-width: 1024px) {
 	.skill-name {
-		font-size: 1.5em;
-	}
-
-	.skill {
-		padding-top: 30px;
-	}
-
-	.star {
-		width: 2em;
+		font-size: 1.4em;
 	}
 
 	.skill-floor {
