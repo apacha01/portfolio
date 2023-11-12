@@ -32,7 +32,7 @@
 			{
 				"title": "Pokédex",
 				"description": "A pokédex made consuming the pokeapi v2. Learned a lot of css tricks and about api calls with JS.",
-				"img": "/portfolio-frontend/imgs/project-pokedex.png",
+				"img": "/portfolio/imgs/project-pokedex.png",
 				"technologies": [
 					"HTML",
 					"CSS",
@@ -44,7 +44,7 @@
 			{
 				"title": "Reading List",
 				"description": "A reading list web app for books. Includes different filters, search and tests (with React Testing Library).",
-				"img": "/portfolio-frontend/imgs/project-readinglist.png",
+				"img": "/portfolio/imgs/project-readinglist.png",
 				"technologies": [
 					"HTML",
 					"JavaScript",
@@ -58,7 +58,7 @@
 			{
 				"title": "Chedoc Shows",
 				"description": "A web page for movies and series from a mock interview at chedoc.",
-				"img": "/portfolio-frontend/imgs/project-chedoc.png",
+				"img": "/portfolio/imgs/project-chedoc.png",
 				"technologies": [
 					"HTML",
 					"CSS",
@@ -73,7 +73,7 @@
 			{
 				"title": "Cryptopacha",
 				"description": "A crypto page consuming the coingecko api to show info on the top cryptos by marketcap (includes pagination).",
-				"img": "/portfolio-frontend/imgs/project-cryptopacha.png",
+				"img": "/portfolio/imgs/project-cryptopacha.png",
 				"technologies": [
 					"HTML",
 					"JavaScript",
@@ -104,7 +104,7 @@
 			},
 			{
 				"name": "Tailwind",
-				"level": 2
+				"level": 1
 			},
 			{
 				"name": "Node",
@@ -117,21 +117,21 @@
 		],
 		"studies": [
 			{
-				"img": "/portfolio-frontend/imgs/utn-logo.jpg",
+				"img": "/portfolio/imgs/utn-logo.jpg",
 				"degree": "IT Technician",
 				"timeSpend": "2021 - Present",
 				"institution": "UTN - INSPT",
 				"location": "Bs. As. Argentina"
 			},
 			{
-				"img": "/portfolio-frontend/imgs/oracle-logo.png",
+				"img": "/portfolio/imgs/oracle-logo.png",
 				"degree": "Web Development Training",
 				"timeSpend": "2022",
 				"institution": "Alura + Oracle Next Education",
 				"location": "Online"
 			},
 			{
-				"img": "/portfolio-frontend/imgs/et28-logo.jpg",
+				"img": "/portfolio/imgs/et28-logo.jpg",
 				"degree": "High School - Electronics Technician",
 				"timeSpend": "2016 - 2020",
 				"institution": "Technical School N.28 'República Francesa'",
@@ -144,27 +144,27 @@
 			"hobbies": [
 				{
 					"name": "Voley",
-					"icon": "/portfolio-frontend/svgs/volleyball.svg"
+					"icon": "/portfolio/svgs/volleyball.svg"
 				},
 				{
 					"name": "Football",
-					"icon": "/portfolio-frontend/svgs/football.svg"
+					"icon": "/portfolio/svgs/football.svg"
 				},
 				{
 					"name": "Music",
-					"icon": "/portfolio-frontend/svgs/headphones.svg"
+					"icon": "/portfolio/svgs/headphones.svg"
 				},
 				{
 					"name": "Reading",
-					"icon": "/portfolio-frontend/svgs/book-stack.svg"
+					"icon": "/portfolio/svgs/book-stack.svg"
 				},
 				{
 					"name": "Chess",
-					"icon": "/portfolio-frontend/svgs/chess-knight.svg"
+					"icon": "/portfolio/svgs/chess-knight.svg"
 				},
 				{
 					"name": "Gaming",
-					"icon": "/portfolio-frontend/svgs/joystick.svg"
+					"icon": "/portfolio/svgs/joystick.svg"
 				}
 			]
 		},
@@ -205,7 +205,7 @@
 			{
 				"title": "Pokédex",
 				"description": "Una pokedex usando la pokeapi v2. Aprendí mucho sobre CSS y las llamadas a apis con JS.",
-				"img": "/portfolio-frontend/imgs/project-pokedex.png",
+				"img": "/portfolio/imgs/project-pokedex.png",
 				"technologies": [
 					"HTML",
 					"CSS",
@@ -217,7 +217,7 @@
 			{
 				"title": "Lista de lectura",
 				"description": "Una página web para hacer una lista de lectura con tus libros. Incluye filtros, búsqueda por distintos parámetros y testing (React Testing Library).",
-				"img": "/portfolio-frontend/imgs/project-readinglist.png",
+				"img": "/portfolio/imgs/project-readinglist.png",
 				"technologies": [
 					"HTML",
 					"JavaScript",
@@ -231,7 +231,7 @@
 			{
 				"title": "Chedoc Shows",
 				"description": "Página web para mostrar series y películas. Ejercicio de una simulación de entrevista de chedoc.",
-				"img": "/portfolio-frontend/imgs/project-chedoc.png",
+				"img": "/portfolio/imgs/project-chedoc.png",
 				"technologies": [
 					"HTML",
 					"CSS",
@@ -246,7 +246,7 @@
 			{
 				"title": "Cryptopacha",
 				"description": "Una página web que consume la api de coingecko para mostrar información de las cryptomonedas con mayor capitalización de mercado (con paginación).",
-				"img": "/portfolio-frontend/imgs/project-cryptopacha.png",
+				"img": "/portfolio/imgs/project-cryptopacha.png",
 				"technologies": [
 					"HTML",
 					"JavaScript",
@@ -277,7 +277,7 @@
 			},
 			{
 				"name": "Tailwind",
-				"level": 2
+				"level": 1
 			},
 			{
 				"name": "Node",
@@ -290,21 +290,21 @@
 		],
 		"studies": [
 			{
-				"img": "/portfolio-frontend/imgs/utn-logo.jpg",
+				"img": "/portfolio/imgs/utn-logo.jpg",
 				"degree": "Técnico en Informática Aplicada",
 				"timeSpend": "2021 - Actualidad",
 				"institution": "UTN - INSPT",
 				"location": "Bs. As. Argentina"
 			},
 			{
-				"img": "/portfolio-frontend/imgs/oracle-logo.png",
+				"img": "/portfolio/imgs/oracle-logo.png",
 				"degree": "Formación en Desarrollo Web",
 				"timeSpend": "2022",
 				"institution": "Alura + Oracle Next Education",
 				"location": "Online"
 			},
 			{
-				"img": "/portfolio-frontend/imgs/et28-logo.jpg",
+				"img": "/portfolio/imgs/et28-logo.jpg",
 				"degree": "Secundario. Técnico en Electrónica",
 				"timeSpend": "2016 - 2020",
 				"institution": "Escuela Técnica N.28 'República Francesa'",
@@ -313,31 +313,31 @@
 		],
 		"about": {
 			"title": "Algunas cosas a saber",
-			"text": "Bueno... No hay mucho para decir.\nMe gustan los deportes, sé jugar en equipo.\nMe gusta la tecnología, por eso elegí esta carrera.\nY por si no se nota, me gustan los juegos :).",
+			"text": "Bueno... No hay mucho para decir.\nMe gustan los deportes, sé trabajar en equipo.\nMe gusta la tecnología, por eso elegí esta carrera.\nY por si no se nota, me gustan los juegos :).",
 			"hobbies": [
 				{
 					"name": "Voley",
-					"icon": "/portfolio-frontend/svgs/volleyball.svg"
+					"icon": "/portfolio/svgs/volleyball.svg"
 				},
 				{
 					"name": "Futbol",
-					"icon": "/portfolio-frontend/svgs/football.svg"
+					"icon": "/portfolio/svgs/football.svg"
 				},
 				{
 					"name": "Musica",
-					"icon": "/portfolio-frontend/svgs/headphones.svg"
+					"icon": "/portfolio/svgs/headphones.svg"
 				},
 				{
 					"name": "Leer",
-					"icon": "/portfolio-frontend/svgs/book-stack.svg"
+					"icon": "/portfolio/svgs/book-stack.svg"
 				},
 				{
 					"name": "Ajedrez",
-					"icon": "/portfolio-frontend/svgs/chess-knight.svg"
+					"icon": "/portfolio/svgs/chess-knight.svg"
 				},
 				{
 					"name": "Jugar",
-					"icon": "/portfolio-frontend/svgs/joystick.svg"
+					"icon": "/portfolio/svgs/joystick.svg"
 				}
 			]
 		},
