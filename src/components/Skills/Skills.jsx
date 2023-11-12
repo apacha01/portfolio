@@ -1,5 +1,6 @@
 import useText from '../../hooks/useText';
 import Skill from '../Skill/Skill';
+import SkillCloud from '../SkillCloud/SkillCloud';
 import Title from '../Title/Title';
 import './skills.css';
 
@@ -9,7 +10,7 @@ function Skills() {
 	return (
 		<section id={text.headerLinks.skills.id} className="skills-section">
 			<Title title={text.headerLinks.skills.title} withCloud={true} />
-			<div className="skills-container">
+			<section className="skills-container">
 				{
 					text.skills.map((s, i) => {
 						return (
@@ -26,7 +27,23 @@ function Skills() {
 						);
 					})
 				}
-			</div>
+			</section>
+			<section className="future-skills-container">
+				<h2 className="future-skills-title">Future Interests</h2>
+				<div className="future-skills-icons">
+					{
+						text.futureSkills.map((s, i) => {
+							return (
+								<SkillCloud
+									key={i}
+									name={s.name}
+									icon={s.icon}
+								/>
+							);
+						})
+					}
+				</div>
+			</section>
 		</section>
 	);
 }

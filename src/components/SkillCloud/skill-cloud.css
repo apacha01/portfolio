@@ -1,0 +1,43 @@
+.skill-cloud-container {
+	position: relative;
+	aspect-ratio: 1 / 1;
+	width: 3.5em;
+	background: url(../../assets/svgs/mario-cloud-floor-sprite.svg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.skill-cloud-container:nth-child(2n) {
+	animation: float 5s infinite;
+}
+
+.skill-cloud-container:nth-child(n) {
+	animation: float 6s infinite;
+}
+
+.skill-cloud-container:first-child {
+	animation: float 7s infinite;
+}
+
+.skill-cloud-container:last-child {
+	animation: float 8s infinite;
+}
+
+.skill-cloud {
+	position: absolute;
+	width: 60%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.skill-cloud-title {
+	color: white;
+}
+
+/* Keyframes */
+@keyframes float {
+	50% {
+		transform: translateY(0.5em);
+	}
+}
