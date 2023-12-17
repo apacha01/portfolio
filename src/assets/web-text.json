@@ -42,6 +42,21 @@
 				"deploy": "https://apacha01.github.io/Pokedex/"
 			},
 			{
+				"title": "SAP Wiki",
+				"description": "A wiki of the Super Auto Pets game. This is the frontend part of the API (called sapi) i made with node and express to complete my first fullstack project.",
+				"img": "/portfolio/imgs/project-sapwiki.png",
+				"technologies": [
+					"Astro",
+					"Preact",
+					"Tailwind",
+					"Nanostores",
+					"JavaScript",
+					"TypeScript"
+				],
+				"repo": "https://github.com/apacha01/sap-wiki",
+				"deploy": "https://sap-wiki.vercel.app/"
+			},
+			{
 				"title": "Reading List",
 				"description": "A reading list web app for books. Includes different filters, search and tests (with React Testing Library).",
 				"img": "/portfolio/imgs/project-readinglist.png",
@@ -227,6 +242,21 @@
 				],
 				"repo": "https://github.com/apacha01/Pokedex",
 				"deploy": "https://apacha01.github.io/Pokedex/"
+			},
+			{
+				"title": "SAP Wiki",
+				"description": "Una wiki del juego Super Auto Pets. Este es el frontend de una API que hice (llamada sapi) con Node y Express, con el que completo mi primera app fullstack.",
+				"img": "/portfolio/imgs/project-sapwiki.png",
+				"technologies": [
+					"Astro",
+					"Preact",
+					"Tailwind",
+					"Nanostores",
+					"JavaScript",
+					"TypeScript"
+				],
+				"repo": "https://github.com/apacha01/sap-wiki",
+				"deploy": "https://sap-wiki.vercel.app/"
 			},
 			{
 				"title": "Lista de lectura",
