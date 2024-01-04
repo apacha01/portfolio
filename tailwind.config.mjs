@@ -5,6 +5,12 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {},
+		fontFamily: {
+			'skreg': 'SK-Regular',
+			'smb': 'SuperMarioBros',
+			'p2': 'Player2',
+			'arcade': 'Arcade',
+		},
 		colors: {
 			...colors,
 			'mario-blue': '#049cd8',
