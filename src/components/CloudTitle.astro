@@ -1,0 +1,39 @@
+---
+import TripleCloud from "./sprites/TripleCloud.astro";
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+const colors = [
+	"text-mario-blue",
+	"text-mario-yellow",
+	"text-mario-red",
+	"text-mario-green",
+];
+---
+
+<h2
+	class="relative aspect-[64/24] w-full max-w-96 flex justify-center items-center mx-auto"
+>
+	<TripleCloud class="max-h-44 absolute top-0 left-0" />
+	{
+		title.split("").map((l, i) => {
+			return " ".localeCompare(l) ? (
+				<span
+					class={`text-3xl sm:text-5xl font-smb mt-2.5 z-10 ${
+						colors[i % colors.length]
+					}`}
+				>
+					{l}
+				</span>
+			) : (
+				<span class="text-3xl sm:text-5xl">
+					{/* No Break Space */}
+					{"\u00A0"}
+				</span>
+			);
+		})
+	}
+</h2>

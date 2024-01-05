@@ -1,4 +1,5 @@
 ---
+import CloudTitle from "@components/CloudTitle.astro";
 import SocialLinks from "@components/SocialLinks.astro";
 import Typewriter from "@components/Typewriter.astro";
 import TripleCloud from "@components/sprites/TripleCloud.astro";
@@ -46,11 +47,7 @@ import Layout from "@layouts/Layout.astro";
 				},
 			]}
 		/>
-		<TripleCloud
-			cloudColor="text-mario-cloud&water-castle-light"
-			detailsColor="text-mario-cloud&water-castle-main"
-			borderColor="text-mario-cloud&water-castle-borders"
-		/>
+		<CloudTitle title="Projects" />
 		<p>hello</p>
 	</main>
 </Layout>
