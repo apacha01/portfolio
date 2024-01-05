@@ -1,4 +1,5 @@
 ---
+import MarioNavbar from "../components/MarioNavbar.astro";
 interface Props {
 	title: string;
 	description: string;
@@ -16,7 +17,18 @@ const { title, description } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>{title}</title>
 	</head>
-	<body class="max-w-[1000px] min-h-screen h-fit mx-auto">
+	<body
+		class="max-w-[1000px] min-h-screen w-full h-fit mx-auto px-4 lg:px-0 overflow-hidden"
+	>
+		<MarioNavbar
+			navlinks={[
+				{ text: "Home", link: "#home" },
+				{ text: "Projects", link: "#projects" },
+				{ text: "Stats", link: "#skills" },
+				{ text: "About", link: "#about" },
+				{ text: "Contact", link: "#contact" },
+			]}
+		/>
 		<slot />
 	</body>
 </html>

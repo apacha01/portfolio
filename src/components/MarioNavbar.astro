@@ -1,0 +1,70 @@
+---
+interface Props {
+	navlinks: { text: string; link: string }[];
+}
+
+const { navlinks } = Astro.props;
+---
+
+<header
+	class="sticky top-2 w-full flex items-center justify-between font-skreg bg-mario-coin-overworld-light text-mario-coin-overworld-main pl-4 pr-8 py-2 shadow-sm shadow-mario-ground&block-overworld-borders z-[9999]"
+>
+	<p class="text-lg">apacha</p>
+	<button
+		id="menu-toggler"
+		class="z-[9998] md:hidden"
+		aria-label="Menu button"
+	>
+		mario mistery box svg
+	</button>
+	<nav
+		id="menu"
+		class="hidden absolute z-[9997] -top-2 -left-4 w-screen h-screen bg-mario-coin-overworld-light md:block md:w-fit md:h-fit md:top-0 md:left-0 md:relative md:bg-transparent"
+	>
+		<ul
+			class="w-[28rem] h-full max-w-full flex flex-col items-center justify-center gap-10 mx-auto px-12 md:w-fit md:h-fit md:mx-0 md:px-0 md:flex-row md:gap-0"
+		>
+			{
+				navlinks.map((e) => {
+					return (
+						<li class="w-full h-fit">
+							<a
+								class="relative block w-full text-center text-4xl md:w-fit md:h-fit md:text-xl px-3 py-1 hover:text-mario-coin-overworld-light before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-mario-coin-overworld-main before:scale-x-0 hover:before:scale-x-100 transition-transform transform-gpu before:transition-transform before:transform-gpu before:duration-100 before:z-[-1]"
+								href={e.link}
+							>
+								{e.text}
+							</a>
+						</li>
+					);
+				})
+			}
+		</ul>
+	</nav>
+	<span
+		class="absolute aspect-square w-1 bg-mario-coin-overworld-main top-1 left-1 z-[-1]"
+	></span>
+	<span
+		class="absolute aspect-square w-1 bg-mario-coin-overworld-main bottom-1 left-1 z-[-1]"
+	></span>
+	<span
+		class="absolute aspect-square w-1 bg-mario-coin-overworld-main top-1 right-1 z-[-1]"
+	></span>
+	<span
+		class="absolute aspect-square w-1 bg-mario-coin-overworld-main bottom-1 right-1 z-[-1]"
+	></span>
+</header>
+
+<style>
+	span {
+		box-shadow: 0.75px 0.75px 1px #000000;
+	}
+</style>
+
+<script>
+	const MENU_TOGGLER_BTN = document.getElementById("menu-toggler");
+	const MENU = document.getElementById("menu");
+
+	MENU_TOGGLER_BTN?.addEventListener("click", () => {
+		MENU?.classList.toggle("hidden");
+	});
+</script>
