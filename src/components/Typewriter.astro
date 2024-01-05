@@ -5,22 +5,27 @@ interface Props {
 	delay?: number;
 	repeat?: boolean;
 	className?: string;
+	headingLevel?: number;
 }
 
-const { text, speed, delay, repeat, className } = Astro.props;
+const { text, speed, delay, repeat, className, headingLevel } = Astro.props;
+
+const Tag =
+	headingLevel && headingLevel >= 1 && headingLevel <= 6
+		? `h${headingLevel}`
+		: "p";
 ---
 
-<p
+<Tag
 	data-typewriter={text}
 	data-speed={speed}
 	data-delay={delay}
 	data-repeat={repeat}
-	class=`inline pr-1 border-r-4 border-mario-sky-font text-mario-sky-font ${className}`
->
-</p>
+	class={`animation-blink inline pr-1 border-r-4 border-mario-sky-font text-mario-sky-font ${className}`}
+/>
 
 <style>
-	p {
+	.animation-blink {
 		animation: blink 500ms infinite steps(1) alternate;
 	}
 	@keyframes blink {
@@ -82,7 +87,7 @@ const { text, speed, delay, repeat, className } = Astro.props;
 			delay: el.dataset.delay,
 			// data-repeat => '' => true
 			// missing data-repeat atribute => undefined => false
-			repeat: typeof el.dataset.repeat === "string",
+			repeat: typeof el.dataset.repeat !== "undefined",
 		});
 	});
 </script>
