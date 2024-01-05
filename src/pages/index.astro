@@ -7,45 +7,14 @@ import Layout from "@layouts/Layout.astro";
 	title="Agustin Pacheco | Portfolio."
 	description="My web portfolio super mario bros themed."
 >
-	<main class="">
-		<h1 class="text-8xl font-smb">HELLO</h1>
-		<h1 class="text-8xl font-p2">HELLO</h1>
-		<h1 class="text-8xl font-skreg">HELLO</h1>
-		<h1 class="text-8xl font-arcade">HELLO</h1>
-		<Typewriter
-			text="Good Day"
-			speed={150}
-			delay={1000}
-			repeat={true}
-			className="text-5xl font-arcade h-12"
-		/>
-		<br />
-		<Typewriter text="Good Bye" repeat={false} />
-		<br />
-		<Typewriter
-			text="A very very very very very very very very very very very very very very very very very very long text."
-		/>
-		<br />
-		<Typewriter
-			text="Fullstack Developer;Designer;Astronaut;Engenieer"
-			repeat={true}
-		/>
-		<br />
-		<Typewriter
-			text="Fullstack Developer;Designer;Astronaut;Engenieer"
-			repeat={false}
-		/>
+	<main class="w-full flex flex-col">
+		<section class="w-full min-h-16 block my-12 text-center">
+			<Typewriter
+				text="Hi! I'm Agustin, a full stack developer specialized in frontend."
+				speed={70}
+				className="text-xl font-p2 max-w-prose min-h-10 mx-auto"
+			/>
+		</section>
+		<p>hello</p>
 	</main>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-</style>
