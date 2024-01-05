@@ -15,7 +15,7 @@ const { text, speed, delay, repeat, className } = Astro.props;
 	data-speed={speed}
 	data-delay={delay}
 	data-repeat={repeat}
-	class={`inline pr-1 border-r-2 border-mario-sky-font text-mario-sky-font ${className}`}
+	class={`inline pr-1 border-r-4 border-mario-sky-font text-mario-sky-font ${className}`}
 >
 </p>
 
@@ -55,6 +55,7 @@ const { text, speed, delay, repeat, className } = Astro.props;
 		}
 
 		async typewrite(word) {
+			await this.wait(this.delay);
 			for (const letter of word.split("")) {
 				this.el.textContent += letter;
 				await this.wait(this.speed);
