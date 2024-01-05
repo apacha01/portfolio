@@ -1,7 +1,6 @@
 ---
-import SingleCloudItem from "@components/SingleCloudItem.astro";
+import SocialLinks from "@components/SocialLinks.astro";
 import Typewriter from "@components/Typewriter.astro";
-import SingleCloud from "@components/sprites/SingleCloud.astro";
 import Layout from "@layouts/Layout.astro";
 ---
 
@@ -17,55 +16,34 @@ import Layout from "@layouts/Layout.astro";
 				className="text-xl font-p2 max-w-prose min-h-10 mx-auto"
 			/>
 		</section>
-		<section
-			class="w-full flex justify-center items-center gap-2 sm:gap-10 mb-12"
-		>
-			<SingleCloudItem className="translate-y-4">
-				<a
-					class="aspect-square w-7 sm:w-10 z-10"
-					href="https://www.linkedin.com/in/agust%C3%ADn-pacheco-estudianteit/"
-					target="_blank"
-					rel="noopener noreferer"
-					title="Linkedin"
-				>
-					<img
-						class="w-full h-full bg-white"
-						src="/portfolio/svgs/linkedin.svg"
-						alt="Linkedin Icon"
-					/>
-				</a>
-			</SingleCloudItem>
-			<SingleCloudItem className="-translate-y-2">
-				<a
-					class="aspect-square w-7 sm:w-10 z-10"
-					href="https://github.com/apacha01/"
-					target="_blank"
-					rel="noopener noreferer"
-					title="GitHub"
-				>
-					<img
-						class="w-full h-full bg-white"
-						src="/portfolio/svgs/github.svg"
-						alt="GitHub Icon"
-					/>
-				</a>
-			</SingleCloudItem>
-			<SingleCloudItem className="translate-y-8">
-				<a
-					class="aspect-square w-7 sm:w-11 z-10"
-					href="/portfolio/cvs/cv-en.pdf"
-					target="_blank"
-					rel="noopener noreferer"
-					title="Resume/CV"
-				>
-					<img
-						class="w-full h-full bg-white"
-						src="/portfolio/svgs/resume.svg"
-						alt="Resume/CV Icon"
-					/>
-				</a>
-			</SingleCloudItem>
-		</section>
+		<SocialLinks
+			items={[
+				{
+					aLink: "https://www.linkedin.com/in/agust%C3%ADn-pacheco-estudianteit/",
+					aTitle: "Linkedin",
+					iconLink: "/portfolio/svgs/linkedin.svg",
+					iconAlt: "Linkedin Icon",
+					cloudClass: "translate-y-4",
+					iconClass: "bg-white",
+				},
+				{
+					aLink: "https://github.com/apacha01/",
+					aTitle: "GitHub",
+					iconLink: "/portfolio/svgs/github.svg",
+					iconAlt: "GitHub Icon",
+					cloudClass: "-translate-y-2",
+					iconClass: "bg-white",
+				},
+				{
+					aLink: "/portfolio/cvs/cv-en.pdf",
+					aTitle: "Resume/CV",
+					iconLink: "/portfolio/svgs/resume.svg",
+					iconAlt: "Resume/CV Icon",
+					cloudClass: "translate-y-8",
+					iconClass: "bg-white",
+				},
+			]}
+		/>
 		<p>hello</p>
 	</main>
 </Layout>

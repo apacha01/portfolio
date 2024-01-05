@@ -1,0 +1,42 @@
+---
+import SingleCloudItem from "./SingleCloudItem.astro";
+
+interface Props {
+	items: {
+		aLink?: string;
+		aTitle?: string;
+		iconLink: string;
+		iconAlt: string;
+		cloudClass?: string;
+		iconClass?: string;
+	}[];
+}
+
+const { items } = Astro.props;
+---
+
+<section
+	class="w-full flex justify-center items-center gap-2 sm:gap-10 md:gap-16 lg:gap-24 mb-12"
+>
+	{
+		items?.map((i) => {
+			return (
+				<SingleCloudItem className={i.cloudClass ?? ""}>
+					<a
+						class="aspect-square w-7 sm:w-10 z-10"
+						href={i.aLink ?? "#"}
+						title={i.aTitle ?? ""}
+						target="_blank"
+						rel="noopener noreferer"
+					>
+						<img
+							class={`w-full h-full ${i.iconClass ?? ""}`}
+							src={i.iconLink}
+							alt={i.iconAlt}
+						/>
+					</a>
+				</SingleCloudItem>
+			);
+		})
+	}
+</section>
