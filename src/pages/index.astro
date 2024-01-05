@@ -1,20 +1,47 @@
 ---
-import CloudTitle from "@components/CloudTitle.astro";
+import MarioNavbar from "@components/MarioNavbar.astro";
+import OptionalCloudTitle from "@components/OptionalCloudTitle.astro";
 import SocialLinks from "@components/SocialLinks.astro";
 import Typewriter from "@components/Typewriter.astro";
-import TripleCloud from "@components/sprites/TripleCloud.astro";
 import Layout from "@layouts/Layout.astro";
+import { getI18N } from "src/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 ---
 
-<Layout
-	title="Agustin Pacheco | Portfolio."
-	description="My web portfolio super mario bros themed."
->
+<Layout title={i18n.SEO_TITLE} description={i18n.SEO_DESCRIPTION}>
+	<MarioNavbar
+		navlinks={[
+			{ text: i18n.SECTIONS.home.navText, link: i18n.SECTIONS.home.id },
+			{
+				text: i18n.SECTIONS.projects.navText,
+				link: i18n.SECTIONS.projects.id,
+			},
+			{
+				text: i18n.SECTIONS.skills.navText,
+				link: i18n.SECTIONS.skills.id,
+			},
+			{
+				text: i18n.SECTIONS.studies.navText,
+				link: i18n.SECTIONS.studies.id,
+			},
+			{ text: i18n.SECTIONS.about.navText, link: i18n.SECTIONS.about.id },
+			{
+				text: i18n.SECTIONS.contact.navText,
+				link: i18n.SECTIONS.contact.id,
+			},
+		]}
+	/>
 	<main class="w-full flex flex-col">
-		<section id="home" class="w-full min-h-16 block my-12 text-center">
+		<section
+			id={i18n.SECTIONS.home.id}
+			class="w-full min-h-16 block my-12 text-center"
+		>
+			<OptionalCloudTitle title={i18n.SECTIONS.home.cloudTitle} />
 			<Typewriter
-				text="Hi! I'm Agustin, a full stack developer specialized in frontend."
-				speed={70}
+				text={i18n.TYPEWRITER_TITLE}
+				speed={parseInt(i18n.OPTIONAL_TYPEWRITER_SPEED) ?? 70}
 				className="text-xl font-p2 max-w-prose min-h-10 mx-auto"
 				headingLevel={1}
 			/>
@@ -22,7 +49,7 @@ import Layout from "@layouts/Layout.astro";
 		<SocialLinks
 			items={[
 				{
-					aLink: "https://www.linkedin.com/in/agust%C3%ADn-pacheco-estudianteit/",
+					aLink: i18n.SOCIAL_LINKS.linkedin,
 					aTitle: "Linkedin",
 					iconLink: "/portfolio/svgs/linkedin.svg",
 					iconAlt: "Linkedin Icon",
@@ -30,7 +57,7 @@ import Layout from "@layouts/Layout.astro";
 					iconClass: "bg-white",
 				},
 				{
-					aLink: "https://github.com/apacha01/",
+					aLink: i18n.SOCIAL_LINKS.github,
 					aTitle: "GitHub",
 					iconLink: "/portfolio/svgs/github.svg",
 					iconAlt: "GitHub Icon",
@@ -38,7 +65,7 @@ import Layout from "@layouts/Layout.astro";
 					iconClass: "bg-white",
 				},
 				{
-					aLink: "/portfolio/cvs/cv-en.pdf",
+					aLink: i18n.SOCIAL_LINKS.resume,
 					aTitle: "Resume/CV",
 					iconLink: "/portfolio/svgs/resume.svg",
 					iconAlt: "Resume/CV Icon",
@@ -47,9 +74,20 @@ import Layout from "@layouts/Layout.astro";
 				},
 			]}
 		/>
-		<section id="projects" class="mt-10">
-			<CloudTitle title="Projects" />
+		<section id={i18n.SECTIONS.projects.id} class="my-10">
+			<OptionalCloudTitle title={i18n.SECTIONS.projects.cloudTitle} />
 		</section>
-		<p>hello</p>
+		<section id={i18n.SECTIONS.skills.id} class="my-10">
+			<OptionalCloudTitle title={i18n.SECTIONS.skills.cloudTitle} />
+		</section>
+		<section id={i18n.SECTIONS.studies.id} class="my-10">
+			<OptionalCloudTitle title={i18n.SECTIONS.studies.cloudTitle} />
+		</section>
+		<section id={i18n.SECTIONS.about.id} class="my-10">
+			<OptionalCloudTitle title={i18n.SECTIONS.about.cloudTitle} />
+		</section>
+		<section id={i18n.SECTIONS.contact.id} class="my-10">
+			<OptionalCloudTitle title={i18n.SECTIONS.contact.cloudTitle} />
+		</section>
 	</main>
 </Layout>

@@ -1,0 +1,42 @@
+{
+	"SEO_TITLE": "Agustin Pacheco | Portfolio",
+	"SEO_DESCRIPTION": "My Super Mario Bros themed web portfolio to showcase my projects and skills.",
+	"TYPEWRITER_TITLE": "Hi! I'm Agustin, a full stack developer specialized in frontend.",
+	"SOCIAL_LINKS": {
+		"linkedin": "https://www.linkedin.com/in/agust%C3%ADn-pacheco-estudianteit/",
+		"github": "https://github.com/apacha01/",
+		"resume": "/portfolio/cvs/cv-en.pdf"
+	},
+	"SECTIONS": {
+		"home": {
+			"id": "home",
+			"navText": "Home",
+			"cloudTitle": ""
+		},
+		"projects": {
+			"id": "projects",
+			"navText": "Projects",
+			"cloudTitle": "Projects"
+		},
+		"skills": {
+			"id": "skills",
+			"navText": "Stats",
+			"cloudTitle": "Stats"
+		},
+		"studies": {
+			"id": "studies",
+			"navText": "Studies",
+			"cloudTitle": "Studies"
+		},
+		"about": {
+			"id": "about",
+			"navText": "About",
+			"cloudTitle": "About Me"
+		},
+		"contact": {
+			"id": "contact",
+			"navText": "Contact",
+			"cloudTitle": "Contact"
+		}
+	}
+}

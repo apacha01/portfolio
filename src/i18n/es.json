@@ -1,0 +1,42 @@
+{
+	"SEO_TITLE": "Agustin Pacheco | Portfolio",
+	"SEO_DESCRIPTION": "Mi portafolio web para mostrar proyectos con temática de Super Mario Bros.",
+	"TYPEWRITER_TITLE": "¡Hola! soy Agustín, desarrollador fullstack especializado en frontend.",
+	"SOCIAL_LINKS": {
+		"linkedin": "https://www.linkedin.com/in/agust%C3%ADn-pacheco-estudianteit/",
+		"github": "https://github.com/apacha01/",
+		"resume": "/portfolio/cvs/cv-es.pdf"
+	},
+	"SECTIONS": {
+		"home": {
+			"id": "home",
+			"navText": "Inicio",
+			"cloudTitle": ""
+		},
+		"projects": {
+			"id": "projects",
+			"navText": "Proyectos",
+			"cloudTitle": "Proyectos"
+		},
+		"skills": {
+			"id": "skills",
+			"navText": "Estadísticas",
+			"cloudTitle": "Estadisticas"
+		},
+		"studies": {
+			"id": "studies",
+			"navText": "Estudios",
+			"cloudTitle": "Estudios"
+		},
+		"about": {
+			"id": "about",
+			"navText": "Sobre Mí",
+			"cloudTitle": "Sobre Mi"
+		},
+		"contact": {
+			"id": "contact",
+			"navText": "Contacto",
+			"cloudTitle": "Contacto"
+		}
+	}
+}
