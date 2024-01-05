@@ -1,4 +1,5 @@
 ---
+import SingleCloudItem from "@components/SingleCloudItem.astro";
 import Typewriter from "@components/Typewriter.astro";
 import SingleCloud from "@components/sprites/SingleCloud.astro";
 import Layout from "@layouts/Layout.astro";
@@ -16,77 +17,55 @@ import Layout from "@layouts/Layout.astro";
 				className="text-xl font-p2 max-w-prose min-h-10 mx-auto"
 			/>
 		</section>
-		<article
-			class="relative aspect-[330/240] w-32 flex justify-center items-center pl-1 pt-1"
+		<section
+			class="w-full flex justify-center items-center gap-2 sm:gap-10 mb-12"
 		>
-			<SingleCloud
-				class="w-32 absolute top-0 left-0"
-				borderColor="fill-mario-cloud&water-overworld-borders"
-				cloudColor="fill-mario-cloud&water-overworld-light"
-				detailsColor="fill-mario-cloud&water-overworld-main"
-			/>
-			<a
-				class="aspect-square w-10 z-10"
-				href="https://www.linkedin.com/in/agust%C3%ADn-pacheco-estudianteit/"
-				target="_blank"
-				rel="noopener noreferer"
-				title="Linkedin"
-			>
-				<img
-					class="w-full h-full"
-					src="/portfolio/svgs/linkedin.svg"
-					alt="Linkedin Icon"
-				/>
-			</a>
-		</article>
-
-		<article
-			class="relative aspect-[330/240] w-32 flex justify-center items-center pl-1 pt-1"
-		>
-			<SingleCloud
-				class="w-32 absolute top-0 left-0"
-				borderColor="fill-mario-cloud&water-overworld-borders"
-				cloudColor="fill-mario-cloud&water-overworld-light"
-				detailsColor="fill-mario-cloud&water-overworld-main"
-			/>
-			<a
-				class="aspect-square w-10 z-10"
-				href="https://www.linkedin.com/in/agust%C3%ADn-pacheco-estudianteit/"
-				target="_blank"
-				rel="noopener noreferer"
-				title="Linkedin"
-			>
-				<img
-					class="w-full h-full"
-					src="/portfolio/svgs/github.svg"
-					alt="Linkedin Icon"
-				/>
-			</a>
-		</article>
-
-		<article
-			class="relative aspect-[330/240] w-32 flex justify-center items-center pl-1 pt-1"
-		>
-			<SingleCloud
-				class="w-32 absolute top-0 left-0"
-				borderColor="fill-mario-cloud&water-overworld-borders"
-				cloudColor="fill-mario-cloud&water-overworld-light"
-				detailsColor="fill-mario-cloud&water-overworld-main"
-			/>
-			<a
-				class="aspect-square w-10 z-10"
-				href="https://www.linkedin.com/in/agust%C3%ADn-pacheco-estudianteit/"
-				target="_blank"
-				rel="noopener noreferer"
-				title="Linkedin"
-			>
-				<img
-					class="w-full h-full"
-					src="/portfolio/svgs/resume.svg"
-					alt="Linkedin Icon"
-				/>
-			</a>
-		</article>
+			<SingleCloudItem className="translate-y-4">
+				<a
+					class="aspect-square w-7 sm:w-10 z-10"
+					href="https://www.linkedin.com/in/agust%C3%ADn-pacheco-estudianteit/"
+					target="_blank"
+					rel="noopener noreferer"
+					title="Linkedin"
+				>
+					<img
+						class="w-full h-full bg-white"
+						src="/portfolio/svgs/linkedin.svg"
+						alt="Linkedin Icon"
+					/>
+				</a>
+			</SingleCloudItem>
+			<SingleCloudItem className="-translate-y-2">
+				<a
+					class="aspect-square w-7 sm:w-10 z-10"
+					href="https://github.com/apacha01/"
+					target="_blank"
+					rel="noopener noreferer"
+					title="GitHub"
+				>
+					<img
+						class="w-full h-full bg-white"
+						src="/portfolio/svgs/github.svg"
+						alt="GitHub Icon"
+					/>
+				</a>
+			</SingleCloudItem>
+			<SingleCloudItem className="translate-y-8">
+				<a
+					class="aspect-square w-7 sm:w-11 z-10"
+					href="/portfolio/cvs/cv-en.pdf"
+					target="_blank"
+					rel="noopener noreferer"
+					title="Resume/CV"
+				>
+					<img
+						class="w-full h-full bg-white"
+						src="/portfolio/svgs/resume.svg"
+						alt="Resume/CV Icon"
+					/>
+				</a>
+			</SingleCloudItem>
+		</section>
 		<p>hello</p>
 	</main>
 </Layout>

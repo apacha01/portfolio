@@ -1,0 +1,21 @@
+---
+import SingleCloud from "@components/sprites/SingleCloud.astro";
+
+interface Props {
+	className?: string;
+}
+
+const { className } = Astro.props;
+---
+
+<article
+	class=`relative aspect-[330/240] w-32 flex justify-center items-center pl-1 pt-2 ${className}`
+>
+	<SingleCloud
+		class="w-full min-w-16 absolute top-0 left-0"
+		borderColor="fill-mario-cloud&water-overworld-borders"
+		cloudColor="fill-mario-cloud&water-overworld-light"
+		detailsColor="fill-mario-cloud&water-overworld-main"
+	/>
+	<slot />
+</article>
