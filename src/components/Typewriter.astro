@@ -1,0 +1,87 @@
+---
+interface Props {
+	text: string;
+	speed?: number;
+	delay?: number;
+	repeat?: boolean;
+	className?: string;
+}
+
+const { text, speed, delay, repeat, className } = Astro.props;
+---
+
+<p
+	data-typewriter={text}
+	data-speed={speed}
+	data-delay={delay}
+	data-repeat={repeat}
+	class={`inline pr-1 border-r-2 border-mario-sky-font text-mario-sky-font ${className}`}
+>
+</p>
+
+<style>
+	p {
+		animation: blink 500ms infinite steps(1) alternate;
+	}
+	@keyframes blink {
+		50% {
+			border-color: transparent;
+		}
+	}
+</style>
+
+<script>
+	// @ts-nocheck
+	// Adapted from https://codepen.io/Coding-in-Public/pen/yLPYjrv
+	class Typerwriter {
+		constructor(el, options) {
+			this.el = el;
+			this.words = [...this.el.dataset.typewriter.split(";")];
+			this.speed = options?.speed ?? 100;
+			this.delay = options?.delay ?? 1500;
+			this.repeat = options?.repeat ?? false;
+			this.initTyping();
+		}
+
+		wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+		async eraseContent() {
+			await this.wait(this.delay);
+			while (this.el.textContent.length !== 0) {
+				this.el.textContent = this.el.textContent.slice(0, -1);
+				await this.wait(this.speed);
+			}
+			await this.wait(this.delay);
+		}
+
+		async typewrite(word) {
+			for (const letter of word.split("")) {
+				this.el.textContent += letter;
+				await this.wait(this.speed);
+			}
+
+			if (this.words.length > 1 || this.repeat) {
+				await this.eraseContent();
+			}
+		}
+
+		async initTyping() {
+			for (const word of this.words) {
+				await this.typewrite(word);
+			}
+			if (this.repeat) {
+				await this.initTyping();
+			}
+		}
+	}
+
+	document.querySelectorAll("[data-typewriter]").forEach((el) => {
+		new Typerwriter(el, {
+			speed: el.dataset.speed,
+			delay: el.dataset.delay,
+			// data-repeat => '' => true
+			// missing data-repeat atribute => undefined => false
+			repeat: typeof el.dataset.repeat === "string",
+		});
+	});
+</script>
