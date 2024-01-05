@@ -1,0 +1,93 @@
+---
+import MarioNavbar from "@components/MarioNavbar.astro";
+import OptionalCloudTitle from "@components/OptionalCloudTitle.astro";
+import SocialLinks from "@components/SocialLinks.astro";
+import Typewriter from "@components/Typewriter.astro";
+import Layout from "@layouts/Layout.astro";
+import { getI18N } from "src/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<Layout title={i18n.SEO_TITLE} description={i18n.SEO_DESCRIPTION}>
+	<MarioNavbar
+		navlinks={[
+			{ text: i18n.SECTIONS.home.navText, link: i18n.SECTIONS.home.id },
+			{
+				text: i18n.SECTIONS.projects.navText,
+				link: i18n.SECTIONS.projects.id,
+			},
+			{
+				text: i18n.SECTIONS.skills.navText,
+				link: i18n.SECTIONS.skills.id,
+			},
+			{
+				text: i18n.SECTIONS.studies.navText,
+				link: i18n.SECTIONS.studies.id,
+			},
+			{ text: i18n.SECTIONS.about.navText, link: i18n.SECTIONS.about.id },
+			{
+				text: i18n.SECTIONS.contact.navText,
+				link: i18n.SECTIONS.contact.id,
+			},
+		]}
+	/>
+	<main class="w-full flex flex-col">
+		<section
+			id={i18n.SECTIONS.home.id}
+			class="w-full min-h-16 block my-12 text-center"
+		>
+			<OptionalCloudTitle title={i18n.SECTIONS.home.cloudTitle} />
+			<Typewriter
+				text={i18n.TYPEWRITER_TITLE}
+				speed={i18n.OPTIONAL_TYPEWRITER_SPEED ?? 70}
+				className="text-xl font-p2 max-w-prose min-h-10 mx-auto"
+				headingLevel={1}
+			/>
+		</section>
+		<SocialLinks
+			items={[
+				{
+					aLink: i18n.SOCIAL_LINKS.linkedin,
+					aTitle: "Linkedin",
+					iconLink: "/portfolio/svgs/linkedin.svg",
+					iconAlt: "Linkedin Icon",
+					cloudClass: "translate-y-2",
+					iconClass: "bg-white",
+				},
+				{
+					aLink: i18n.SOCIAL_LINKS.github,
+					aTitle: "GitHub",
+					iconLink: "/portfolio/svgs/github.svg",
+					iconAlt: "GitHub Icon",
+					cloudClass: "-translate-y-5",
+					iconClass: "bg-white",
+				},
+				{
+					aLink: i18n.SOCIAL_LINKS.resume,
+					aTitle: "Resume/CV",
+					iconLink: "/portfolio/svgs/resume.svg",
+					iconAlt: "Resume/CV Icon",
+					cloudClass: "mt-12",
+					iconClass: "bg-white",
+				},
+			]}
+		/>
+		<section id={i18n.SECTIONS.projects.id} class="my-10">
+			<OptionalCloudTitle title={i18n.SECTIONS.projects.cloudTitle} />
+		</section>
+		<section id={i18n.SECTIONS.skills.id} class="my-10">
+			<OptionalCloudTitle title={i18n.SECTIONS.skills.cloudTitle} />
+		</section>
+		<section id={i18n.SECTIONS.studies.id} class="my-10">
+			<OptionalCloudTitle title={i18n.SECTIONS.studies.cloudTitle} />
+		</section>
+		<section id={i18n.SECTIONS.about.id} class="my-10">
+			<OptionalCloudTitle title={i18n.SECTIONS.about.cloudTitle} />
+		</section>
+		<section id={i18n.SECTIONS.contact.id} class="my-10">
+			<OptionalCloudTitle title={i18n.SECTIONS.contact.cloudTitle} />
+		</section>
+	</main>
+</Layout>
