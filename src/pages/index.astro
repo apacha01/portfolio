@@ -11,7 +11,7 @@ import Layout from "@layouts/Layout.astro";
 	description="My web portfolio super mario bros themed."
 >
 	<main class="w-full flex flex-col">
-		<section class="w-full min-h-16 block my-12 text-center">
+		<section id="home" class="w-full min-h-16 block my-12 text-center">
 			<Typewriter
 				text="Hi! I'm Agustin, a full stack developer specialized in frontend."
 				speed={70}
@@ -26,7 +26,7 @@ import Layout from "@layouts/Layout.astro";
 					aTitle: "Linkedin",
 					iconLink: "/portfolio/svgs/linkedin.svg",
 					iconAlt: "Linkedin Icon",
-					cloudClass: "translate-y-4",
+					cloudClass: "translate-y-2",
 					iconClass: "bg-white",
 				},
 				{
@@ -34,7 +34,7 @@ import Layout from "@layouts/Layout.astro";
 					aTitle: "GitHub",
 					iconLink: "/portfolio/svgs/github.svg",
 					iconAlt: "GitHub Icon",
-					cloudClass: "-translate-y-2",
+					cloudClass: "-translate-y-5",
 					iconClass: "bg-white",
 				},
 				{
@@ -42,12 +42,14 @@ import Layout from "@layouts/Layout.astro";
 					aTitle: "Resume/CV",
 					iconLink: "/portfolio/svgs/resume.svg",
 					iconAlt: "Resume/CV Icon",
-					cloudClass: "translate-y-8",
+					cloudClass: "mt-12",
 					iconClass: "bg-white",
 				},
 			]}
 		/>
-		<CloudTitle title="Projects" />
+		<section id="projects" class="mt-10">
+			<CloudTitle title="Projects" />
+		</section>
 		<p>hello</p>
 	</main>
 </Layout>
