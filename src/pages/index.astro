@@ -41,7 +41,7 @@ const i18n = getI18N({ currentLocale });
 			<OptionalCloudTitle title={i18n.SECTIONS.home.cloudTitle} />
 			<Typewriter
 				text={i18n.TYPEWRITER_TITLE}
-				speed={parseInt(i18n.OPTIONAL_TYPEWRITER_SPEED) ?? 70}
+				speed={i18n.OPTIONAL_TYPEWRITER_SPEED ?? 70}
 				className="text-xl font-p2 max-w-prose min-h-10 mx-auto"
 				headingLevel={1}
 			/>
