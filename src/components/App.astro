@@ -1,11 +1,12 @@
 ---
+import { getI18N } from "src/i18n";
+import Layout from "@layouts/Layout.astro";
 import MarioNavbar from "@components/MarioNavbar.astro";
 import OptionalCloudTitle from "@components/OptionalCloudTitle.astro";
 import SocialLinks from "@components/SocialLinks.astro";
 import Typewriter from "@components/Typewriter.astro";
-import Layout from "@layouts/Layout.astro";
-import { getI18N } from "src/i18n";
-import ThemeSelector from "./ThemeSelector.astro";
+import RadioBlockSelector from "@components/RadioBlockSelector.astro";
+import RadioBlockSelectorOption from "@components/RadioBlockSelectorOption.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -35,7 +36,40 @@ const i18n = getI18N({ currentLocale });
 		]}
 	/>
 	<main class="w-full flex flex-col">
-		<ThemeSelector />
+		<RadioBlockSelector title="Theme">
+			<RadioBlockSelectorOption
+				radioId="overworld"
+				radioName="theme"
+				radioValue="overworld"
+				blocksColor="text-mario-ground&block-overworld-main"
+				bordersColor="text-mario-ground&block-overworld-borders"
+				checked={true}
+			/>
+			<RadioBlockSelectorOption
+				radioId="underworld"
+				radioName="theme"
+				radioValue="underworld"
+				blocksColor="text-mario-ground&block-underworld-main"
+				bordersColor="text-mario-ground&block-underworld-borders"
+				checked={false}
+			/>
+			<RadioBlockSelectorOption
+				radioId="underwater"
+				radioName="theme"
+				radioValue="underwater"
+				blocksColor="text-mario-ground&block-underwater-main"
+				bordersColor="text-mario-ground&block-underwater-borders"
+				checked={false}
+			/>
+			<RadioBlockSelectorOption
+				radioId="castle"
+				radioName="theme"
+				radioValue="castle"
+				blocksColor="text-mario-ground&block-castle-main"
+				bordersColor="text-mario-ground&block-castle-borders"
+				checked={false}
+			/>
+		</RadioBlockSelector>
 		<section
 			id={i18n.SECTIONS.home.id}
 			class="w-full min-h-16 block my-12 text-center"
