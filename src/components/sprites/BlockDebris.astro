@@ -1,0 +1,27 @@
+---
+interface Props {
+	debrisColor?: string;
+	detailsColor?: string;
+	class?: string;
+}
+
+const { debrisColor, detailsColor } = Astro.props;
+---
+
+<svg {...Astro.props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8">
+	<g
+		class={debrisColor ??
+			"text-mario-ground&block-overworld-main theme-underworld:text-mario-ground&block-underworld-main theme-underwater:text-mario-ground&block-underwater-main theme-castle:text-mario-ground&block-castle-main"}
+		fill="currentColor"
+	>
+		<path d="M2 1h5v5H2z"></path>
+		<path d="M1 2h5v5H1zM3 0h3v1H3zM2 7h3v1H2zM0 3h1v3H0zM7 2h1v3H7z"
+		></path>
+	</g>
+	<path
+		class={detailsColor ??
+			"text-mario-ground&block-overworld-borders theme-underworld:text-mario-ground&block-underworld-borders theme-underwater:text-mario-ground&block-underwater-borders theme-castle:text-mario-ground&block-castle-borders"}
+		fill="currentColor"
+		d="M4 0h1v1H4zM3 1h1v1H3zM2 2h1v1H2zM1 3h1v1H1zM0 4h1v1H0zM4 2h1v1H4zM6 2h1v1H6zM5 3h1v1H5zM4 4h1v1H4zM3 5h1v1H3zM2 6h1v1H2zM4 6h1v1H4z"
+	></path>
+</svg>
