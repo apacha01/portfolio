@@ -1,4 +1,5 @@
 import colors from 'tailwindcss/colors';
+import plugin from 'tailwindcss/plugin';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -115,5 +116,12 @@ export default {
 			}
 		}
 	},
-	plugins: [],
+	plugins: [
+		// https://play.tailwindcss.com/Xgi2tzI1u1
+		plugin(function ({ addVariant }) {
+			addVariant('theme-underworld', '.theme:has(#underworld:checked) &');
+			addVariant('theme-underwater', '.theme:has(#underwater:checked) &');
+			addVariant('theme-castle', '.theme:has(#castle:checked) &');
+		})
+	],
 }
