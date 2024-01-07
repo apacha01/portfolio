@@ -29,10 +29,10 @@ const invertedThemedHoverTextClass =
 	</label>
 	<nav
 		id="menu"
-		class=`[clip-path:circle(0px_at_calc(100%-4rem)_15px)] absolute z-[9997] -top-2 -left-14 w-screen h-screen lg:visible lg:opacity-100 lg:[clip-path:none] lg:w-full lg:h-fit lg:top-0 lg:left-0 lg:relative lg:bg-transparent peer-[&:has(#menu-toggler:checked)]:[clip-path:circle(75%)] transition-[clip-path] duration-300 themed-text-block-bg`
+		class=`[clip-path:circle(0px_at_calc(100%-4rem)_15px)] absolute z-[9997] w-screen h-screen -top-2 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:visible lg:opacity-100 lg:[clip-path:none] lg:w-full lg:h-fit lg:top-0 lg:left-0 lg:relative lg:bg-transparent peer-[&:has(#menu-toggler:checked)]:[clip-path:circle(75%)] transition-[clip-path] duration-300 themed-text-block-bg`
 	>
 		<ul
-			class="w-[32rem] h-full max-w-full flex flex-col items-center justify-evenly gap-10 mx-auto px-12 lg:w-full lg:h-fit lg:mx-0 lg:px-0 lg:flex-row lg:gap-0"
+			class="w-[32rem] h-full max-w-full flex flex-col items-center justify-center gap-10 mx-auto px-12 lg:w-full lg:h-fit lg:mx-0 lg:px-0 lg:flex-row lg:justify-evenly lg:gap-0"
 		>
 			{
 				navlinks.map((e) => {
