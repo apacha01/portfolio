@@ -50,6 +50,7 @@ import BreakableBlock from "./sprites/BreakableBlock.astro";
 			this.marioElement = this.sliderElement.querySelector(".mario");
 			this.currentIndex = 0;
 			this.marioJumpDuration = 200;
+			this.isJumping = false;
 
 			if (
 				!this.slidesContainer ||
@@ -107,6 +108,7 @@ import BreakableBlock from "./sprites/BreakableBlock.astro";
 		}
 
 		marioJump(duration) {
+			this.isJumping = true;
 			let translateClass = "-translate-y-10";
 			let currentSprite = this.marioElement.src;
 
@@ -119,10 +121,12 @@ import BreakableBlock from "./sprites/BreakableBlock.astro";
 
 			setTimeout(() => {
 				this.marioElement.src = currentSprite;
+				this.isJumping = false;
 			}, duration);
 		}
 
 		slideToNextElement() {
+			if (this.isJumping) return;
 			this.increaseIndex();
 
 			this.marioJump(this.marioJumpDuration);
@@ -132,6 +136,7 @@ import BreakableBlock from "./sprites/BreakableBlock.astro";
 		}
 
 		slideToPrevElement() {
+			if (this.isJumping) return;
 			this.descreaseIndex();
 
 			this.marioJump(this.marioJumpDuration);
