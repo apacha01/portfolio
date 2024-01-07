@@ -37,51 +37,53 @@ const i18n = getI18N({ currentLocale });
 		]}
 	/>
 	<main class="w-full flex flex-col">
-		<RadioBlockSelector title="Theme">
-			<RadioBlockSelectorOption
-				radioId="overworld"
-				radioName="theme"
-				radioValue="overworld"
-				blocksColor="text-mario-ground&block-overworld-main"
-				bordersColor="text-mario-ground&block-overworld-borders"
-				checked={true}
-			/>
-			<RadioBlockSelectorOption
-				radioId="underworld"
-				radioName="theme"
-				radioValue="underworld"
-				blocksColor="text-mario-ground&block-underworld-main"
-				bordersColor="text-mario-ground&block-underworld-borders"
-				checked={false}
-			/>
-			<RadioBlockSelectorOption
-				radioId="underwater"
-				radioName="theme"
-				radioValue="underwater"
-				blocksColor="text-mario-ground&block-underwater-main"
-				bordersColor="text-mario-ground&block-underwater-borders"
-				checked={false}
-			/>
-			<RadioBlockSelectorOption
-				radioId="castle"
-				radioName="theme"
-				radioValue="castle"
-				blocksColor="text-mario-ground&block-castle-main"
-				bordersColor="text-mario-ground&block-castle-borders"
-				checked={false}
-			/>
-		</RadioBlockSelector>
 		<section
 			id={i18n.SECTIONS.home.id}
-			class="w-full min-h-16 block my-12 text-center"
+			class="flex flex-col gap-8 w-full my-10 text-center"
 		>
+			<RadioBlockSelector title="Theme">
+				<RadioBlockSelectorOption
+					radioId="overworld"
+					radioName="theme"
+					radioValue="overworld"
+					blocksColor="text-mario-ground&block-overworld-main"
+					bordersColor="text-mario-ground&block-overworld-borders"
+					checked={true}
+				/>
+				<RadioBlockSelectorOption
+					radioId="underworld"
+					radioName="theme"
+					radioValue="underworld"
+					blocksColor="text-mario-ground&block-underworld-main"
+					bordersColor="text-mario-ground&block-underworld-borders"
+					checked={false}
+				/>
+				<RadioBlockSelectorOption
+					radioId="underwater"
+					radioName="theme"
+					radioValue="underwater"
+					blocksColor="text-mario-ground&block-underwater-main"
+					bordersColor="text-mario-ground&block-underwater-borders"
+					checked={false}
+				/>
+				<RadioBlockSelectorOption
+					radioId="castle"
+					radioName="theme"
+					radioValue="castle"
+					blocksColor="text-mario-ground&block-castle-main"
+					bordersColor="text-mario-ground&block-castle-borders"
+					checked={false}
+				/>
+			</RadioBlockSelector>
 			<OptionalCloudTitle title={i18n.SECTIONS.home.cloudTitle} />
-			<Typewriter
-				text={i18n.TYPEWRITER_TITLE}
-				speed={i18n.OPTIONAL_TYPEWRITER_SPEED ?? 70}
-				className="text-xl font-p2 max-w-prose min-h-10 mx-auto"
-				headingLevel={1}
-			/>
+			<div class="w-full min-h-16 block">
+				<Typewriter
+					text={i18n.TYPEWRITER_TITLE}
+					speed={i18n.OPTIONAL_TYPEWRITER_SPEED ?? 70}
+					className="text-xl font-p2 max-w-prose min-h-10 mx-auto"
+					headingLevel={1}
+				/>
+			</div>
 		</section>
 		<SocialLinks
 			items={[
