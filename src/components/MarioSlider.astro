@@ -1,0 +1,147 @@
+---
+import BreakableBlock from "./sprites/BreakableBlock.astro";
+
+/*
+	TODO
+		props for distance between mario and block
+		props for duration of the jump
+		props for floor and mario height
+*/
+---
+
+<article class="slider flex flex-col w-full h-full my-10">
+	<div
+		class="slides-container flex-1 flex flex-col justify-center items-center flex-nowrap w-full h-28 py-4 px-8 overflow-x-hidden themed-text-block-text themed-text-block-bg"
+	>
+		<slot />
+	</div>
+	<div
+		class="flex items-center justify-between w-full h-16 mt-10 sm:h-20 md:h-24"
+	>
+		<button
+			class="slider-prev-btn aspect-square w-10 font-p2 text-lg text-center shadow-[2px_2px] themed-shadow themed-text-block-text themed-text-block-bg"
+			>{"<"}</button
+		>
+		<img
+			src="/src/assets/svgs/mario-idle.svg"
+			alt="Mario idle sprite"
+			class="mario h-full transition-transform"
+		/>
+		<button
+			class="slider-next-btn aspect-square w-10 text-center font-p2 text-lg pl-1 mr-[2px] shadow-[2px_2px] themed-shadow themed-text-block-text themed-text-block-bg"
+			>{">"}</button
+		>
+	</div>
+	<BreakableBlock className="w-full h-4 sm:h-6 md:h-8" />
+</article>
+
+<script>
+	// @ts-nocheck
+	class Slider {
+		constructor(sliderElement) {
+			if (!sliderElement) return;
+
+			this.sliderElement = sliderElement;
+			this.slidesContainer =
+				sliderElement.querySelector(".slides-container");
+			this.slides = this.slidesContainer?.children;
+			this.prevBtn = this.sliderElement.querySelector(".slider-prev-btn");
+			this.nextBtn = this.sliderElement.querySelector(".slider-next-btn");
+			this.marioElement = this.sliderElement.querySelector(".mario");
+			this.currentIndex = 0;
+			this.marioJumpDuration = 200;
+
+			if (
+				!this.slidesContainer ||
+				!this.slides ||
+				!this.prevBtn ||
+				!this.nextBtn
+			)
+				return;
+
+			// Bind the methods to the instance
+			this.slideToNextElement = this.slideToNextElement.bind(this);
+			this.slideToPrevElement = this.slideToPrevElement.bind(this);
+			this.increaseIndex = this.increaseIndex.bind(this);
+			this.descreaseIndex = this.descreaseIndex.bind(this);
+
+			this.updateSlider();
+			this.prevBtn.addEventListener("click", this.slideToPrevElement);
+			this.nextBtn.addEventListener("click", this.slideToNextElement);
+		}
+
+		increaseIndex() {
+			this.currentIndex =
+				this.currentIndex < this.slides.length - 1
+					? this.currentIndex + 1
+					: 0;
+		}
+
+		descreaseIndex() {
+			this.currentIndex =
+				this.currentIndex > 0
+					? this.currentIndex - 1
+					: this.slides.length - 1;
+		}
+
+		updateSlider() {
+			[...this.slides].forEach((s, i) => {
+				if (i === this.currentIndex) {
+					s.classList.add("block");
+					s.classList.remove("hidden");
+				} else {
+					s.classList.add("hidden");
+					s.classList.remove("block");
+				}
+			});
+		}
+
+		hitSlidesBlock(duration) {
+			let newBackgronudColor = "themed-alternate-text-block-bg";
+			setTimeout(() => {
+				this.slidesContainer.classList.add(newBackgronudColor);
+			}, duration / 2);
+			setTimeout(() => {
+				this.slidesContainer.classList.remove(newBackgronudColor);
+			}, duration);
+		}
+
+		marioJump(duration) {
+			let translateClass = "-translate-y-10";
+			let currentSprite = this.marioElement.src;
+
+			this.marioElement.classList.add(translateClass);
+			this.marioElement.src = "/src/assets/svgs/mario-jump.svg";
+
+			setTimeout(() => {
+				this.marioElement.classList.remove(translateClass);
+			}, duration / 2);
+
+			setTimeout(() => {
+				this.marioElement.src = currentSprite;
+			}, duration);
+		}
+
+		slideToNextElement() {
+			this.increaseIndex();
+
+			this.marioJump(this.marioJumpDuration);
+			this.hitSlidesBlock(this.marioJumpDuration);
+
+			this.updateSlider();
+		}
+
+		slideToPrevElement() {
+			this.descreaseIndex();
+
+			this.marioJump(this.marioJumpDuration);
+			this.hitSlidesBlock(this.marioJumpDuration);
+
+			this.updateSlider();
+		}
+	}
+
+	document.querySelectorAll(".slider").forEach((s) => {
+		new Slider(s);
+	});
+</script>

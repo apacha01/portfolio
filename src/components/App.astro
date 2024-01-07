@@ -8,6 +8,7 @@ import SocialLinks from "@components/SocialLinks.astro";
 import Typewriter from "@components/Typewriter.astro";
 import RadioBlockSelector from "@components/RadioBlockSelector.astro";
 import RadioBlockSelectorOption from "@components/RadioBlockSelectorOption.astro";
+import MarioSlider from "./MarioSlider.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -116,6 +117,11 @@ const i18n = getI18N({ currentLocale });
 		/>
 		<section id={i18n.SECTIONS.projects.id} class="my-10">
 			<OptionalCloudTitle title={i18n.SECTIONS.projects.cloudTitle} />
+			<MarioSlider>
+				<h3>slider test 1</h3>
+				<h3>slider test 2</h3>
+				<h3>slider test 3</h3>
+			</MarioSlider>
 		</section>
 		<section id={i18n.SECTIONS.skills.id} class="my-10">
 			<OptionalCloudTitle title={i18n.SECTIONS.skills.cloudTitle} />
