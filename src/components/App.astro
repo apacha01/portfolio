@@ -1,6 +1,6 @@
 ---
 import { getI18N } from "src/i18n";
-import "../index.css";
+import "../assets/css/index.css";
 import Layout from "@layouts/Layout.astro";
 import MarioNavbar from "@components/MarioNavbar.astro";
 import OptionalCloudTitle from "@components/OptionalCloudTitle.astro";
@@ -79,7 +79,8 @@ const i18n = getI18N({ currentLocale });
 			<div class="w-full min-h-16 block">
 				<Typewriter
 					text={i18n.TYPEWRITER_TITLE}
-					speed={i18n.OPTIONAL_TYPEWRITER_SPEED ?? 70}
+					speed={//@ts-ignore
+					i18n.OPTIONAL_TYPEWRITER_SPEED ?? 70}
 					className="text-xl font-p2 max-w-prose min-h-10 mx-auto"
 					headingLevel={1}
 				/>
