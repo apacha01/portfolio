@@ -97,52 +97,53 @@ import BreakableBlock from "./sprites/BreakableBlock.astro";
 			});
 		}
 
-		hitSlidesBlock(duration) {
-			let newBackgronudColor = "themed-alternate-text-block-bg";
-			setTimeout(() => {
-				this.slidesContainer.classList.add(newBackgronudColor);
-			}, duration / 2);
-			setTimeout(() => {
-				this.slidesContainer.classList.remove(newBackgronudColor);
-			}, duration);
-		}
-
-		marioJump(duration) {
+		makeJump(fromIndex, jumpDuration) {
 			this.isJumping = true;
+
 			let translateClass = "-translate-y-10";
 			let currentSprite = this.marioElement.src;
+			let newBackgronudColor = "themed-alternate-text-block-bg";
+			let hideClass = "opacity-0";
 
 			this.marioElement.classList.add(translateClass);
 			this.marioElement.src = "/src/assets/svgs/mario-jump.svg";
 
 			setTimeout(() => {
+				this.slides[fromIndex].classList.add(hideClass);
+				this.slidesContainer.classList.add(newBackgronudColor);
 				this.marioElement.classList.remove(translateClass);
-			}, duration / 2);
+			}, jumpDuration / 2);
 
 			setTimeout(() => {
 				this.marioElement.src = currentSprite;
+				this.slides[fromIndex].classList.remove(hideClass);
+				this.slidesContainer.classList.remove(newBackgronudColor);
 				this.isJumping = false;
-			}, duration);
+			}, jumpDuration);
 		}
 
 		slideToNextElement() {
 			if (this.isJumping) return;
+
+			this.makeJump(this.currentIndex, this.marioJumpDuration);
+
 			this.increaseIndex();
 
-			this.marioJump(this.marioJumpDuration);
-			this.hitSlidesBlock(this.marioJumpDuration);
-
-			this.updateSlider();
+			setTimeout(() => {
+				this.updateSlider();
+			}, this.marioJumpDuration);
 		}
 
 		slideToPrevElement() {
 			if (this.isJumping) return;
+
+			this.makeJump(this.currentIndex, this.marioJumpDuration);
+
 			this.descreaseIndex();
 
-			this.marioJump(this.marioJumpDuration);
-			this.hitSlidesBlock(this.marioJumpDuration);
-
-			this.updateSlider();
+			setTimeout(() => {
+				this.updateSlider();
+			}, this.marioJumpDuration);
 		}
 	}
 
