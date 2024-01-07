@@ -116,6 +116,16 @@ export default {
 			}
 		}
 	},
+	safelist: [
+		'bg-mario-ground&block-overworld-main',
+		'bg-mario-ground&block-underworld-main',
+		'bg-mario-ground&block-underwater-main',
+		'bg-mario-ground&block-castle-main',
+		'bg-mario-ground&block-overworld-borders',
+		'bg-mario-ground&block-underworld-borders',
+		'bg-mario-ground&block-underwater-borders',
+		'bg-mario-ground&block-castle-borders'
+	],
 	plugins: [
 		// https://play.tailwindcss.com/Xgi2tzI1u1
 		plugin(function ({ addVariant }) {

@@ -65,9 +65,9 @@ const {
 		</span>
 	</div>
 	<BreakableBlock
-		bricksColor={blocksColor}
-		bordersColor={bordersColor}
-		class="aboslute peer-checked:hidden"
+		bricksColor={blocksColor?.replace("text", "bg")}
+		bordersColor={bordersColor?.replace("text", "bg")}
+		className="w-full h-full aboslute peer-checked:hidden"
 	/>
 </label>
 
