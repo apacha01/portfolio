@@ -4,10 +4,15 @@ interface Props {
 }
 
 const { navlinks } = Astro.props;
+
+const invertedThemedBeforeBackgroundClass =
+	"before:bg-mario-coin-overworld-main theme-underworld:before:bg-mario-ground&block-underworld-light theme-underwater:before:bg-mario-ground&block-underwater-light theme-castle:before:bg-mario-ground&block-castle-light";
+const invertedThemedHoverTextClass =
+	"hover:text-mario-coin-overworld-light theme-underworld:hover:text-mario-ground&block-underworld-main theme-underwater:hover:text-mario-ground&block-underwater-main theme-castle:hover:text-mario-ground&block-castle-main";
 ---
 
 <header
-	class="sticky top-2 w-full flex items-center justify-end font-skreg bg-mario-coin-overworld-light text-mario-coin-overworld-main px-4 py-2 shadow-sm shadow-mario-ground&block-overworld-borders z-[9999]"
+	class="sticky top-2 w-full flex items-center justify-end font-skreg px-4 py-2 shadow-sm shadow-mario-ground&block-overworld-borders z-[9999] themed-text-block-bg themed-text-block-text"
 >
 	<label
 		for="menu-toggler"
@@ -24,7 +29,7 @@ const { navlinks } = Astro.props;
 	</label>
 	<nav
 		id="menu"
-		class="[clip-path:circle(0px_at_calc(100%-4rem)_15px)] absolute z-[9997] -top-2 -left-14 w-screen h-screen bg-mario-coin-overworld-light lg:visible lg:opacity-100 lg:[clip-path:none] lg:w-full lg:h-fit lg:top-0 lg:left-0 lg:relative lg:bg-transparent peer-[&:has(#menu-toggler:checked)]:[clip-path:circle(75%)] transition-[clip-path] duration-300"
+		class=`[clip-path:circle(0px_at_calc(100%-4rem)_15px)] absolute z-[9997] -top-2 -left-14 w-screen h-screen lg:visible lg:opacity-100 lg:[clip-path:none] lg:w-full lg:h-fit lg:top-0 lg:left-0 lg:relative lg:bg-transparent peer-[&:has(#menu-toggler:checked)]:[clip-path:circle(75%)] transition-[clip-path] duration-300 themed-text-block-bg`
 	>
 		<ul
 			class="w-[32rem] h-full max-w-full flex flex-col items-center justify-evenly gap-10 mx-auto px-12 lg:w-full lg:h-fit lg:mx-0 lg:px-0 lg:flex-row lg:gap-0"
@@ -34,7 +39,7 @@ const { navlinks } = Astro.props;
 					return (
 						<li class="w-full lg:w-fit h-fit">
 							<a
-								class="relative block w-full text-center text-4xl lg:w-fit lg:h-fit lg:text-xl px-3 py-1 hover:text-mario-coin-overworld-light before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-mario-coin-overworld-main before:scale-x-0 hover:before:scale-x-100 transition-transform transform-gpu before:transition-transform before:transform-gpu before:duration-100 before:z-[-1]"
+								class={`relative block w-full text-center text-4xl lg:w-fit lg:h-fit lg:text-xl px-3 py-1 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:scale-x-0 hover:before:scale-x-100 transition-transform transform-gpu before:transition-transform before:transform-gpu before:duration-100 before:z-[-1] ${invertedThemedHoverTextClass} ${invertedThemedBeforeBackgroundClass}`}
 								href={"#" + e.link}
 								onclick="document.getElementById('menu-toggler').checked=false;"
 							>
@@ -47,15 +52,15 @@ const { navlinks } = Astro.props;
 		</ul>
 	</nav>
 	<span
-		class="absolute aspect-square w-1 bg-mario-coin-overworld-main top-1 left-1 z-[-1] shadow-[0.75px_0.75px_1px_#000000]"
+		class=`absolute aspect-square w-1 top-1 left-1 z-[-1] shadow-[0.75px_0.75px_1px_#000000] themed-alternate-text-block-bg`
 	></span>
 	<span
-		class="absolute aspect-square w-1 bg-mario-coin-overworld-main bottom-1 left-1 z-[-1] shadow-[0.75px_0.75px_1px_#000000]"
+		class=`absolute aspect-square w-1 bottom-1 left-1 z-[-1] shadow-[0.75px_0.75px_1px_#000000] themed-alternate-text-block-bg`
 	></span>
 	<span
-		class="absolute aspect-square w-1 bg-mario-coin-overworld-main top-1 right-1 z-[-1] shadow-[0.75px_0.75px_1px_#000000]"
+		class=`absolute aspect-square w-1 top-1 right-1 z-[-1] shadow-[0.75px_0.75px_1px_#000000] themed-alternate-text-block-bg`
 	></span>
 	<span
-		class="absolute aspect-square w-1 bg-mario-coin-overworld-main bottom-1 right-1 z-[-1] shadow-[0.75px_0.75px_1px_#000000]"
+		class=`absolute aspect-square w-1 bottom-1 right-1 z-[-1] shadow-[0.75px_0.75px_1px_#000000] themed-alternate-text-block-bg`
 	></span>
 </header>
