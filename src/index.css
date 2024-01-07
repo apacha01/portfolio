@@ -53,3 +53,8 @@
 .themed-scenery-main {
 	@apply text-mario-scenery-overworld-main theme-underworld:text-mario-scenery-underworld-main theme-underwater:text-mario-scenery-underwater-main theme-castle:text-mario-scenery-castle-main
 }
+
+/* SHADOW COLORS */
+.themed-shadow {
+	@apply shadow-mario-ground&block-overworld-borders theme-underworld:shadow-mario-ground&block-underworld-borders theme-underwater:shadow-mario-ground&block-underwater-borders theme-castle:shadow-mario-ground&block-castle-borders
+}
