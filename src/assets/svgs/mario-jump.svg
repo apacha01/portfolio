@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+	<g fill="#6b6d00">
+		<path d="M4 4h10v3H4zm1-1h3v1H5zm5 0h1v1h-1z"></path>
+		<path
+			d="M13 3h3v3h-3zm1 3h1v1h-1zm-1 1h1v1h-1zM2 8h11v3H2zm2 3h12v3H4zM1 9h1v2H1zm14 0h1v2h-1zM3 12h1v3H3zm-1 1h1v2H2zm-1 1h1v2H1z">
+		</path>
+	</g>
+	<path
+		d="M8 3h2v5H8zM5 4h1v2H5zm6-1h1v2h-1zM6 6h2v2H6zm6-2h1v2h-1zM7 4h1v1H7zm3 1h1v1h-1zm3 0h2v1h-2zm-3 2h3v1h-3zm4-7h3v3h-3zM0 10h2v2H0zm1 2h1v1H1zm1-1h1v1H2zm7 0h1v1H9zm3 0h1v1h-1z"
+		fill="#ea9e22"></path>
+	<g fill="#b53120">
+		<path d="M6 1h5v1H6zM5 2h9v1H5zm-1 9h2v2H4zm0 3h4v2H4z"></path>
+		<path
+			d="M5 12h6v3H5zm2-1h2v1H7zm3 0h2v1h-2zm1 1h3v2h-3zm2-1h1v1h-1zM8 9h1v2H8zm4 0h1v2h-1zM7 8h1v1H7zm4 0h1v1h-1zm-2 2h3v1H9z">
+		</path>
+	</g>
+</svg>
