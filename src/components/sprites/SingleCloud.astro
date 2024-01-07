@@ -6,25 +6,26 @@ interface Props {
 	class?: string;
 }
 
-const { cloudColor, detailsColor, borderColor } = Astro.props;
+const {
+	cloudColor = "themed-cloud-light",
+	detailsColor = "themed-cloud-main",
+	borderColor = "themed-cloud-borders",
+} = Astro.props;
 ---
 
 <svg {...Astro.props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 240">
 	<path
-		class={borderColor ??
-			"text-mario-cloud&water-overworld-borders theme-underworld:text-mario-cloud&water-underworld-borders theme-underwater:text-mario-cloud&water-underwater-borders theme-castle:text-mario-cloud&water-castle-borders"}
+		class={borderColor}
 		fill="currentColor"
 		d="M150 5v5h-10v10h-20v10h-10v30h-10v10H90v10H60v10H50v10H40v10h10v-10h10V90h30V80h10V70h10V60h10V30h20V20h10V10h40v10h10v20h10v10h10V40h10v10h10v30h10v20h10v10h10v-10h10V90h10v30h10v10h10v-10h10v30h-10v10h-10v10h10v10h10v10h10v-10h-10v-10h-10v-10h10v-10h10v-30h-10v-10h-10v10h-10V90h-10V80h-10v10h-10v10h-10V80h-10V50h-10V40h-10V30h-10v10h-10V20h-10V10h-10V0h-40v5zM10 125v5H0v20h10v10h10v10h10v10h10v20h10v10h40v10h10v10h20v10h30v-10h10v-10h10v10h20v10h40v-10h20v-10h10v10h20v-10h20v-10h20v-10h-20v10h-20v10h-20v-10h-10v10h-20v10h-40v-10h-20v-10h-10v10h-10v10h-30v-10h-20v-10H90v-10H50v-20H40v-10H30v-10H20v-10H10v-20h20v-10H10v5z"
 	></path>
 	<path
-		class={cloudColor ??
-			"text-mario-cloud&water-overworld-light theme-underworld:text-mario-cloud&water-underworld-light theme-underwater:text-mario-cloud&water-underwater-light theme-castle:text-mario-cloud&water-castle-light"}
+		class={cloudColor}
 		fill="currentColor"
 		d="M150 10v10h-10v10h-20v30h-10v10h-10v10H90v10H60v10H50v10H40v10H30v10H10v20h10v10h10v10h10v10h10v20h40v10h10v10h20v10h30v-10h10v-10h10v10h20v10h40v-10h20v-10h10v10h20v-10h20v-10h20v-20h-10v-10h-10v-10h10v-10h10v-30h-10v10h-10v-10h-10V90h-10v10h-10v10h-10v-10h-10V80h-10V50h-10V40h-10v10h-10V40h-10V20h-10V10h-40z"
 	></path>
 	<path
-		class={detailsColor ??
-			"text-mario-cloud&water-overworld-main theme-underworld:text-mario-cloud&water-underworld-main theme-underwater:text-mario-cloud&water-underwater-main theme-castle:text-mario-cloud&water-castle-main"}
+		class={detailsColor}
 		fill="currentColor"
 		d="M190 50v10h10v10h10V60h-10V50h-10m-50 10v10h-10v10h10V70h20V60h-20M50 160v10h10v10h10v10h40v10h20v10h20v-10h30v-10h10v10h10v10h30v-10h10v-10h10v-10h-10v10h-40v-10h-10v-10h10v-10h-10v10h-10v10h-30v10h-30v-10h-10v-10h-10v10H70v-10H60v-10H50z"
 	></path>

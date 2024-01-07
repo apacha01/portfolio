@@ -1,0 +1,55 @@
+/* CLOUDS */
+.themed-cloud-borders {
+	@apply text-mario-cloud&water-overworld-borders theme-underworld:text-mario-cloud&water-underworld-borders theme-underwater:text-mario-cloud&water-underwater-borders theme-castle:text-mario-cloud&water-castle-borders
+}
+
+.themed-cloud-light {
+	@apply text-mario-cloud&water-overworld-light theme-underworld:text-mario-cloud&water-underworld-light theme-underwater:text-mario-cloud&water-underwater-light theme-castle:text-mario-cloud&water-castle-light
+}
+
+.themed-cloud-main {
+	@apply text-mario-cloud&water-overworld-main theme-underworld:text-mario-cloud&water-underworld-main theme-underwater:text-mario-cloud&water-underwater-main theme-castle:text-mario-cloud&water-castle-main
+}
+
+/* BLOCKS */
+.themed-block-borders {
+	@apply text-mario-ground&block-overworld-borders theme-underworld:text-mario-ground&block-underworld-borders theme-underwater:text-mario-ground&block-underwater-borders theme-castle:text-mario-ground&block-castle-borders
+}
+
+.themed-block-light {
+	@apply text-mario-ground&block-overworld-light theme-underworld:text-mario-ground&block-underworld-light theme-underwater:text-mario-ground&block-underwater-light theme-castle:text-mario-ground&block-castle-light
+}
+
+.themed-block-main {
+	@apply text-mario-ground&block-overworld-main theme-underworld:text-mario-ground&block-underworld-main theme-underwater:text-mario-ground&block-underwater-main theme-castle:text-mario-ground&block-castle-main
+}
+
+/* TEXT BLOCKS */
+.themed-text-block-text {
+	@apply text-mario-coin-overworld-main theme-underworld:text-mario-ground&block-underworld-light theme-underwater:text-mario-ground&block-underwater-light theme-castle:text-mario-ground&block-castle-light
+}
+
+.themed-text-block-bg {
+	@apply bg-mario-coin-overworld-light theme-underworld:bg-mario-ground&block-underworld-main theme-underwater:bg-mario-ground&block-underwater-main theme-castle:bg-mario-ground&block-castle-main
+}
+
+.themed-alternate-text-block-text {
+	@apply text-mario-coin-overworld-light theme-underworld:text-mario-ground&block-underworld-main theme-underwater:text-mario-ground&block-underwater-main theme-castle:text-mario-ground&block-castle-main
+}
+
+.themed-alternate-text-block-bg {
+	@apply bg-mario-coin-overworld-main theme-underworld:bg-mario-ground&block-underworld-light theme-underwater:bg-mario-ground&block-underwater-light theme-castle:bg-mario-ground&block-castle-light
+}
+
+/* SCENERY */
+.themed-scenery-borders {
+	@apply text-mario-scenery-overworld-borders theme-underworld:text-mario-scenery-underworld-borders theme-underwater:text-mario-scenery-underwater-borders theme-castle:text-mario-scenery-castle-borders
+}
+
+.themed-scenery-light {
+	@apply text-mario-scenery-overworld-light theme-underworld:text-mario-scenery-underworld-light theme-underwater:text-mario-scenery-underwater-light theme-castle:text-mario-scenery-castle-light
+}
+
+.themed-scenery-main {
+	@apply text-mario-scenery-overworld-main theme-underworld:text-mario-scenery-underworld-main theme-underwater:text-mario-scenery-underwater-main theme-castle:text-mario-scenery-castle-main
+}

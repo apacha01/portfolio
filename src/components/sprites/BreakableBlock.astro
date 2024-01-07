@@ -5,7 +5,10 @@ interface Props {
 	class?: string;
 }
 
-const { bricksColor, bordersColor } = Astro.props;
+const {
+	bricksColor = "themed-block-main",
+	bordersColor = "themed-block-borders",
+} = Astro.props;
 ---
 
 <svg
@@ -13,14 +16,10 @@ const { bricksColor, bordersColor } = Astro.props;
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 1008 1008"
 >
+	<path class={bordersColor} fill="currentColor" d="M0 0h1008v1008H0V0z"
+	></path>
 	<path
-		class={bordersColor ??
-			"text-mario-ground&block-overworld-borders theme-underworld:text-mario-ground&block-underworld-borders theme-underwater:text-mario-ground&block-underwater-borders theme-castle:text-mario-ground&block-castle-borders"}
-		fill="currentColor"
-		d="M0 0h1008v1008H0V0z"></path>
-	<path
-		class={bricksColor ??
-			"text-mario-ground&block-overworld-main theme-underworld:text-mario-ground&block-underworld-main theme-underwater:text-mario-ground&block-underwater-main theme-castle:text-mario-ground&block-castle-main"}
+		class={bricksColor}
 		fill="currentColor"
 		d="M252 756h441v189H252V756zM504 504h441v189H504V504zM0 504h441v189H0V504zM252 252h441v189H252V252zM504 0h441v189H504V0zM0 0h441v189H0V0zM756 756h252v189H756V756zM756 252h252v189H756V252zM0 756h189v189H0V756zM0 252h189v189H0V252z"
 	></path>
