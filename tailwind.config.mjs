@@ -20,7 +20,7 @@ export default {
 			'mario-green': '#43b047',
 			// https://www.spriters-resource.com/nes/supermariobros/sheet/52571/
 			'mario-sky': {
-				'overworld': '#6185f8',
+				'overworld': '#9494ff',
 				'underworld': '#000000',
 				'underwater': '#2038ec',
 				'castle': '#000000'
