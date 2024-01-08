@@ -41,19 +41,6 @@
 	},
 	"PROJECTS": [
 		{
-			"title": "Pokédex",
-			"description": "Una pokedex hecha con vanilla JS consumiendo la PokeApi v2.",
-			"imgURL": "/portfolio/imgs/project-pokedex.webp",
-			"imgAlt": "Página web de la Pokédex",
-			"techstack": [
-				"HTML",
-				"CSS",
-				"JavaScript"
-			],
-			"repo": "https://github.com/apacha01/Pokedex",
-			"deploy": "https://apacha01.github.io/Pokedex/"
-		},
-		{
 			"title": "SAP Wiki",
 			"description": "Una wiki del juego Super Auto Pets.",
 			"imgURL": "/portfolio/imgs/project-sapwiki.webp",
@@ -70,6 +57,22 @@
 			"deploy": "https://sap-wiki.vercel.app/"
 		},
 		{
+			"title": "Aplicación de Flashcards",
+			"description": "Una aplicación web para estudiar con flashcards.",
+			"imgURL": "/portfolio/imgs/project-flashcards.webp",
+			"imgAlt": "Página web de la aplicación de flashcards",
+			"techstack": [
+				"Astro",
+				"Preact",
+				"Tailwind",
+				"Nanostores",
+				"JavaScript",
+				"TypeScript"
+			],
+			"repo": "https://github.com/apacha01/flashcards-app",
+			"deploy": "https://apacha01.github.io/flashcards-app"
+		},
+		{
 			"title": "Lista de Lectura",
 			"description": "Una aplicación web para libros. Con filtros, búsqueda y test (con React Testing Library).",
 			"imgURL": "/portfolio/imgs/project-readinglist.webp",
@@ -83,6 +86,31 @@
 			],
 			"repo": "https://github.com/apacha01/practice-react/tree/master/practice-projects/projects/07-book-store",
 			"deploy": "https://apacha01.github.io/reading-list-interview/"
+		},
+		{
+			"title": "Pokédex",
+			"description": "Una pokedex hecha con vanilla JS consumiendo la PokeApi v2.",
+			"imgURL": "/portfolio/imgs/project-pokedex.webp",
+			"imgAlt": "Página web de la Pokédex",
+			"techstack": [
+				"HTML",
+				"CSS",
+				"JavaScript"
+			],
+			"repo": "https://github.com/apacha01/Pokedex",
+			"deploy": "https://apacha01.github.io/Pokedex/"
+		},
+		{
+			"title": "30 Días de CSS",
+			"description": "Un challenge de 30 días para mejorar mis habilidades de UI.",
+			"imgURL": "/portfolio/imgs/project-30css.webp",
+			"imgAlt": "Página web del desafiío de 30 Days de css",
+			"techstack": [
+				"HTML",
+				"CSS"
+			],
+			"repo": "https://github.com/apacha01/30-days-of-css",
+			"deploy": "https://apacha01.github.io/30-days-of-css"
 		},
 		{
 			"title": "Chedoc Shows",
