@@ -38,5 +38,82 @@
 			"navText": "Contact",
 			"cloudTitle": "Contact"
 		}
-	}
+	},
+	"PROJECTS": [
+		{
+			"title": "Pokédex",
+			"description": "A pokédex made consuming the pokeapi v2.",
+			"imgURL": "/portfolio/imgs/project-pokedex.webp",
+			"imgAlt": "Pokédex web page image",
+			"techstack": [
+				"HTML",
+				"CSS",
+				"JavaScript"
+			],
+			"repo": "https://github.com/apacha01/Pokedex",
+			"deploy": "https://apacha01.github.io/Pokedex/"
+		},
+		{
+			"title": "SAP Wiki",
+			"description": "A wiki of the Super Auto Pets game. This is the frontend part of the API (called sapi) i made with node and express to complete my first fullstack project.",
+			"imgURL": "/portfolio/imgs/project-sapwiki.webp",
+			"imgAlt": "SAP Wiki web page image",
+			"techstack": [
+				"Astro",
+				"Preact",
+				"Tailwind",
+				"Nanostores",
+				"JavaScript",
+				"TypeScript"
+			],
+			"repo": "https://github.com/apacha01/sap-wiki",
+			"deploy": "https://sap-wiki.vercel.app/"
+		},
+		{
+			"title": "Reading List",
+			"description": "A reading list web app for books. Includes different filters, search and tests (with React Testing Library).",
+			"imgURL": "/portfolio/imgs/project-readinglist.webp",
+			"imgAlt": "Reading List web page image",
+			"techstack": [
+				"HTML",
+				"JavaScript",
+				"React",
+				"Zustand",
+				"Tailwind"
+			],
+			"repo": "https://github.com/apacha01/practice-react/tree/master/practice-projects/projects/07-book-store",
+			"deploy": "https://apacha01.github.io/reading-list-interview/"
+		},
+		{
+			"title": "Chedoc Shows",
+			"description": "A web page for movies and series from a mock interview at chedoc.",
+			"imgURL": "/portfolio/imgs/project-chedoc.webp",
+			"imgAlt": "Chedoc Movies web page image",
+			"techstack": [
+				"HTML",
+				"CSS",
+				"JavaScript",
+				"React",
+				"React Router",
+				"Zustand"
+			],
+			"repo": "https://github.com/apacha01/practice-react/tree/master/practice-projects/projects/05-chedoc-movies",
+			"deploy": ""
+		},
+		{
+			"title": "Cryptopacha",
+			"description": "A crypto page consuming the coingecko api to show info on the top cryptos by marketcap (includes pagination).",
+			"imgURL": "/portfolio/imgs/project-cryptopacha.webp",
+			"imgAlt": "Cryptopacha web page image",
+			"techstack": [
+				"HTML",
+				"JavaScript",
+				"React",
+				"React Router",
+				"Tailwind"
+			],
+			"repo": "https://github.com/apacha01/practice-react/tree/master/practice-projects/projects/06-cryptopacha",
+			"deploy": ""
+		}
+	]
 }

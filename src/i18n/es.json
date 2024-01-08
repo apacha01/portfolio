@@ -38,5 +38,82 @@
 			"navText": "Contacto",
 			"cloudTitle": "Contacto"
 		}
-	}
+	},
+	"PROJECTS": [
+		{
+			"title": "Pokédex",
+			"description": "Una pokedex hecha con vanilla JS consumiendo la PokeApi v2.",
+			"imgURL": "/portfolio/imgs/project-pokedex.webp",
+			"imgAlt": "Página web de la Pokédex",
+			"techstack": [
+				"HTML",
+				"CSS",
+				"JavaScript"
+			],
+			"repo": "https://github.com/apacha01/Pokedex",
+			"deploy": "https://apacha01.github.io/Pokedex/"
+		},
+		{
+			"title": "SAP Wiki",
+			"description": "Una wiki del juego Super Auto Pets.",
+			"imgURL": "/portfolio/imgs/project-sapwiki.webp",
+			"imgAlt": "Página web de la SAP Wiki",
+			"techstack": [
+				"Astro",
+				"Preact",
+				"Tailwind",
+				"Nanostores",
+				"JavaScript",
+				"TypeScript"
+			],
+			"repo": "https://github.com/apacha01/sap-wiki",
+			"deploy": "https://sap-wiki.vercel.app/"
+		},
+		{
+			"title": "Lista de Lectura",
+			"description": "Una aplicación web para libros. Con filtros, búsqueda y test (con React Testing Library).",
+			"imgURL": "/portfolio/imgs/project-readinglist.webp",
+			"imgAlt": "Página web de la Lista de Lectura",
+			"techstack": [
+				"HTML",
+				"JavaScript",
+				"React",
+				"Zustand",
+				"Tailwind"
+			],
+			"repo": "https://github.com/apacha01/practice-react/tree/master/practice-projects/projects/07-book-store",
+			"deploy": "https://apacha01.github.io/reading-list-interview/"
+		},
+		{
+			"title": "Chedoc Shows",
+			"description": "Página web para mostrar peliculas y series para la entrevista de Chedoc.",
+			"imgURL": "/portfolio/imgs/project-chedoc.webp",
+			"imgAlt": "Chedoc Movies web page image",
+			"techstack": [
+				"HTML",
+				"CSS",
+				"JavaScript",
+				"React",
+				"React Router",
+				"Zustand"
+			],
+			"repo": "https://github.com/apacha01/practice-react/tree/master/practice-projects/projects/05-chedoc-movies",
+			"deploy": ""
+		},
+		{
+			"title": "Cryptopacha",
+			"description": "Una página web crypto que consume la api de coingecko.",
+			"imgURL": "/portfolio/imgs/project-cryptopacha.webp",
+			"imgAlt": "Página web de Cryptopacha",
+			"techstack": [
+				"HTML",
+				"JavaScript",
+				"React",
+				"React Router",
+				"Tailwind"
+			],
+			"repo": "https://github.com/apacha01/practice-react/tree/master/practice-projects/projects/06-cryptopacha",
+			"deploy": ""
+		}
+	]
 }
