@@ -1,0 +1,75 @@
+---
+interface Props {
+	imageURL: string;
+	imageAlt: string;
+	title: string;
+	description?: string;
+	techstack?: string[];
+	repositoryURL?: string;
+	deployURL?: string;
+}
+
+const {
+	imageURL,
+	imageAlt,
+	title,
+	description,
+	techstack,
+	repositoryURL,
+	deployURL,
+} = Astro.props;
+---
+
+<article class="flex flex-col gap-4 w-full h-full p-4 overflow-hidden">
+	<img class="w-full rounded-sm" src={imageURL} alt={imageAlt} />
+	<h3 class="font-p2 text-2xl">{title}</h3>
+	<div class="flex flex-nowrap items-center gap-6 w-full h-fit">
+		<div
+			class="flex flex-1 flex-wrap justify-start items-center gap-4 font-skreg text-sm"
+		>
+			{
+				techstack?.map((t) => {
+					return (
+						<span class="py-1 px-2 themed-alternate-text-block-bg themed-alternate-text-block-text">
+							{t}
+						</span>
+					);
+				})
+			}
+		</div>
+		<div class="flex gap-3">
+			{
+				repositoryURL ? (
+					<a
+						href={repositoryURL}
+						target="_blank"
+						rel="noopener noreferer"
+					>
+						<span class="github block aspect-square w-8 themed-alternate-text-block-bg hover:scale-110 transition-transform" />
+					</a>
+				) : null
+			}
+			{
+				deployURL ? (
+					<a
+						href={deployURL}
+						target="_blank"
+						rel="noopener noreferer"
+					>
+						<span class="deploy block aspect-square w-8 themed-alternate-text-block-bg hover:scale-110 transition-transform" />
+					</a>
+				) : null
+			}
+		</div>
+	</div>
+</article>
+
+<style>
+	span.github {
+		mask: url("/src/assets/svgs/github.svg") no-repeat 50% 50%;
+	}
+
+	span.deploy {
+		mask: url("/src/assets/svgs/external-link.svg") no-repeat 50% 50%;
+	}
+</style>

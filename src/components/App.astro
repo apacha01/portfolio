@@ -9,6 +9,7 @@ import Typewriter from "@components/Typewriter.astro";
 import RadioBlockSelector from "@components/RadioBlockSelector.astro";
 import RadioBlockSelectorOption from "@components/RadioBlockSelectorOption.astro";
 import MarioSlider from "./MarioSlider.astro";
+import ProjectCard from "./ProjectCard.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -118,9 +119,20 @@ const i18n = getI18N({ currentLocale });
 		<section id={i18n.SECTIONS.projects.id} class="my-10">
 			<OptionalCloudTitle title={i18n.SECTIONS.projects.cloudTitle} />
 			<MarioSlider>
-				<h3 class="text-red-50">slider test 1</h3>
-				<h3>slider test 2</h3>
-				<h3>slider test 3</h3>
+				{
+					i18n.PROJECTS.map((p) => {
+						return (
+							<ProjectCard
+								title={p.title}
+								imageURL={p.imgURL}
+								imageAlt={p.imgAlt}
+								techstack={p.techstack}
+								repositoryURL={p.repo}
+								deployURL={p.deploy}
+							/>
+						);
+					})
+				}
 			</MarioSlider>
 		</section>
 		<section id={i18n.SECTIONS.skills.id} class="my-10">
