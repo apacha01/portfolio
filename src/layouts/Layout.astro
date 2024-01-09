@@ -18,10 +18,10 @@ const { currentLocale } = Astro;
 		<title>{title}</title>
 	</head>
 	<body
-		class="w-full h-full text-mario-sky-font bg-mario-sky-overworld theme-underworld:bg-mario-sky-underworld theme-underwater:bg-mario-sky-underwater theme-castle:bg-mario-sky-castle overflow-x-hidden"
+		class="w-full h-full text-mario-sky-font bg-mario-sky-overworld theme-underworld:bg-mario-sky-underworld theme-underwater:bg-mario-sky-underwater theme-castle:bg-mario-sky-castle"
 	>
 		<div
-			class="max-w-[900px] min-h-screen w-full h-fit mx-auto px-8 lg:px-0"
+			class="max-w-[900px] min-h-screen w-full h-fit overflow-x-hidden mx-auto px-8 lg:px-0"
 		>
 			<slot />
 		</div>

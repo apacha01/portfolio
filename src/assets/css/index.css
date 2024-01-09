@@ -58,3 +58,12 @@
 .themed-shadow {
 	@apply shadow-mario-ground&block-overworld-borders theme-underworld:shadow-mario-ground&block-underworld-borders theme-underwater:shadow-mario-ground&block-underwater-borders theme-castle:shadow-mario-ground&block-castle-borders
 }
+
+/* FLAGS */
+.themed-flag {
+	@apply text-mario-flag-overworld-flag theme-underworld:text-mario-flag-underworld-flag theme-underwater:text-mario-flag-underwater-flag theme-castle:bg-mario-flag-castle-flag
+}
+
+.themed-skull {
+	@apply text-mario-flag-overworld-skull theme-underworld:text-mario-flag-underworld-skull theme-underwater:text-mario-flag-underwater-skull theme-castle:bg-mario-flag-castle-skull
+}
