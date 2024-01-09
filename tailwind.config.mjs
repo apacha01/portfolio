@@ -6,6 +6,9 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {},
+		backgroundImage: {
+			'star': 'url("/src/assets/svgs/mario-star.svg")'
+		},
 		fontFamily: {
 			'skreg': 'SK-Regular',
 			'smb': 'SuperMarioBros',
@@ -112,6 +115,24 @@ export default {
 					'light': '#ffffff',
 					'main': '#adadad',
 					'borders': '#636363'
+				}
+			},
+			'mario-flag': {
+				'overworld': {
+					'flag': '#ffffff',
+					'skull': '#0c9300'
+				},
+				'underworld': {
+					'flag': '#feccc5',
+					'skull': '#007c8d'
+				},
+				'underwater': {
+					'flag': '#ffffff',
+					'skull': '#adadad'
+				},
+				'castle': {
+					'flag': '#feccc5',
+					'skull': '#007c8d'
 				}
 			}
 		}
