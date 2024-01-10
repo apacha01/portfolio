@@ -4,13 +4,28 @@ interface Props {
 	skillIconURL: string;
 	skillIconAlt: string;
 	skillIconTitle: string;
+	float?: boolean;
 	className?: string;
 }
 
-const { skillIconURL, skillIconAlt, skillIconTitle, className } = Astro.props;
+const {
+	skillIconURL,
+	skillIconAlt,
+	skillIconTitle,
+	float = false,
+	className,
+} = Astro.props;
+
+let floatDuration;
+if (float) {
+	floatDuration = Math.floor(Math.random() * 6 + 5);
+}
 ---
 
-<div class=`relative aspect-square hover:scale-110 w-8 ${className}`>
+<div
+	class=`relative aspect-square w-8 ${className} ${float ? 'float' : ''}`
+	style={float ? `--fd:${floatDuration}s` : ""}
+>
 	<CloudBlock class="absolute block w-full h-full -z-10" />
 	<img
 		class="w-3/5 max-h-[70%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -19,3 +34,15 @@ const { skillIconURL, skillIconAlt, skillIconTitle, className } = Astro.props;
 		title={skillIconTitle}
 	/>
 </div>
+
+<style>
+	.float {
+		animation: float var(--fd) infinite;
+	}
+
+	@keyframes float {
+		50% {
+			transform: translateY(1rem);
+		}
+	}
+</style>
