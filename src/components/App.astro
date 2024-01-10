@@ -10,8 +10,10 @@ import RadioBlockSelector from "@components/RadioBlockSelector.astro";
 import RadioBlockSelectorOption from "@components/RadioBlockSelectorOption.astro";
 import MarioSlider from "./MarioSlider.astro";
 import ProjectCard from "./ProjectCard.astro";
-import BreakableBlock from "./sprites/BreakableBlock.astro";
 import Skill from "./Skill.astro";
+import Castle from "./sprites/Castle.astro";
+import FloorBlock from "./sprites/FloorBlock.astro";
+import Flagpole from "./sprites/Flagpole.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -186,8 +188,15 @@ const i18n = getI18N({ currentLocale });
 				</div>
 			</article>
 		</section>
-		<section id={i18n.SECTIONS.studies.id} class="my-10">
+		<section id={i18n.SECTIONS.studies.id} class="relative my-10">
 			<OptionalCloudTitle title={i18n.SECTIONS.studies.cloudTitle} />
+			<div
+				class="relative h-full w-full flex flex-col gap-0 items-center"
+			>
+				<Castle class="aspect-[144/176] w-1/2 translate-y-[1px]" />
+				<Flagpole class="absolute w-full h-full bottom-4 sm:bottom-8" />
+				<FloorBlock className="w-full h-4 sm:h-8" />
+			</div>
 		</section>
 		<section id={i18n.SECTIONS.about.id} class="my-10">
 			<OptionalCloudTitle title={i18n.SECTIONS.about.cloudTitle} />
