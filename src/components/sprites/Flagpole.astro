@@ -1,0 +1,16 @@
+---
+import FlagpoleBottom from "./FlagpoleBottom.astro";
+import FlagpoleTop from "./FlagpoleTop.astro";
+---
+
+<div {...Astro.props}>
+	<FlagpoleTop
+		class="aspect-square w-2 sm:w-4 absolute top-0 left-0 translate-x-[calc(50%-2px)] sm:translate-x-[calc(50%-4px)]"
+	/>
+	<span
+		class="w-[2px] sm:w-1 h-full absolute left-0 translate-x-[calc(8px-50%)] sm:translate-x-[calc(12px-50%)] -z-10 bg-mario-scenery-overworld-light theme-underworld:bg-mario-scenery-underworld-light theme-underwater:bg-mario-scenery-underwater-light theme-castle:bg-mario-scenery-castle-light"
+	></span>
+	<FlagpoleBottom class="absolute aspect-square w-4 sm:w-6 left-0 bottom-0" />
+</div>
+
+<style></style>
