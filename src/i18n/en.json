@@ -20,8 +20,8 @@
 		},
 		"skills": {
 			"id": "skills",
-			"navText": "Stats",
-			"cloudTitle": "Stats"
+			"navText": "Skills",
+			"cloudTitle": "Skills"
 		},
 		"studies": {
 			"id": "studies",
@@ -143,5 +143,59 @@
 			"repo": "https://github.com/apacha01/practice-react/tree/master/practice-projects/projects/06-cryptopacha",
 			"deploy": ""
 		}
-	]
+	],
+	"SKILLS": {
+		"SKILLS_TITLES": {
+			"CURRENT": "Current Skills",
+			"FUTURE": "Future Interest"
+		},
+		"SKILLS_CURRENT": [
+			{
+				"iconURL": "/portfolio/svgs/html5.svg",
+				"iconAlt": "HTML Icon",
+				"iconTitle": "HTML"
+			},
+			{
+				"iconURL": "/portfolio/svgs/css3.svg",
+				"iconAlt": "CSS Icon",
+				"iconTitle": "CSS"
+			},
+			{
+				"iconURL": "/portfolio/svgs/javascript.svg",
+				"iconAlt": "JavaScript Icon",
+				"iconTitle": "JavaScript"
+			},
+			{
+				"iconURL": "/portfolio/svgs/typescript.svg",
+				"iconAlt": "TypeScript Icon",
+				"iconTitle": "TypeScript"
+			},
+			{
+				"iconURL": "/portfolio/svgs/react.svg",
+				"iconAlt": "React Icon",
+				"iconTitle": "React"
+			},
+			{
+				"iconURL": "/portfolio/svgs/tailwind.svg",
+				"iconAlt": "Tailwind Icon",
+				"iconTitle": "Tailwind"
+			},
+			{
+				"iconURL": "/portfolio/svgs/astro.svg",
+				"iconAlt": "Astro Icon",
+				"iconTitle": "Astro"
+			},
+			{
+				"iconURL": "/portfolio/svgs/node.svg",
+				"iconAlt": "Node.js Icon",
+				"iconTitle": "Node"
+			},
+			{
+				"iconURL": "/portfolio/svgs/express.svg",
+				"iconAlt": "Express.js Icon",
+				"iconTitle": "Express"
+			}
+		],
+		"SKILLS_FUTURE": []
+	}
 }

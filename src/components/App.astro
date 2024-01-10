@@ -10,6 +10,8 @@ import RadioBlockSelector from "@components/RadioBlockSelector.astro";
 import RadioBlockSelectorOption from "@components/RadioBlockSelectorOption.astro";
 import MarioSlider from "./MarioSlider.astro";
 import ProjectCard from "./ProjectCard.astro";
+import BreakableBlock from "./sprites/BreakableBlock.astro";
+import Skill from "./Skill.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -135,8 +137,38 @@ const i18n = getI18N({ currentLocale });
 				}
 			</MarioSlider>
 		</section>
-		<section id={i18n.SECTIONS.skills.id} class="my-10">
+		<section
+			id={i18n.SECTIONS.skills.id}
+			class="flex flex-col gap-12 my-10"
+		>
 			<OptionalCloudTitle title={i18n.SECTIONS.skills.cloudTitle} />
+			<article
+				class="flex flex-col justify-center items-center px-8 w-full"
+			>
+				<h3 class="font-p2 text-2xl text-center mb-10">
+					{i18n.SKILLS.SKILLS_TITLES.CURRENT}
+				</h3>
+				<div class="flex flex-wrap justify-start gap-10">
+					{
+						i18n.SKILLS.SKILLS_CURRENT.map((s) => {
+							return (
+								<Skill
+									skillIconURL={s.iconURL}
+									skillIconAlt={s.iconAlt}
+									skillIconTitle={s.iconTitle}
+									className="w-24"
+								/>
+							);
+						})
+					}
+				</div>
+			</article>
+			<article class="w-full">
+				<h3 class="font-p2 text-2xl text-center mb-8">
+					{i18n.SKILLS.SKILLS_TITLES.FUTURE}
+				</h3>
+			</article>
+			<BreakableBlock className="w-full h-4 md:h-8" />
 		</section>
 		<section id={i18n.SECTIONS.studies.id} class="my-10">
 			<OptionalCloudTitle title={i18n.SECTIONS.studies.cloudTitle} />
