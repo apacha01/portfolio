@@ -1,0 +1,31 @@
+---
+interface Props {
+	blocksColor?: string;
+	bordersColor?: string;
+	shineColor?: string;
+	className?: string;
+}
+
+const {
+	blocksColor = "themed-block-main-bg",
+	bordersColor = "themed-block-borders-bg",
+	shineColor = "themed-block-light-bg",
+	className,
+} = Astro.props;
+---
+
+<div class=`relative ${className} ${blocksColor}`>
+	<span class=`borders block w-full h-full ${bordersColor}`></span>
+	<span class=`absolute top-0 left-0 shine block w-full h-full ${shineColor}`
+	></span>
+</div>
+
+<style>
+	span.borders {
+		mask: url(/src/assets/svgs/mario-floor-borders-shape.svg) repeat 0% 50%;
+	}
+
+	span.shine {
+		mask: url(/src/assets/svgs/mario-floor-shine-shape.svg) repeat 0% 50%;
+	}
+</style>

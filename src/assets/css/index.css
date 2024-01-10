@@ -24,6 +24,19 @@
 	@apply text-mario-ground&block-overworld-main theme-underworld:text-mario-ground&block-underworld-main theme-underwater:text-mario-ground&block-underwater-main theme-castle:text-mario-ground&block-castle-main
 }
 
+/* BLOCKS AS BACKGROUND */
+.themed-block-borders-bg {
+	@apply bg-mario-ground&block-overworld-borders theme-underworld:bg-mario-ground&block-underworld-borders theme-underwater:bg-mario-ground&block-underwater-borders theme-castle:bg-mario-ground&block-castle-borders
+}
+
+.themed-block-light-bg {
+	@apply bg-mario-ground&block-overworld-light theme-underworld:bg-mario-ground&block-underworld-light theme-underwater:bg-mario-ground&block-underwater-light theme-castle:bg-mario-ground&block-castle-light
+}
+
+.themed-block-main-bg {
+	@apply bg-mario-ground&block-overworld-main theme-underworld:bg-mario-ground&block-underworld-main theme-underwater:bg-mario-ground&block-underwater-main theme-castle:bg-mario-ground&block-castle-main
+}
+
 /* TEXT BLOCKS */
 .themed-text-block-text {
 	@apply text-mario-coin-overworld-main theme-underworld:text-mario-ground&block-underworld-light theme-underwater:text-mario-ground&block-underwater-light theme-castle:text-mario-ground&block-castle-light
