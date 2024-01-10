@@ -1,0 +1,21 @@
+---
+import CloudBlock from "@components/sprites/CloudBlock.astro";
+interface Props {
+	skillIconURL: string;
+	skillIconAlt: string;
+	skillIconTitle: string;
+	className?: string;
+}
+
+const { skillIconURL, skillIconAlt, skillIconTitle, className } = Astro.props;
+---
+
+<div class=`relative aspect-square hover:scale-110 w-8 ${className}`>
+	<CloudBlock class="absolute block w-full h-full -z-10" />
+	<img
+		class="w-3/5 max-h-[70%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+		src={skillIconURL}
+		alt={skillIconAlt}
+		title={skillIconTitle}
+	/>
+</div>
