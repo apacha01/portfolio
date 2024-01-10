@@ -196,6 +196,22 @@
 				"iconTitle": "Express"
 			}
 		],
-		"SKILLS_FUTURE": []
+		"SKILLS_FUTURE": [
+			{
+				"iconURL": "/portfolio/svgs/next.svg",
+				"iconAlt": "Next.js Icon",
+				"iconTitle": "Next.js"
+			},
+			{
+				"iconURL": "/portfolio/svgs/postgres.svg",
+				"iconAlt": "PostgresSQL Icon",
+				"iconTitle": "PostgresSQL"
+			},
+			{
+				"iconURL": "/portfolio/svgs/rust.svg",
+				"iconAlt": "Rust Icon",
+				"iconTitle": "Rust"
+			}
+		]
 	}
 }

@@ -156,7 +156,7 @@ const i18n = getI18N({ currentLocale });
 									skillIconURL={s.iconURL}
 									skillIconAlt={s.iconAlt}
 									skillIconTitle={s.iconTitle}
-									className="w-24"
+									className="w-24 hover:scale-110"
 								/>
 							);
 						})
@@ -167,8 +167,23 @@ const i18n = getI18N({ currentLocale });
 				<h3 class="font-p2 text-2xl text-center mb-8">
 					{i18n.SKILLS.SKILLS_TITLES.FUTURE}
 				</h3>
+				<div class="flex flex-wrap justify-center gap-10">
+					{
+						i18n.SKILLS.SKILLS_FUTURE.map((s) => {
+							return (
+								<Skill
+									skillIconURL={s.iconURL}
+									skillIconAlt={s.iconAlt}
+									skillIconTitle={s.iconTitle}
+									float={true}
+									className="w-24"
+								/>
+							);
+						})
+					}
+				</div>
 			</article>
-			<BreakableBlock className="w-full h-4 md:h-8" />
+			<!-- <BreakableBlock className="w-full h-4 md:h-8" /> -->
 		</section>
 		<section id={i18n.SECTIONS.studies.id} class="my-10">
 			<OptionalCloudTitle title={i18n.SECTIONS.studies.cloudTitle} />
