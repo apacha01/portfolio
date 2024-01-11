@@ -14,6 +14,7 @@ import Skill from "./Skill.astro";
 import Castle from "./sprites/Castle.astro";
 import FloorBlock from "./sprites/FloorBlock.astro";
 import Flagpole from "./sprites/Flagpole.astro";
+import Study from "./Study.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -160,7 +161,7 @@ const i18n = getI18N({ currentLocale });
 									skillIconURL={s.iconURL}
 									skillIconAlt={s.iconAlt}
 									skillIconTitle={s.iconTitle}
-									className="w-24 hover:scale-110 transition-transform"
+									className="w-16 sm:w-24 hover:scale-110 transition-transform"
 								/>
 							);
 						})
@@ -180,7 +181,7 @@ const i18n = getI18N({ currentLocale });
 									skillIconAlt={s.iconAlt}
 									skillIconTitle={s.iconTitle}
 									float={true}
-									className="w-24"
+									className="w-16 sm:w-24"
 								/>
 							);
 						})
@@ -193,8 +194,15 @@ const i18n = getI18N({ currentLocale });
 			<div
 				class="relative h-full w-full flex flex-col gap-0 items-center"
 			>
+				{
+					i18n.STUDIES.map((s) => {
+						return <Study {...s} flag={true} />;
+					})
+				}
 				<Castle class="aspect-[144/176] w-1/2 translate-y-[1px]" />
-				<Flagpole class="absolute w-full h-full bottom-4 sm:bottom-8" />
+				<Flagpole
+					class="absolute w-full h-full bottom-4 sm:bottom-8 -z-10"
+				/>
 				<FloorBlock className="w-full h-4 sm:h-8" />
 			</div>
 		</section>

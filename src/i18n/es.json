@@ -213,5 +213,34 @@
 				"iconTitle": "Rust"
 			}
 		]
-	}
+	},
+	"STUDIES": [
+		{
+			"degree": "Técnico en Informática Aplicada",
+			"institution": "UTN - INSPT",
+			"institutionImg": "/portfolio/imgs/utn.webp",
+			"institutionImgAlt": "Universidad Tecnológica Nacional",
+			"institutionImgTitle": "Universidad Tecnológica Nacional",
+			"timeLapse": "2021 - Actualidad",
+			"location": "Bs. As. Argentina"
+		},
+		{
+			"degree": "Formación en Desarrollo Web",
+			"institution": "Alura + Oracle Next Education",
+			"institutionImg": "/portfolio/imgs/oracle.webp",
+			"institutionImgAlt": "Oracle",
+			"institutionImgTitle": "Oracle",
+			"timeLapse": "2022",
+			"location": "Online"
+		},
+		{
+			"degree": "Secundario - Técnico en Electrónica",
+			"institution": "Escuela Técnica N°28 'República Francesa'",
+			"institutionImg": "/portfolio/imgs/et28.webp",
+			"institutionImgAlt": "Escuela Técnica N°28",
+			"institutionImgTitle": "Escuela Técnica N°28",
+			"timeLapse": "2016 - 2020",
+			"location": "Bs. As. Argentina"
+		}
+	]
 }

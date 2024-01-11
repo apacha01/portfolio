@@ -1,0 +1,57 @@
+---
+import CloudBlock from "./sprites/CloudBlock.astro";
+import Flag from "./sprites/Flag.astro";
+
+interface Props {
+	timeLapse: string;
+	degree: string;
+	institution: string;
+	institutionImg: string;
+	institutionImgAlt: string;
+	institutionImgTitle: string;
+	location: string;
+	flag?: boolean;
+}
+
+const {
+	degree,
+	institution,
+	location,
+	timeLapse,
+	institutionImg,
+	institutionImgAlt,
+	institutionImgTitle,
+	flag = false,
+} = Astro.props;
+---
+
+<article
+	class="relative self-start flex flex-col gap-2 w-full pl-8 sm:pl-12 pr-10 sm:pr-24 my-6"
+>
+	{
+		flag ? (
+			<Flag class="absolute left-2 sm:left-3 aspect-square w-5 sm:w-8 -scale-x-100" />
+		) : null
+	}
+	<span class="font-skreg text-xs sm:text-base">
+		{timeLapse}
+	</span>
+	<h3 class="font-p2 text-base sm:text-2xl">
+		{degree}
+	</h3>
+	<p class="font-skreg text-sm sm:text-lg">
+		{institution}
+	</p>
+	<span class="font-skreg text-xs sm:text-base">
+		{location}
+	</span>
+	<div class="absolute aspect-square w-10 sm:w-20 top-0 right-0">
+		<CloudBlock class="absolute w-full h-full -z-10" />
+		<img
+			class="max-w-[60%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+			src={institutionImg}
+			alt={institutionImgAlt}
+			title={institutionImgTitle}
+		/>
+	</div>
+</article>

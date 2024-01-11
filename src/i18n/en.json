@@ -213,5 +213,34 @@
 				"iconTitle": "Rust"
 			}
 		]
-	}
+	},
+	"STUDIES": [
+		{
+			"degree": "IT Technician",
+			"institution": "UTN - INSPT",
+			"institutionImg": "/portfolio/imgs/utn.webp",
+			"institutionImgAlt": "National Technological University",
+			"institutionImgTitle": "National Technological University",
+			"timeLapse": "2021 - Present",
+			"location": "Bs. As. Argentina"
+		},
+		{
+			"degree": "Web Development Training",
+			"institution": "Alura + Oracle Next Education",
+			"institutionImg": "/portfolio/imgs/oracle.webp",
+			"institutionImgAlt": "Oracle",
+			"institutionImgTitle": "Oracle",
+			"timeLapse": "2022",
+			"location": "Online"
+		},
+		{
+			"degree": "High School - Electronic Technician",
+			"institution": "Technical School N°28 'República Francesa'",
+			"institutionImg": "/portfolio/imgs/et28.webp",
+			"institutionImgAlt": "Technical School N°28",
+			"institutionImgTitle": "Technical School N°28",
+			"timeLapse": "2016 - 2020",
+			"location": "Bs. As. Argentina"
+		}
+	]
 }
