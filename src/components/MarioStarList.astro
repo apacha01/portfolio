@@ -1,0 +1,30 @@
+---
+interface Props {
+	list: string[];
+	class?: string;
+}
+
+const { list } = Astro.props;
+---
+
+<ul {...Astro.props}>
+	{
+		list.map((item) => {
+			return (
+				<li class="flex items-start sm:items-center justify-start gap-4">
+					<span class="block aspect-square w-6 sm:w-10" />
+					<p class="flex-1 font-skreg text-sm sm:text-lg md:text-xl max-w-prose text-balance">
+						{item}
+					</p>
+				</li>
+			);
+		})
+	}
+</ul>
+
+<style>
+	span {
+		background: url(/src/assets/svgs/mario-star.svg) no-repeat 50% 50% /
+			contain;
+	}
+</style>

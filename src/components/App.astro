@@ -15,6 +15,7 @@ import Castle from "./sprites/Castle.astro";
 import FloorBlock from "./sprites/FloorBlock.astro";
 import Flagpole from "./sprites/Flagpole.astro";
 import Study from "./Study.astro";
+import MarioStarList from "./MarioStarList.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -208,6 +209,21 @@ const i18n = getI18N({ currentLocale });
 		</section>
 		<section id={i18n.SECTIONS.about.id} class="my-10">
 			<OptionalCloudTitle title={i18n.SECTIONS.about.cloudTitle} />
+			<h3 class="font-p2 text-2xl text-center mb-8">
+				{i18n.ABOUT.DESCRIPTION_TITLE}
+			</h3>
+			{
+				typeof i18n.ABOUT.DESCRIPTION === "string" ? (
+					<p class="font-skreg sm:text-xl">
+						{i18n.ABOUT.DESCRIPTION}
+					</p>
+				) : (
+					<MarioStarList
+						class="w-fit mx-auto"
+						list={i18n.ABOUT.DESCRIPTION}
+					/>
+				)
+			}
 		</section>
 		<section id={i18n.SECTIONS.contact.id} class="my-10">
 			<OptionalCloudTitle title={i18n.SECTIONS.contact.cloudTitle} />
