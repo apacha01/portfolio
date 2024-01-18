@@ -245,10 +245,6 @@
 	],
 	"ABOUT": {
 		"DESCRIPTION_TITLE": "A few things to know",
-		"DESCRIPTION": [
-			"I like sports, I'm a team player.",
-			"I like tech, that's why I chose it as my career.",
-			"And in case you couldn't tell, I like games :)."
-		]
+		"DESCRIPTION": "I like sports, I'm a team player.\nI like tech, that's why I chose it as my career.\nAnd in case you couldn't tell, I like games :)."
 	}
 }
