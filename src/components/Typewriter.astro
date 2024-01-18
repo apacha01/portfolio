@@ -4,11 +4,18 @@ interface Props {
 	speed?: number;
 	delay?: number;
 	repeat?: boolean;
-	className?: string;
+	class?: string;
 	headingLevel?: number;
 }
 
-const { text, speed, delay, repeat, className, headingLevel } = Astro.props;
+const {
+	text,
+	speed,
+	delay,
+	repeat,
+	class: className,
+	headingLevel,
+} = Astro.props;
 
 const Tag =
 	headingLevel && headingLevel >= 1 && headingLevel <= 6

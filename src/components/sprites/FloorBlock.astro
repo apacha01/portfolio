@@ -3,14 +3,14 @@ interface Props {
 	blocksColor?: string;
 	bordersColor?: string;
 	shineColor?: string;
-	className?: string;
+	class?: string;
 }
 
 const {
 	blocksColor = "themed-block-main-bg",
 	bordersColor = "themed-block-borders-bg",
 	shineColor = "themed-block-light-bg",
-	className,
+	class: className,
 } = Astro.props;
 ---
 

@@ -2,11 +2,11 @@
 interface Props {
 	bricksColor?: string;
 	bordersColor?: string;
-	className?: string;
+	class?: string;
 }
 
 const {
-	className = "w-full h-full",
+	class: className = "w-full h-full",
 	bordersColor = "themed-block-borders-bg",
 	bricksColor = "themed-block-main-bg",
 } = Astro.props;

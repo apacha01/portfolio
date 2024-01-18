@@ -5,7 +5,7 @@ interface Props {
 	skillIconAlt: string;
 	skillIconTitle: string;
 	float?: boolean;
-	className?: string;
+	class?: string;
 }
 
 const {
@@ -13,7 +13,7 @@ const {
 	skillIconAlt,
 	skillIconTitle,
 	float = false,
-	className,
+	class: className,
 } = Astro.props;
 
 let floatDuration;
