@@ -242,5 +242,9 @@
 			"timeLapse": "2016 - 2020",
 			"location": "Bs. As. Argentina"
 		}
-	]
+	],
+	"ABOUT": {
+		"DESCRIPTION_TITLE": "Algunas cosas para saber",
+		"DESCRIPTION": "asdfadsf asdfasdf asdf asd fasd fas df asd fasd f ads fa sdf a dsf asd f ad fa sdf adf ad f asd f\nasdf\nasd"
+	}
 }

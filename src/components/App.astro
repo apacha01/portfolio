@@ -16,6 +16,7 @@ import FloorBlock from "./sprites/FloorBlock.astro";
 import Flagpole from "./sprites/Flagpole.astro";
 import Study from "./Study.astro";
 import MarioStarList from "./MarioStarList.astro";
+import UndergroundParagraph from "./UndergroundParagraph.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -214,9 +215,10 @@ const i18n = getI18N({ currentLocale });
 			</h3>
 			{
 				typeof i18n.ABOUT.DESCRIPTION === "string" ? (
-					<p class="font-skreg sm:text-xl">
-						{i18n.ABOUT.DESCRIPTION}
-					</p>
+					<UndergroundParagraph
+						class="w-full h-fit"
+						text={i18n.ABOUT.DESCRIPTION}
+					/>
 				) : (
 					<MarioStarList
 						class="w-fit mx-auto"

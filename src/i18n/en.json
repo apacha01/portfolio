@@ -242,5 +242,13 @@
 			"timeLapse": "2016 - 2020",
 			"location": "Bs. As. Argentina"
 		}
-	]
+	],
+	"ABOUT": {
+		"DESCRIPTION_TITLE": "A few things to know",
+		"DESCRIPTION": [
+			"I like sports, I'm a team player.",
+			"I like tech, that's why I chose it as my career.",
+			"And in case you couldn't tell, I like games :)."
+		]
+	}
 }
