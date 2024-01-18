@@ -1,0 +1,32 @@
+---
+interface Props {
+	bordersColor?: string;
+	bushColor?: string;
+	detailsColor?: string;
+	class?: string;
+}
+
+const {
+	bordersColor = "themed-scenery-borders",
+	bushColor = "themed-scenery-light",
+	detailsColor = "themed-scenery-main",
+} = Astro.props;
+---
+
+<svg {...Astro.props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 16">
+	<path
+		class={bordersColor}
+		fill="currentColor"
+		d="M1 15h30v1H1zm-1-2h32v2H0zm1-1h31v1H1zm2-2h26v2H3zm1-1h21v1H4zm1-1h20v1H5zm3-1h16v1H8zm1-1h15v1H9zm1-1h14v1H10zm0-1h13v1H10zm0-1h10v1H10zm1-1h9v1h-9zm2-1h6v1h-6zm1-1h4v1h-4zm7 3h1v1h-1zm5 6h3v1h-3zm1-1h1v1h-1zm3 3h1v1h-1z"
+	></path>
+	<path
+		class={bushColor}
+		fill="currentColor"
+		d="M2 15h28v1H2zm-1-2h30v2H1zm2-2h25v2H3zm1-1h21v1H4zm1-1h19v1H5zm3-1h16v1H8zm1-1h14v1H9zm1-1h13v1H10zm1-1h12v1H11zm0-2h8v2h-8zm2-1h6v1h-6zm1-1h4v1h-4zm14 11h1v1h-1zm2 0h1v1h-1zm-4-2h1v1h-1zm1 0h1v1h-1zm0-1h1v1h-1zm-8-5h1v1h-1zm2 0h1v1h-1z"
+	></path>
+	<path
+		class={detailsColor}
+		fill="currentColor"
+		d="M12 7h1v1h-1zm1-1h1v1h-1zm1 0h1v1h-1zm3-1h1v1h-1zm1 1h1v1h-1z"
+	></path>
+</svg>

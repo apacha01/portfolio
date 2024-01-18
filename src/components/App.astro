@@ -216,6 +216,7 @@ const i18n = getI18N({ currentLocale });
 			{
 				typeof i18n.ABOUT.DESCRIPTION === "string" ? (
 					<UndergroundParagraph
+						bushes={true}
 						class="w-full h-fit"
 						text={i18n.ABOUT.DESCRIPTION}
 					/>
