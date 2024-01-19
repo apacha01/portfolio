@@ -1,0 +1,10 @@
+---
+interface Props {
+	iconURL: string;
+	class?: string;
+}
+
+const { iconURL, class: className } = Astro.props;
+---
+
+<span class={className} style=`mask: url(${iconURL}) no-repeat 50% 50%`></span>
