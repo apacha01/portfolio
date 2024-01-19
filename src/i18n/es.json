@@ -245,6 +245,33 @@
 	],
 	"ABOUT": {
 		"DESCRIPTION_TITLE": "Algunas cosas para saber",
-		"DESCRIPTION": "Me gustan los deportes, sé trabjar en equipo.\nMe gusta la tecnología, por eso elegí esta carrera.\nY por si no se nota, me gustan los juegos :)."
+		"DESCRIPTION": "Me gustan los deportes, sé trabjar en equipo.\nMe gusta la tecnología, por eso elegí esta carrera.\nY por si no se nota, me gustan los juegos :).",
+		"HOBBIES_TITLE": "Hobbies",
+		"HOBBIES": [
+			{
+				"name": "Voley",
+				"iconURL": "/portfolio/svgs/volleyball.svg"
+			},
+			{
+				"name": "Fútbol",
+				"iconURL": "/portfolio/svgs/football.svg"
+			},
+			{
+				"name": "Musica",
+				"iconURL": "/portfolio/svgs/headphones.svg"
+			},
+			{
+				"name": "Leer",
+				"iconURL": "/portfolio/svgs/book-stack.svg"
+			},
+			{
+				"name": "Ajedrez",
+				"iconURL": "/portfolio/svgs/chess-knight.svg"
+			},
+			{
+				"name": "Jugar",
+				"iconURL": "/portfolio/svgs/joystick.svg"
+			}
+		]
 	}
 }

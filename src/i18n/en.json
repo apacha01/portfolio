@@ -245,6 +245,33 @@
 	],
 	"ABOUT": {
 		"DESCRIPTION_TITLE": "A few things to know",
-		"DESCRIPTION": "I like sports, I'm a team player.\nI like tech, that's why I chose it as my career.\nAnd in case you couldn't tell, I like games :)."
+		"DESCRIPTION": "I like sports, I'm a team player.\nI like tech, that's why I chose it as my career.\nAnd in case you couldn't tell, I like games :).",
+		"HOBBIES_TITLE": "Hobbies",
+		"HOBBIES": [
+			{
+				"name": "Volleyball",
+				"iconURL": "/portfolio/svgs/volleyball.svg"
+			},
+			{
+				"name": "Football",
+				"iconURL": "/portfolio/svgs/football.svg"
+			},
+			{
+				"name": "Music",
+				"iconURL": "/portfolio/svgs/headphones.svg"
+			},
+			{
+				"name": "Reading",
+				"iconURL": "/portfolio/svgs/book-stack.svg"
+			},
+			{
+				"name": "Chess",
+				"iconURL": "/portfolio/svgs/chess-knight.svg"
+			},
+			{
+				"name": "Gaming",
+				"iconURL": "/portfolio/svgs/joystick.svg"
+			}
+		]
 	}
 }
