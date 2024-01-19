@@ -17,6 +17,7 @@ import Flagpole from "./sprites/Flagpole.astro";
 import Study from "./Study.astro";
 import MarioStarList from "./MarioStarList.astro";
 import UndergroundParagraph from "./UndergroundParagraph.astro";
+import MarioHobbieTube from "./MarioHobbieTube.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -210,23 +211,45 @@ const i18n = getI18N({ currentLocale });
 		</section>
 		<section id={i18n.SECTIONS.about.id} class="my-10">
 			<OptionalCloudTitle title={i18n.SECTIONS.about.cloudTitle} />
-			<h3 class="font-p2 text-2xl text-center mb-8">
-				{i18n.ABOUT.DESCRIPTION_TITLE}
-			</h3>
-			{
-				typeof i18n.ABOUT.DESCRIPTION === "string" ? (
-					<UndergroundParagraph
-						bushes={true}
-						class="w-full h-fit"
-						text={i18n.ABOUT.DESCRIPTION}
-					/>
-				) : (
-					<MarioStarList
-						class="w-fit mx-auto"
-						list={i18n.ABOUT.DESCRIPTION}
-					/>
-				)
-			}
+			<article>
+				<h3 class="font-p2 text-2xl text-center mb-8">
+					{i18n.ABOUT.DESCRIPTION_TITLE}
+				</h3>
+				{
+					typeof i18n.ABOUT.DESCRIPTION === "string" ? (
+						<UndergroundParagraph
+							bushes={true}
+							class="w-full h-fit"
+							text={i18n.ABOUT.DESCRIPTION}
+						/>
+					) : (
+						<MarioStarList
+							class="w-fit mx-auto"
+							list={i18n.ABOUT.DESCRIPTION}
+						/>
+					)
+				}
+			</article>
+			<article class="mt-12">
+				<h3 class="font-p2 text-2xl text-center mb-8">
+					{i18n.ABOUT.HOBBIES_TITLE}
+				</h3>
+				<div
+					class="flex flex-wrap justify-center items-center gap-12 sm:gap-28"
+				>
+					{
+						i18n.ABOUT.HOBBIES.map((h) => {
+							return (
+								<MarioHobbieTube
+									iconURL={h.iconURL}
+									title={h.name}
+									class="w-40 max-w-[35%]"
+								/>
+							);
+						})
+					}
+				</div>
+			</article>
 		</section>
 		<section id={i18n.SECTIONS.contact.id} class="my-10">
 			<OptionalCloudTitle title={i18n.SECTIONS.contact.cloudTitle} />
