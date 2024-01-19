@@ -18,6 +18,7 @@ import Study from "./Study.astro";
 import MarioStarList from "./MarioStarList.astro";
 import UndergroundParagraph from "./UndergroundParagraph.astro";
 import MarioHobbieTube from "./MarioHobbieTube.astro";
+import Tree from "./sprites/Tree.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -49,7 +50,7 @@ const i18n = getI18N({ currentLocale });
 	<main class="w-full flex flex-col">
 		<section
 			id={i18n.SECTIONS.home.id}
-			class="flex flex-col gap-8 w-full my-10 text-center"
+			class="flex flex-col gap-8 w-full mt-20 text-center"
 		>
 			<RadioBlockSelector title="Theme">
 				<RadioBlockSelectorOption
@@ -124,7 +125,7 @@ const i18n = getI18N({ currentLocale });
 				},
 			]}
 		/>
-		<section id={i18n.SECTIONS.projects.id} class="my-10">
+		<section id={i18n.SECTIONS.projects.id} class="mt-20">
 			<OptionalCloudTitle title={i18n.SECTIONS.projects.cloudTitle} />
 			<MarioSlider>
 				{
@@ -145,7 +146,7 @@ const i18n = getI18N({ currentLocale });
 		</section>
 		<section
 			id={i18n.SECTIONS.skills.id}
-			class="flex flex-col gap-12 my-10"
+			class="flex flex-col gap-12 mt-20"
 		>
 			<OptionalCloudTitle title={i18n.SECTIONS.skills.cloudTitle} />
 			<article
@@ -192,7 +193,7 @@ const i18n = getI18N({ currentLocale });
 				</div>
 			</article>
 		</section>
-		<section id={i18n.SECTIONS.studies.id} class="relative my-10">
+		<section id={i18n.SECTIONS.studies.id} class="relative mt-20">
 			<OptionalCloudTitle title={i18n.SECTIONS.studies.cloudTitle} />
 			<div
 				class="relative h-full w-full flex flex-col gap-0 items-center"
@@ -209,7 +210,7 @@ const i18n = getI18N({ currentLocale });
 				<FloorBlock class="w-full h-4 sm:h-8" />
 			</div>
 		</section>
-		<section id={i18n.SECTIONS.about.id} class="my-10">
+		<section id={i18n.SECTIONS.about.id} class="mt-20">
 			<OptionalCloudTitle title={i18n.SECTIONS.about.cloudTitle} />
 			<article>
 				<h3 class="font-p2 text-2xl text-center mb-8">
@@ -251,7 +252,7 @@ const i18n = getI18N({ currentLocale });
 				</div>
 			</article>
 		</section>
-		<section id={i18n.SECTIONS.contact.id} class="my-10">
+		<section id={i18n.SECTIONS.contact.id} class="mt-20">
 			<OptionalCloudTitle title={i18n.SECTIONS.contact.cloudTitle} />
 		</section>
 	</main>
