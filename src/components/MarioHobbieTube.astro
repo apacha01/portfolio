@@ -1,0 +1,41 @@
+---
+import CustomIcon from "./CustomIcon.astro";
+import FloorBlock from "./sprites/FloorBlock.astro";
+import MarioTube from "./sprites/MarioTube.astro";
+
+interface Props {
+	iconURL: string;
+	title: string;
+	class?: string;
+}
+
+const { iconURL, title, class: className } = Astro.props;
+---
+
+<div class=`flex flex-col justify-center items-center ${className}`>
+	<div
+		class="floating-hobbie aspect-square flex flex-col justify-center items-center gap-1 max-w-full w-3/4 m-8 p-2 themed-text-block-bg themed-shadow shadow-[2px_2px]"
+	>
+		<CustomIcon
+			class="block w-full h-full themed-alternate-text-block-bg"
+			iconURL={iconURL}
+		/>
+		<span class="themed-text-block-text font-arcade sm:text-lg"
+			>{title}</span
+		>
+	</div>
+	<MarioTube />
+	<FloorBlock class="w-full h-4 sm:h-8" />
+</div>
+
+<style is:global>
+	.floating-hobbie {
+		animation: float 5s ease-in-out infinite;
+	}
+
+	@keyframes float {
+		50% {
+			transform: translateY(-5px);
+		}
+	}
+</style>
