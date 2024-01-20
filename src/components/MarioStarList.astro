@@ -4,10 +4,10 @@ interface Props {
 	class?: string;
 }
 
-const { list } = Astro.props;
+const { list, class: className } = Astro.props;
 ---
 
-<ul {...Astro.props}>
+<ul class={className}>
 	{
 		list.map((item) => {
 			return (

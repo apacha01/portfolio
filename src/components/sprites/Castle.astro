@@ -10,11 +10,12 @@ const {
 	blocksColor = "themed-block-main",
 	bordersColor = "themed-block-borders",
 	topShineColor = "themed-block-light",
+	class: className,
 } = Astro.props;
 ---
 
 <svg
-	{...Astro.props}
+	class={className}
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 1440 1760"
 >

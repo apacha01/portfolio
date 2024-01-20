@@ -8,10 +8,11 @@ interface Props {
 const {
 	debrisColor = "themed-block-borders",
 	detailsColor = "themed-block-main",
+	class: className,
 } = Astro.props;
 ---
 
-<svg {...Astro.props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8">
+<svg class={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8">
 	<g class={debrisColor} fill="currentColor">
 		<path d="M2 1h5v5H2z"></path>
 		<path d="M1 2h5v5H1zM3 0h3v1H3zM2 7h3v1H2zM0 3h1v3H0zM7 2h1v3H7z"

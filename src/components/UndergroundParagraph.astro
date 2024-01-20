@@ -4,14 +4,14 @@ import MarioBush from "./sprites/SingleBush.astro";
 
 interface Props {
 	text: string;
-	class?: string;
 	bushes?: boolean;
+	class?: string;
 }
 
-const { text, bushes = false } = Astro.props;
+const { text, bushes = false, class: className } = Astro.props;
 ---
 
-<div {...Astro.props}>
+<div class={className}>
 	{
 		bushes ? (
 			<div class="flex justify-between">

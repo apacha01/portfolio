@@ -5,10 +5,14 @@ interface Props {
 	class?: string;
 }
 
-const { flagColor = "themed-flag", skullColor = "themed-skull" } = Astro.props;
+const {
+	flagColor = "themed-flag",
+	skullColor = "themed-skull",
+	class: className,
+} = Astro.props;
 ---
 
-<svg {...Astro.props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+<svg class={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
 	<path
 		class={flagColor}
 		fill="currentColor"

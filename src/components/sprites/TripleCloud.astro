@@ -10,10 +10,11 @@ const {
 	cloudColor = "themed-cloud-light",
 	detailsColor = "themed-cloud-main",
 	borderColor = "themed-cloud-borders",
+	class: className,
 } = Astro.props;
 ---
 
-<svg {...Astro.props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 24">
+<svg class={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 24">
 	<path
 		class={borderColor}
 		stroke="currentColor"

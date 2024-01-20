@@ -10,10 +10,11 @@ const {
 	bordersColor = "themed-scenery-borders",
 	bushColor = "themed-scenery-light",
 	detailsColor = "themed-scenery-main",
+	class: className,
 } = Astro.props;
 ---
 
-<svg {...Astro.props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 16">
+<svg class={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 16">
 	<path
 		class={bordersColor}
 		fill="currentColor"

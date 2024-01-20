@@ -1,9 +1,15 @@
 ---
 import FlagpoleBottom from "./FlagpoleBottom.astro";
 import FlagpoleTop from "./FlagpoleTop.astro";
+
+interface Props {
+	class?: string;
+}
+
+const { class: className } = Astro.props;
 ---
 
-<div {...Astro.props}>
+<div class={className}>
 	<FlagpoleTop
 		class="aspect-square w-2 sm:w-4 absolute top-0 left-0 translate-x-1/2 sm:translate-x-[calc(50%-4px)]"
 	/>
