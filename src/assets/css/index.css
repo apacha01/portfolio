@@ -80,3 +80,16 @@
 .themed-skull {
 	@apply text-mario-flag-overworld-skull theme-underworld:text-mario-flag-underworld-skull theme-underwater:text-mario-flag-underwater-skull theme-castle:text-mario-flag-castle-skull
 }
+
+/* COINS */
+.themed-coin-light {
+	@apply text-mario-coin-overworld-light theme-underworld:text-mario-coin-underworld-light theme-underwater:text-mario-coin-underwater-light theme-castle:text-mario-coin-castle-light
+}
+
+.themed-coin-main {
+	@apply text-mario-coin-overworld-main theme-underworld:text-mario-coin-underworld-main theme-underwater:text-mario-coin-underwater-main theme-castle:text-mario-coin-castle-main
+}
+
+.themed-coin-borders {
+	@apply text-mario-coin-overworld-borders theme-underworld:text-mario-coin-underworld-borders theme-underwater:text-mario-coin-underwater-borders theme-castle:text-mario-coin-castle-borders
+}

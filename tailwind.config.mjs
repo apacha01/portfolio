@@ -91,7 +91,7 @@ export default {
 				},
 				'castle': {
 					'light': '#e69c21',
-					'main': '#4242ff',
+					'main': '#9c4a00',
 					'borders': '#636363'
 				}
 			},
