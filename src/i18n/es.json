@@ -273,5 +273,9 @@
 				"iconURL": "/portfolio/svgs/joystick.svg"
 			}
 		]
+	},
+	"CONTACT": {
+		"CONTACT_LEGEND": "Mamma Mia! Hablas italiano? Yo no, asique contactame en Español por favor.",
+		"CONTACT_LINKS": []
 	}
 }
