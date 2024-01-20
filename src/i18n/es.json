@@ -5,7 +5,8 @@
 	"SOCIAL_LINKS": {
 		"linkedin": "https://www.linkedin.com/in/agust%C3%ADn-pacheco-estudianteit/",
 		"github": "https://github.com/apacha01/",
-		"resume": "/portfolio/cvs/cv-es.pdf"
+		"resume": "/portfolio/cvs/cv-es.pdf",
+		"email": "agustin.pacheco1901@gmail.com"
 	},
 	"SECTIONS": {
 		"home": {
@@ -275,7 +276,6 @@
 		]
 	},
 	"CONTACT": {
-		"CONTACT_LEGEND": "Mamma Mia! Hablas italiano? Yo no, asique contactame en Español por favor.",
-		"CONTACT_LINKS": []
+		"CONTACT_LEGEND": "Mamma Mia! Hablas italiano? Yo no, asique contactame en Español por favor."
 	}
 }

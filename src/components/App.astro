@@ -19,6 +19,7 @@ import MarioStarList from "./MarioStarList.astro";
 import UndergroundParagraph from "./UndergroundParagraph.astro";
 import MarioHobbieTube from "./MarioHobbieTube.astro";
 import Tree from "./sprites/Tree.astro";
+import Email from "./icons/Email.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -256,6 +257,35 @@ const i18n = getI18N({ currentLocale });
 			>
 				{i18n.CONTACT.CONTACT_LEGEND}
 			</h3>
+			<div
+				class="w-[85%] mx-auto mt-16 mb-4 flex justify-between items-center font-skreg sm:text-3xl"
+			>
+				<a
+					class="flex justify-start items-center gap-4"
+					href={i18n.SOCIAL_LINKS.linkedin}
+					title="Linkedin"
+					target="_blank"
+					rel="noopener noreferer"
+				>
+					<img
+						class="aspect-square w-6 sm:w-12 bg-white"
+						src="/src/assets/svgs/linkedin.svg"
+						alt="Linkedin Icon"
+					/>
+					Linkedin
+				</a>
+				<a
+					href=`mailto:${i18n.SOCIAL_LINKS.email}`
+					class="flex justify-start items-center gap-4"
+					target="_blank"
+					rel="noreferrer"
+				>
+					<Email
+						class="aspect-square w-6 sm:w-12 text-black theme-underworld:text-white theme-underwater:text-white theme-castle:text-white"
+					/>
+					Email
+				</a>
+			</div>
 			<Tree class="w-full" />
 		</section>
 	</main>
