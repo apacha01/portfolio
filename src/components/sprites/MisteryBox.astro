@@ -1,0 +1,36 @@
+---
+interface Props {
+	blockColor?: string;
+	interrogationMarkColor?: string;
+	shadowColor?: string;
+	class?: string;
+}
+
+const {
+	blockColor = "themed-coin-light",
+	interrogationMarkColor = "themed-coin-main",
+	shadowColor = "themed-coin-borders",
+	class: className,
+} = Astro.props;
+---
+
+<svg class={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+	<g class={blockColor} fill="currentColor">
+		<path d="M17 17v224h224V17H17z"></path>
+		<path d="M113 80v48h15v-15h17V80h-32z"></path>
+	</g>
+	<g class={interrogationMarkColor} fill="currentColor">
+		<path d="M17 0v17H0v224h17V17h224V0H17z"></path>
+		<path
+			d="M80 49v16H65v48h32V65h48v48h-17v15h-15v32h32v-32h32V65h-17V49H80zm33 128v31h32v-31h-32z"
+		></path>
+	</g>
+	<g class={shadowColor} fill="currentColor">
+		<path
+			d="M241 17v224H0v15h256V17h-15M32 32v17h17V32H32m176 0v17h17V32h-17zM97 65v48H80v15h33V80h32V65H97z"
+		></path>
+		<path
+			d="M177 80v48h-32v32h-17v17h32v-32h33V80h-16zm-32 113v15h-17v17h32v-32h-15M32 208v17h17v-17H32m176 0v17h17v-17h-17z"
+		></path>
+	</g>
+</svg>
