@@ -1,4 +1,6 @@
 ---
+import MisteryBox from "./sprites/MisteryBox.astro";
+
 interface Props {
 	navlinks: { text: string; link: string }[];
 }
@@ -12,35 +14,36 @@ const invertedThemedHoverTextClass =
 ---
 
 <header
-	class="sticky top-2 w-full flex items-center justify-end font-skreg px-4 py-2 shadow-[1px_1px_2px] themed-shadow z-[9999] themed-text-block-bg themed-text-block-text"
+	class="z-[9999] fixed top-6 right-8 w-fit flex items-center justify-end font-skreg themed-text-block-text lg:sticky lg:top-2 lg:w-full lg:px-4 lg:py-2 lg:shadow-[1px_1px_2px] themed-shadow lg:bg-mario-coin-overworld-light theme-underworld:lg:bg-mario-ground&block-underworld-main theme-underwater:lg:bg-mario-ground&block-underwater-main theme-castle:lg:bg-mario-ground&block-castle-main"
 >
 	<label
 		for="menu-toggler"
-		class="z-[9998] lg:hidden cursor-pointer peer"
+		class="z-[9998] lg:hidden cursor-pointer peer active:-translate-y-2 transition-transform"
 		aria-label="Menu button"
 	>
-		mario mistery box svg
+		<MisteryBox class="aspect-square w-10" />
 		<input
 			type="checkbox"
 			name="menu-toggler"
 			id="menu-toggler"
-			class="peer hidden"
+			class="hidden"
 		/>
 	</label>
 	<nav
 		id="menu"
-		class=`[clip-path:circle(0px_at_calc(100%-4rem)_15px)] absolute z-[9997] w-screen h-screen -top-2 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:visible lg:opacity-100 lg:[clip-path:none] lg:w-full lg:h-fit lg:top-0 lg:left-0 lg:relative lg:bg-transparent peer-[&:has(#menu-toggler:checked)]:[clip-path:circle(75%)] transition-[clip-path] duration-300 themed-text-block-bg`
+		class="[clip-path:circle(0px_at_calc(100%-3rem)_15px)] absolute z-[9997] w-screen h-screen -top-6 left-[180%] -translate-x-full lg:translate-x-0 lg:visible lg:opacity-100 lg:[clip-path:none] lg:w-full lg:h-fit lg:top-0 lg:left-0 lg:relative lg:bg-transparent peer-[&:has(#menu-toggler:checked)]:[clip-path:circle(75%)] transition-[clip-path] duration-300 themed-text-block-bg"
 	>
 		<ul
 			class="w-[32rem] h-full max-w-full flex flex-col items-center justify-center gap-10 mx-auto px-12 lg:w-full lg:h-fit lg:mx-0 lg:px-0 lg:flex-row lg:justify-evenly lg:gap-0"
 		>
 			{
 				navlinks.map((e) => {
+					e.link = e.link.startsWith("#") ? e.link : "#" + e.link;
 					return (
 						<li class="w-full lg:w-fit h-fit">
 							<a
 								class={`relative block w-full text-center text-4xl lg:w-fit lg:h-fit lg:text-xl px-3 py-1 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:scale-x-0 hover:before:scale-x-100 transition-transform transform-gpu before:transition-transform before:transform-gpu before:duration-100 before:z-[-1] ${invertedThemedHoverTextClass} ${invertedThemedBeforeBackgroundClass}`}
-								href={"#" + e.link}
+								href={e.link}
 								onclick="document.getElementById('menu-toggler').checked=false;"
 							>
 								{e.text}
@@ -52,15 +55,15 @@ const invertedThemedHoverTextClass =
 		</ul>
 	</nav>
 	<span
-		class="absolute aspect-square w-1 top-1 left-1 z-[-1] shadow-[1px_1px] themed-shadow themed-alternate-text-block-bg"
+		class="absolute aspect-square lg:w-1 top-1 left-1 z-[-1] shadow-[1px_1px] themed-shadow themed-alternate-text-block-bg"
 	></span>
 	<span
-		class="absolute aspect-square w-1 bottom-1 left-1 z-[-1] shadow-[1px_1px] themed-shadow themed-alternate-text-block-bg"
+		class="absolute aspect-square lg:w-1 bottom-1 left-1 z-[-1] shadow-[1px_1px] themed-shadow themed-alternate-text-block-bg"
 	></span>
 	<span
-		class="absolute aspect-square w-1 top-1 right-1 z-[-1] shadow-[1px_1px] themed-shadow themed-alternate-text-block-bg"
+		class="absolute aspect-square lg:w-1 top-1 right-1 z-[-1] shadow-[1px_1px] themed-shadow themed-alternate-text-block-bg"
 	></span>
 	<span
-		class="absolute aspect-square w-1 bottom-1 right-1 z-[-1] shadow-[1px_1px] themed-shadow themed-alternate-text-block-bg"
+		class="absolute aspect-square lg:w-1 bottom-1 right-1 z-[-1] shadow-[1px_1px] themed-shadow themed-alternate-text-block-bg"
 	></span>
 </header>
