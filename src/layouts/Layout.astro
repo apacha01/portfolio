@@ -9,7 +9,10 @@ const { currentLocale } = Astro;
 ---
 
 <!doctype html>
-<html lang={currentLocale} class="theme">
+<html
+	lang={currentLocale}
+	class="theme scroll-p-0 lg:scroll-pt-16 scroll-smooth"
+>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
@@ -42,8 +45,6 @@ const { currentLocale } = Astro;
 			"Open Sans",
 			"Helvetica Neue",
 			sans-serif;
-		scroll-padding-top: 6rem;
-		scroll-behavior: smooth;
 	}
 
 	@font-face {
