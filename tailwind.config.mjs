@@ -5,7 +5,11 @@ import plugin from 'tailwindcss/plugin';
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {
+			screens: {
+				'xs': '470px'
+			}
+		},
 		backgroundImage: {
 			'star': 'url("/src/assets/svgs/mario-star.svg")'
 		},
