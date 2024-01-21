@@ -74,11 +74,11 @@
 
 /* FLAGS */
 .themed-flag {
-	@apply text-mario-flag-overworld-flag theme-underworld:text-mario-flag-underworld-flag theme-underwater:text-mario-flag-underwater-flag theme-castle:text-mario-flag-castle-flag
+	@apply text-mario-objects&enemies-overworld-borders theme-underworld:text-mario-objects&enemies-underworld-borders theme-underwater:text-mario-objects&enemies-underwater-borders theme-castle:text-mario-objects&enemies-castle-borders
 }
 
 .themed-skull {
-	@apply text-mario-flag-overworld-skull theme-underworld:text-mario-flag-underworld-skull theme-underwater:text-mario-flag-underwater-skull theme-castle:text-mario-flag-castle-skull
+	@apply text-mario-objects&enemies-overworld-main theme-underworld:text-mario-objects&enemies-underworld-main theme-underwater:text-mario-objects&enemies-underwater-main theme-castle:text-mario-objects&enemies-castle-main
 }
 
 /* COINS */
@@ -92,4 +92,17 @@
 
 .themed-coin-borders {
 	@apply text-mario-coin-overworld-borders theme-underworld:text-mario-coin-underworld-borders theme-underwater:text-mario-coin-underwater-borders theme-castle:text-mario-coin-castle-borders
+}
+
+/* TURTLES SHELL */
+.themed-shell {
+	@apply text-mario-objects&enemies-overworld-main theme-underworld:text-mario-objects&enemies-underworld-main theme-underwater:text-mario-objects&enemies-underwater-main theme-castle:text-mario-objects&enemies-castle-main
+}
+
+.themed-shell-details {
+	@apply text-mario-objects&enemies-overworld-secondary theme-underworld:text-mario-objects&enemies-underworld-secondary theme-underwater:text-mario-objects&enemies-underwater-secondary theme-castle:text-mario-objects&enemies-castle-secondary
+}
+
+.themed-shell-borders {
+	@apply text-mario-objects&enemies-overworld-borders theme-underworld:text-mario-objects&enemies-underworld-borders theme-underwater:text-mario-objects&enemies-underwater-borders theme-castle:text-mario-objects&enemies-castle-borders
 }

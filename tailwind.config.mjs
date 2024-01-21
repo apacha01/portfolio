@@ -121,22 +121,26 @@ export default {
 					'borders': '#636363'
 				}
 			},
-			'mario-flag': {
+			'mario-objects&enemies': {
 				'overworld': {
-					'flag': '#ffffff',
-					'skull': '#0c9300'
+					'borders': '#ffffff',
+					'main': '#0c9300',
+					'secondary': '#e69c21'
 				},
 				'underworld': {
-					'flag': '#feccc5',
-					'skull': '#007c8d'
+					'borders': '#feccc5',
+					'main': '#007c8d',
+					'secondary': '#9c4a00'
 				},
 				'underwater': {
-					'flag': '#ffffff',
-					'skull': '#adadad'
+					'borders': '#ffffff',
+					'main': '#adadad',
+					'secondary': '#e69c21'
 				},
 				'castle': {
-					'flag': '#feccc5',
-					'skull': '#007c8d'
+					'borders': '#feccc5',
+					'main': '#007c8d',
+					'secondary': '#9c4a00'
 				}
 			}
 		}
