@@ -258,7 +258,7 @@
 				"iconURL": "/portfolio/svgs/football.svg"
 			},
 			{
-				"name": "Musica",
+				"name": "Música",
 				"iconURL": "/portfolio/svgs/headphones.svg"
 			},
 			{
@@ -276,6 +276,6 @@
 		]
 	},
 	"CONTACT": {
-		"CONTACT_LEGEND": "Mamma Mia! Hablas italiano? Yo no, asique contactame en Español por favor."
+		"CONTACT_LEGEND": "¡Mamma Mia! ¿Hablas italiano? Yo no, asique contactame en Español por favor."
 	}
 }
