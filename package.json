@@ -1,7 +1,15 @@
 {
 	"name": "portfolio",
 	"type": "module",
-	"version": "0.0.1",
+	"version": "1.0.0",
+	"homepage": "https://github.com/apacha01/portfolio#readme",
+	"bugs": {
+		"url": "https://github.com/apacha01/portfolio/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/apacha01/portfolio.git"
+	},
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",
