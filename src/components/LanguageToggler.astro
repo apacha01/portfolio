@@ -1,0 +1,82 @@
+---
+import BreakableBlock from "./sprites/BreakableBlock.astro";
+import TurtleShell from "./sprites/TurtleShell.astro";
+import ARG_FLAG from "../assets/svgs/arg-flag.svg";
+import US_FLAG from "../assets/svgs/usa-flag.svg";
+
+interface Props {
+	class?: string;
+}
+
+const { currentLocale = "en", url } = Astro;
+const { class: className } = Astro.props;
+
+// page prefix for gh deploy
+const pathname = url.pathname.replace("/portfolio", "");
+
+let restUrl;
+
+// not necessary now, maybe for multipaged web in future
+if (pathname.startsWith("/es")) {
+	const segments = pathname.split("/").slice(2);
+	restUrl = "/" + segments.join("/").replace(/\/+$/, "");
+} else {
+	restUrl = pathname.replace(/\/+$/, "");
+}
+
+const LOCALES: Record<
+	string,
+	{ code: string; name: string; href: string; label: string; flagAlt: string }
+> = {
+	es: {
+		code: "es",
+		href: `/portfolio/es${restUrl}`,
+		name: "Español",
+		label: "Ir a la página en Ingles",
+		flagAlt: "Icono de la Bandera Argentina",
+	},
+	en: {
+		code: "en",
+		href: `/portfolio${restUrl}`,
+		name: "English",
+		label: "Go to Spanish page",
+		flagAlt: "USA Flag Icon",
+	},
+};
+
+const currentLocaleData = LOCALES[currentLocale];
+
+// filter in case there's more than one lang (in the future). For now, take the only one (with [0]).
+const otherLocaleData = Object.values(LOCALES).filter(
+	(locale) => locale.code !== currentLocale,
+)[0];
+
+// not necessary now, maybe for multipaged web in future
+const currentPath = url.pathname.replace(currentLocaleData.href, "");
+---
+
+<div class=`relative ${className}`>
+	<img
+		class="absolute top-2 left-2 w-6 sm:w-7 z-10"
+		src={US_FLAG.src}
+		alt={LOCALES["en"].flagAlt}
+	/>
+	<img
+		class="absolute top-2 right-2 w-6 xs:w-7 z-10"
+		src={ARG_FLAG.src}
+		alt={LOCALES["es"].flagAlt}
+	/>
+
+	<a
+		href=`${otherLocaleData.href}${currentPath}`
+		aria-label={currentLocaleData.label}
+		class={`relative flex w-full h-9 sm:h-11 z-20 ${
+			currentLocaleData.code.localeCompare("es") === 0
+				? "justify-end"
+				: "justify-start"
+		}`}
+	>
+		<TurtleShell class="h-full" />
+	</a>
+	<BreakableBlock class="w-full h-4 sm:h-6" />
+</div>
