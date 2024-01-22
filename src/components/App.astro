@@ -21,6 +21,7 @@ import MarioHobbieTube from "./MarioHobbieTube.astro";
 import Tree from "./sprites/Tree.astro";
 import Email from "./icons/Email.astro";
 import LanguageToggler from "./LanguageToggler.astro";
+import { THEMES } from "src/constants/theme.js";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -59,31 +60,30 @@ const i18n = getI18N({ currentLocale });
 			>
 				<RadioBlockSelector title="Theme">
 					<RadioBlockSelectorOption
-						radioId="overworld"
+						radioId={THEMES.OVERWORLD}
 						radioName="theme"
-						radioValue="overworld"
+						radioValue={THEMES.OVERWORLD}
 						blocksColor="text-mario-ground&block-overworld-main"
 						bordersColor="text-mario-ground&block-overworld-borders"
-						checked={true}
 					/>
 					<RadioBlockSelectorOption
-						radioId="underworld"
+						radioId={THEMES.UNDERGROUND}
 						radioName="theme"
-						radioValue="underworld"
+						radioValue={THEMES.UNDERGROUND}
 						blocksColor="text-mario-ground&block-underworld-main"
 						bordersColor="text-mario-ground&block-underworld-borders"
 					/>
 					<RadioBlockSelectorOption
-						radioId="underwater"
+						radioId={THEMES.UNDERWATER}
 						radioName="theme"
-						radioValue="underwater"
+						radioValue={THEMES.UNDERWATER}
 						blocksColor="text-mario-ground&block-underwater-main"
 						bordersColor="text-mario-ground&block-underwater-borders"
 					/>
 					<RadioBlockSelectorOption
-						radioId="castle"
+						radioId={THEMES.CASTLE}
 						radioName="theme"
-						radioValue="castle"
+						radioValue={THEMES.CASTLE}
 						blocksColor="text-mario-ground&block-castle-main"
 						bordersColor="text-mario-ground&block-castle-borders"
 					/>
