@@ -1,3 +1,4 @@
+import { basePrefix } from '/src/constants/deploy.js';
 import { defineConfig } from 'astro/config';
 
 import tailwind from "@astrojs/tailwind";
@@ -6,7 +7,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
 	integrations: [tailwind()],
 	site: 'https://apacha01.github.io',
-	base: '/portfolio',
+	base: basePrefix,
 	i18n: {
 		defaultLocale: 'en',
 		locales: ['en', 'es'],

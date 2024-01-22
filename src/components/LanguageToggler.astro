@@ -3,6 +3,7 @@ import BreakableBlock from "./sprites/BreakableBlock.astro";
 import TurtleShell from "./sprites/TurtleShell.astro";
 import ARG_FLAG from "../assets/svgs/arg-flag.svg";
 import US_FLAG from "../assets/svgs/usa-flag.svg";
+import { basePrefix } from "src/constants/deploy";
 
 interface Props {
 	class?: string;
@@ -12,7 +13,7 @@ const { currentLocale = "en", url } = Astro;
 const { class: className } = Astro.props;
 
 // page prefix for gh deploy
-const pathname = url.pathname.replace("/portfolio", "");
+const pathname = url.pathname.replace(basePrefix, "");
 
 let restUrl;
 
@@ -30,14 +31,14 @@ const LOCALES: Record<
 > = {
 	es: {
 		code: "es",
-		href: `/portfolio/es${restUrl}`,
+		href: `${basePrefix}/es${restUrl}`,
 		name: "Español",
 		label: "Ir a la página en Ingles",
 		flagAlt: "Icono de la Bandera Argentina",
 	},
 	en: {
 		code: "en",
-		href: `/portfolio${restUrl}`,
+		href: `${basePrefix}${restUrl}`,
 		name: "English",
 		label: "Go to Spanish page",
 		flagAlt: "USA Flag Icon",
