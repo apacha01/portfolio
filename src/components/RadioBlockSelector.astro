@@ -15,3 +15,24 @@ const { title, class: className } = Astro.props;
 		<slot />
 	</div>
 </section>
+
+<script>
+	import { getTheme, setTheme } from "../stores/theme.ts";
+
+	const theme = getTheme();
+	const radioInputs = document.querySelectorAll(
+		"input[type='radio']",
+	) as NodeListOf<HTMLInputElement>;
+
+	radioInputs.forEach((ri) => {
+		// set the theme when clicked
+		ri.addEventListener("click", () => {
+			setTheme(ri.value);
+		});
+
+		// initial check to set the theme on page load
+		if (theme.localeCompare(ri.id) === 0) {
+			ri.checked = true;
+		}
+	});
+</script>
