@@ -20,6 +20,7 @@ import UndergroundParagraph from "./UndergroundParagraph.astro";
 import MarioHobbieTube from "./MarioHobbieTube.astro";
 import Tree from "./sprites/Tree.astro";
 import Email from "./icons/Email.astro";
+import LanguageToggler from "./LanguageToggler.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -53,37 +54,42 @@ const i18n = getI18N({ currentLocale });
 			id={i18n.SECTIONS.home.id}
 			class="flex flex-col gap-8 w-full text-center"
 		>
-			<RadioBlockSelector class="mt-10" title="Theme">
-				<RadioBlockSelectorOption
-					radioId="overworld"
-					radioName="theme"
-					radioValue="overworld"
-					blocksColor="text-mario-ground&block-overworld-main"
-					bordersColor="text-mario-ground&block-overworld-borders"
-					checked={true}
-				/>
-				<RadioBlockSelectorOption
-					radioId="underworld"
-					radioName="theme"
-					radioValue="underworld"
-					blocksColor="text-mario-ground&block-underworld-main"
-					bordersColor="text-mario-ground&block-underworld-borders"
-				/>
-				<RadioBlockSelectorOption
-					radioId="underwater"
-					radioName="theme"
-					radioValue="underwater"
-					blocksColor="text-mario-ground&block-underwater-main"
-					bordersColor="text-mario-ground&block-underwater-borders"
-				/>
-				<RadioBlockSelectorOption
-					radioId="castle"
-					radioName="theme"
-					radioValue="castle"
-					blocksColor="text-mario-ground&block-castle-main"
-					bordersColor="text-mario-ground&block-castle-borders"
-				/>
-			</RadioBlockSelector>
+			<section
+				class="settings w-full flex flex-col gap-8 justify-center items-center mt-10 md:flex-row md:justify-between md:items-start md:px-20"
+			>
+				<RadioBlockSelector title="Theme">
+					<RadioBlockSelectorOption
+						radioId="overworld"
+						radioName="theme"
+						radioValue="overworld"
+						blocksColor="text-mario-ground&block-overworld-main"
+						bordersColor="text-mario-ground&block-overworld-borders"
+						checked={true}
+					/>
+					<RadioBlockSelectorOption
+						radioId="underworld"
+						radioName="theme"
+						radioValue="underworld"
+						blocksColor="text-mario-ground&block-underworld-main"
+						bordersColor="text-mario-ground&block-underworld-borders"
+					/>
+					<RadioBlockSelectorOption
+						radioId="underwater"
+						radioName="theme"
+						radioValue="underwater"
+						blocksColor="text-mario-ground&block-underwater-main"
+						bordersColor="text-mario-ground&block-underwater-borders"
+					/>
+					<RadioBlockSelectorOption
+						radioId="castle"
+						radioName="theme"
+						radioValue="castle"
+						blocksColor="text-mario-ground&block-castle-main"
+						bordersColor="text-mario-ground&block-castle-borders"
+					/>
+				</RadioBlockSelector>
+				<LanguageToggler class="w-28 sm:w-36" />
+			</section>
 			<OptionalCloudTitle title={i18n.SECTIONS.home.cloudTitle} />
 			<div class="w-full min-h-16 block">
 				<Typewriter
