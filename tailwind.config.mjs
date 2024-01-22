@@ -11,7 +11,9 @@ export default {
 			}
 		},
 		backgroundImage: {
-			'star': 'url("/src/assets/svgs/mario-star.svg")'
+			'star': 'url("/src/assets/svgs/mario-star.svg")',
+			'mario-idle': 'url("/src/assets/svgs/mario-idle.svg")',
+			'mario-jump': 'url("/src/assets/svgs/mario-jump.svg")'
 		},
 		fontFamily: {
 			'skreg': 'SK-Regular',

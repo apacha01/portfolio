@@ -22,11 +22,9 @@ import BreakableBlock from "./sprites/BreakableBlock.astro";
 			class="slider-prev-btn aspect-square w-10 font-p2 text-lg text-center shadow-[2px_2px] themed-shadow themed-text-block-text themed-text-block-bg"
 			>{"<"}</button
 		>
-		<img
-			src="/src/assets/svgs/mario-idle.svg"
-			alt="Mario idle sprite"
-			class="mario h-full transition-transform"
-		/>
+		<span
+			class="mario aspect-square h-full transition-transform bg-mario-idle"
+		></span>
 		<button
 			class="slider-next-btn aspect-square w-10 text-center font-p2 text-lg pl-1 mr-[2px] shadow-[2px_2px] themed-shadow themed-text-block-text themed-text-block-bg"
 			>{">"}</button
@@ -101,12 +99,13 @@ import BreakableBlock from "./sprites/BreakableBlock.astro";
 			this.isJumping = true;
 
 			let translateClass = "-translate-y-10";
-			let currentSprite = this.marioElement.src;
+			let currentSpriteClass = "bg-mario-idle";
+			let newSpriteClass = "bg-mario-jump";
 			let newBackgronudColor = "themed-alternate-text-block-bg";
 			let hideClass = "opacity-0";
 
-			this.marioElement.classList.add(translateClass);
-			this.marioElement.src = "/src/assets/svgs/mario-jump.svg";
+			this.marioElement.classList.add(translateClass, newSpriteClass);
+			this.marioElement.classList.remove(currentSpriteClass);
 
 			setTimeout(() => {
 				this.slides[fromIndex].classList.add(hideClass);
@@ -115,7 +114,8 @@ import BreakableBlock from "./sprites/BreakableBlock.astro";
 			}, jumpDuration / 2);
 
 			setTimeout(() => {
-				this.marioElement.src = currentSprite;
+				this.marioElement.classList.add(currentSpriteClass);
+				this.marioElement.classList.remove(newSpriteClass);
 				this.slides[fromIndex].classList.remove(hideClass);
 				this.slidesContainer.classList.remove(newBackgronudColor);
 				this.isJumping = false;

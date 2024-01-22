@@ -23,6 +23,11 @@ import Email from "./icons/Email.astro";
 import LanguageToggler from "./LanguageToggler.astro";
 import { THEMES } from "src/constants/theme.js";
 
+// Icons
+import gh from "/src/assets/svgs/github.svg";
+import lkin from "/src/assets/svgs/linkedin.svg";
+import cv from "/src/assets/svgs/resume.svg";
+
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 ---
@@ -106,7 +111,7 @@ const i18n = getI18N({ currentLocale });
 				{
 					aLink: i18n.SOCIAL_LINKS.linkedin,
 					aTitle: "Linkedin",
-					iconLink: "/src/assets/svgs/linkedin.svg",
+					iconLink: lkin.src,
 					iconAlt: "Linkedin Icon",
 					cloudClass: "translate-y-2",
 					iconClass: "bg-white",
@@ -114,7 +119,7 @@ const i18n = getI18N({ currentLocale });
 				{
 					aLink: i18n.SOCIAL_LINKS.github,
 					aTitle: "GitHub",
-					iconLink: "/src/assets/svgs/github.svg",
+					iconLink: gh.src,
 					iconAlt: "GitHub Icon",
 					cloudClass: "-translate-y-5",
 					iconClass: "bg-white",
@@ -122,7 +127,7 @@ const i18n = getI18N({ currentLocale });
 				{
 					aLink: i18n.SOCIAL_LINKS.resume,
 					aTitle: "Resume/CV",
-					iconLink: "/src/assets/svgs/resume.svg",
+					iconLink: cv.src,
 					iconAlt: "Resume/CV Icon",
 					cloudClass: "mt-12",
 					iconClass: "bg-white",
@@ -272,7 +277,7 @@ const i18n = getI18N({ currentLocale });
 				>
 					<img
 						class="aspect-square w-6 sm:w-12 bg-white"
-						src="/src/assets/svgs/linkedin.svg"
+						src={lkin.src}
 						alt="Linkedin Icon"
 					/>
 					Linkedin
